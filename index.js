@@ -7,6 +7,8 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(layouts({
     "engine": "handlebars",
+    "directory": "templates/layouts",
+    "partials": "templates/partials",
     "default": "home.hbs"
   }))
   .destination('./dist')

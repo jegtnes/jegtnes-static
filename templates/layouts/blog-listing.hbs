@@ -14,10 +14,9 @@
 
     <ul>
 
-      {{#each collections.posts}}
+      {{#each collections.blog}}
       <li>
-        <h3>{{{this.title}}}</h3>
-        <article>{{{this.contents}}}</article>
+        <a href=/{{this.path}}>{{{this.title}}}</a>
       </li>
       {{/each}}
 

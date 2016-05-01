@@ -20,15 +20,17 @@ Metalsmith(__dirname)
     pages: {
       pattern: './*.md'
     },
-    posts: {
-      pattern: 'posts/*.md'
+    blog: {
+      pattern: 'posts/*.md',
+      sortBy: 'date',
+      reverse: true
     }
   }))
   .use(markdown())
   .use(permalinks({
     linksets: [
       {
-        match: { collection: 'posts' },
+        match: { collection: 'blog' },
         pattern: 'blog/:title'
       },
       {

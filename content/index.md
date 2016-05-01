@@ -1,6 +1,7 @@
 ---
-title: Home
+title: Index
 layout: home.hbs
+permalink: false
 ---
 
 # Hello world

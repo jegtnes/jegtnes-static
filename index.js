@@ -3,14 +3,22 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
+var browserSync = require('metalsmith-browser-sync');
 
 var handlebars = require('handlebars');
 
 Metalsmith(__dirname)
   .source('content')
+  .use(browserSync({
+    server: "./dist",
+    files: [
+      "content/**/*.md",
+      "templates/**/*.hbs"
+    ]
+  }))
   .use(collections({
     pages: {
-      pattern: 'pages/*.md'
+      pattern: './*.md'
     },
     posts: {
       pattern: 'posts/*.md'

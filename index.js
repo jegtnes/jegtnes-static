@@ -1,9 +1,12 @@
 var Metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
+var collections = require('metalsmith-collections');
+
 var handlebars = require('handlebars');
 
 Metalsmith(__dirname)
+  .source('content')
   .use(markdown())
   .use(layouts({
     "engine": "handlebars",

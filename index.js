@@ -3,6 +3,7 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
+var copy = require('metalsmith-copy');
 
 var handlebars = require('handlebars');
 
@@ -34,6 +35,11 @@ Metalsmith(__dirname)
     "directory": "templates/layouts",
     "partials": "templates/partials",
     "default": "home.hbs"
+  }))
+  .use(copy({
+    pattern: 'pages/*.md',
+    directory: './',
+    move: true
   }))
   .destination('./dist')
   .build(function(err) {

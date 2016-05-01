@@ -32,8 +32,7 @@ Metalsmith(__dirname)
   .use(layouts({
     "engine": "handlebars",
     "directory": "templates/layouts",
-    "partials": "templates/partials",
-    "default": "home.hbs"
+    "partials": "templates/partials"
   }))
   .destination('./dist')
   .build(function(err) {

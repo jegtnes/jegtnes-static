@@ -1,6 +1,7 @@
 ---
 title: How to serve different assets in production environments with Ghost
 date: 2014-05-01
+layout: blog-post.hbs
 ---
 
 Serving minified, compressed, and concatenated assets (CSS and JavaScript) is considered a good practice; it saves you bandwidth and ensures your users can load your site as quickly as possible. However, this can be impractical for debugging locally, so most environments enable the serving of different assets to different environments.

@@ -1,6 +1,7 @@
 ---
 title: On the word 'guys'
 date: 2015-07-14
+layout: blog-post.hbs
 ---
 
 Hey, folks.

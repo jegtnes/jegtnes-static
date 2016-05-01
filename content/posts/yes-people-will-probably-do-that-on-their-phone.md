@@ -1,6 +1,7 @@
 ---
 title: Yes, people will probably do that on their phone
 date: 2013-03-12
+layout: blog-post.hbs
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 title: How to implement permalink redirection in Ghost 0.3
 date: 2013-08-28
+layout: blog-post.hbs
 ---
 Update: For a better solution in Ghost 0.4.x, see my [other post](/blog/how-to-implement-permalink-redirection-in-ghost-0-4).
 

@@ -1,6 +1,7 @@
 ---
 title: Adjustments (not resolutions)
 date: 2012-12-30
+layout: blog-post.hbs
 ---
 
 {<1>}![](/content/images/2013/Oct/newyears_cover.jpg)

@@ -1,6 +1,7 @@
 ---
 title: Graduate seeking great company to make lovely web things for
 date: 2014-06-02
+layout: blog-post.hbs
 ---
 
 Hi there! I'm Alex. I'm just about to graduate from my degree, and as I'm now offically an adult and Real Person™, it's time for me to [get ~~a haircut and get~~ a real job](https://www.youtube.com/watch?v=_3l2Vo1z260).

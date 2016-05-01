@@ -1,6 +1,7 @@
 ---
 title: Reasons to be Creative
 date: 2012-09-12
+layout: blog-post.hbs
 ---
 
 ![The Reasons to be Creative main stage](/content/images/2013/Oct/reasonsheader.jpg)

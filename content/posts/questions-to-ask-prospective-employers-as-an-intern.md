@@ -1,6 +1,7 @@
 ---
 title: Questions to ask prospective employers as an intern
 date: 2014-09-22
+layout: blog-post.hbs
 ---
 
 The talented student [Tom de Wit](//twitter.com/ttomdewit) is looking for an internship and wanted to figure out what kinds of questions he should be asking his prospective employees. (You should totally hire him, by the way).

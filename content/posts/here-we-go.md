@@ -1,6 +1,7 @@
 ---
 title: Here We Go
 date: 2012-05-06
+layout: blog-post.hbs
 ---
 
 ![](/content/images/2013/Oct/cover_1.jpg)

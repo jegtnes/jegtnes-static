@@ -1,6 +1,7 @@
 ---
 title: Using UnCSS and Gulp in Ghost to create tiny assets
 date: 2015-05-31
+layout: blog-post.hbs
 ---
 
 Build tools have come a very long way in a very short time. I'm here to tell you how to use [gulp-uncss](https://github.com/ben-eb/gulp-uncss) and other minifying tools with a Ghost blog to dramatically reduce the file size of your CSS by quite a bit, especially if you're using a theme with all the bells and whistles and/or a large framework like Foundation or Bootstrap.

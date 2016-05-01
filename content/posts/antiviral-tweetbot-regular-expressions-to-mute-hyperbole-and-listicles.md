@@ -1,6 +1,7 @@
 ---
 title: Antiviral: Tweetbot regular expressions to mute hyperbole and listicles
 date: 2014-02-24
+layout: blog-post.hbs
 ---
 
 (Alternative title: _12 Life Changing Twitter Hacks To Revolutionise Your Twitter Experience_)

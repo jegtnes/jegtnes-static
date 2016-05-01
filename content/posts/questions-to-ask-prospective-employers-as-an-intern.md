@@ -1,5 +1,5 @@
 ---
-title: I'm joining cxpartners
+title: Questions to ask prospective employers as an intern
 date: 2014-09-22
 ---
 

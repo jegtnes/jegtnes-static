@@ -4,7 +4,7 @@ date: 2012-09-12
 layout: blog-post.hbs
 ---
 
-![The Reasons to be Creative main stage](content/images/reasonsheader.jpg)
+![The Reasons to be Creative main stage](/assets/images/reasonsheader.jpg)
 <p>This year I had the opportunity to attend Reasons to be Creative in Brighton. This conference had been around for quite a few years under a different guise, Flash on the Beach, which, as the name implies, was focused on Flash; something I've never quite gotten into (sans a few horrible splash intro screens when I was playing around with web development as a teenager—but let's not go there).</p>
 
 <p>My colleague, <a href="http://twitter.com/adambu1988">Adam</a>, repeatedly told everyone at Simpleweb how it was an amazing experience until our ears bled. To shut him up, I acquired a ticket, but let's be honest, at £60 for a student ticket for a three-day conference, it'd be <em>really</em> rude not to. I swear my degree has almost paid for itself by way of ridiculous student discounts alone.</p>
@@ -12,7 +12,7 @@ layout: blog-post.hbs
 <p>For the uninitiated, Reasons to be Creative is a three-track, three-day conference. Although multitrack conferences break my heart on several occasions by way of overlapping awesome speakers; they do allow for more flexibility as well. Considering the veritable cornucopia of talks that I attended in total, I'm not going to attempt to cover all of them—some talks heavily relied on visuals and slides, some of them had live coding, and some of them just didn't have as many talking points as others. I'll cover some of my favourites below.</p>
 
 <h2>Kevin Warwick</h2>
-![A picture of Kevin Warwick speaking](content/images/kevinwarwick.jpg)
+![A picture of Kevin Warwick speaking](/assets/images/kevinwarwick.jpg)
 <p>The first keynote was covered by Kevin Warwick, a Professor of Cybernetics at the University of Reading, doing scientific research in several advanced subjects that are far beyond my comprehension. Kevin believed we all are going to become cyborgs in a couple of decades, which, admittedly, sounds a bit intimidating. During his talk, Kevin presented some of his research experiments into cybernetics, which at one point involved him implanting a chip in his arm communicating <em>directly with his nervous system</em>, allowing him to control a robotic arm over the internet from across the Atlantic Ocean, amongst others. He demonstrated a video showing robotics being partially able to control Parkinson's Disease, which was amazing. I hadn't heard of Mr Warwick before this conference, but it <a href="https://en.wikipedia.org/wiki/Kevin_Warwick">turns out he's quite well known, to say it the least</a>, for these sorts of experiments. </p>
 
 <p>This talk set the theme perfectly well for the rest of the conference. There are many professions out there that the web industry can derive inspiration and ideas from—as well as closely cooperate with, including this kind of <em>crazy, ridiculously bonkers science stuff</em>, illustration, film making, and many more. Kevin inspired me to broaden my horizons, and contemplate the future in which I may become a cyborg myself—and, heck, consider how humans could possibly hack with our own hardware in a few decades time. Arduino is only the beginning!</p>
@@ -20,7 +20,7 @@ layout: blog-post.hbs
 <p>(Admittedly, the cost of failure is a bit higher, but hey. For science!)</p>
 
 <h2>Inayaili de León</h2>
-![A picture of Inayaili de León speaking](content/images/inayailideleon.jpg)
+![A picture of Inayaili de León speaking](/assets/images/inayailideleon.jpg)
 <blockquote><p>"Communication is the most important part of our job. So why are we terrible at it?"</p></blockquote>
 
 <p><a href="https://twitter.com/yaili">Inayaili</a> set out to solve this question in her excellently delivered talk. As she went through a standard day at work for her at Canonical, being a remote worker, I was reminded of how much time we actually spend communicating and how comparatively little we spend actually <strong>making</strong> things. This isn't a bad thing—communication is vital in every project. Despite all of the time invested in communication, we're often pretty rubbish at it. What can we do about this?</p>
@@ -42,7 +42,7 @@ layout: blog-post.hbs
 <p>In summary, this is a talk that everyone could really gain from, no matter if you're a designer, developer, project manager, or professional cat herder. I've certainly returned to work with a changed attitude as a result.</p>
 
 <h2>Christian Heilmann</h2>
-![A picture of Christian Heilmann speaking](content/images/christianheilmann.jpg)
+![A picture of Christian Heilmann speaking](/assets/images/christianheilmann.jpg)
 <p><a href="https://twitter.com/codepo8">Christian</a> is a developer evangelist at Mozilla, and presented the first keynote of the second day, "The Web Thing".</p>
 
 <p>A very fitting title for the talk, as this was not focused on a single topic, but on the web as a whole and his thoughts on it. We generally see the web as something extremely cherished, something we want to look after, cuddle to sleep every night, and care for; which is entirely reasonable, as it pays our bills and it's ridiculously fun to work with. Most end users, however, see it as something awesome, in the true sense of the word (huge, impressive, but maybe slightly daunting and scary). We tend to forget this.</p>
@@ -68,7 +68,7 @@ layout: blog-post.hbs
 <blockquote><p>Today is the tomorrow you expected yesterday.</p></blockquote>
 
 <h2>Evgenia Grinblo</h2>
-![A picture of Evgenia Grinblo speaking](content/images/evgeniagrinblo.jpg)
+![A picture of Evgenia Grinblo speaking](/assets/images/evgeniagrinblo.jpg)
 <p><a href="https://twitter.com/grinblo">Evgenia</a> is a user experience researcher at a mobile design agency in London, and presented at the second slot of the second day.</p>
 
 <p>It's been almost a week since I watched this talk, and I still can't put my finger on it, but Evgenia's talk was definitely the one that made the most impact on me. I can't tell exactly why, and now, as I'm writing this, I feel like whatever I end up doing, I couldn't possibly do this talk justice by summarising it.</p>
@@ -86,7 +86,7 @@ layout: blog-post.hbs
 <p>As I write this I can still recall her anecdotes and stories. Such a great talk. This write-up in no way does it justice. Thank you, Jenny.</p>
 
 <h2>Gimme 5</h2>
-![A picture of all the Gimme5 speakers on stage to give their final thanks](content/images/gimme5.jpg)
+![A picture of all the Gimme5 speakers on stage to give their final thanks](/assets/images/gimme5.jpg)
 <p>Gimme 5 is an hour-long session consisting of twelve people, often new or inexperienced in public speaking, getting a chance to be thrown into the deep end and present a talk in five minutes. This really enforces succinctness, which makes for an interesting format. If the speaker is good, you've got an excellent five minutes loaded with knowledge, and if the presenter really wasn't up to the task, you don't have to listen to them for more than five minutes. Either way, after doing this, the speakers have got some experience under their belt and would find it easier to pick up speaking elsewhere if they should so desire (and the two most popular talks get invited back to next year's Reasons).</p>
 
 <p>That being said, there weren't really any bad presentations at all—the standard was through the roof. Some of my favourites included <a href="https://twitter.com/markskinner_">Mark Skinner</a>, who talked about <a href="http://markskinner.com/post/designing-for-happiness">designing for happiness and why this is important</a>; <a href="http://twitter.com/msfx">Matt Parker</a>, who presented a rather amusing game in Unity, <a href="http://msfx.co.uk/2012/09/09/reasons-to-be-creative-gimme5-session-download/">literally involving flashing people at the beach</a>; and <a href="https://twitter.com/onishiweb">Adam Onishi</a>, talking about <a href="http://www.onishiweb.co.uk/2012/09/the-designer-developer-relationship/">the designer-developer relationship</a> and how to improve this. </p>

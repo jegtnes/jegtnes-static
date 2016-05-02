@@ -29,7 +29,7 @@ A few hours later and I had my thermometer. Here's what I learnt:
 ### Hardware is _tricky_ to debug.
 At one point, when I attempted to turn all the LEDs off/on, one LED was consistently turned on. Turns out, if you're using the serial port to pass data from the Arduino to the computer (for logging), you can't rely on pins 0 and 1. It would have been useful if the guide mentioned this when first talking about the serial port. That being said, it was relieving that the universal software debugging strategy of _remove everything_ still applied. In this case, I found this nugget when googling "serial port bug pin 1 arduino".
 
-![A screenshot of Arduino documentation. The important part says: Serial (…) communicates on digital pins 0 (RX) and 1 (TX) as well as the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input and output](content/images/Screen-Shot-2015-10-07-at-00-12-19.png)
+![A screenshot of Arduino documentation. The important part says: Serial (…) communicates on digital pins 0 (RX) and 1 (TX) as well as the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input and output](/assets/images/Screen-Shot-2015-10-07-at-00-12-19.png)
 
 It was satisfying to solve this bug, but I sure as hell felt stupid swapping five different jumper wires, transistors, and LEDs in case they were all somehow broken. **Software controls the hardware, not vice-versa**. In some cases the hardware is actually broken, but that's a topic for another post.
 
@@ -52,8 +52,8 @@ So, here's what I made:
 
 <iframe src="https://vine.co/v/eE7dV3lmB5W/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
-![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has six highlighted LEDs. Another, representing ten degrees each, has one highlighted LED. Caption: 16 degrees Celsius.](content/images/16.jpg)
+![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has six highlighted LEDs. Another, representing ten degrees each, has one highlighted LED. Caption: 16 degrees Celsius.](/assets/images/16.jpg)
 
-![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has eight highlighted LEDs. Another, representing ten degrees each, has one highlighted LED. Caption: 18 degrees Celsius.](content/images/18-1.jpg)
+![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has eight highlighted LEDs. Another, representing ten degrees each, has one highlighted LED. Caption: 18 degrees Celsius.](/assets/images/18-1.jpg)
 
-![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has six zero highlighted degrees. Another, representing ten degrees each, has two highlighted LEDs. Caption: 20 degrees Celsius.](content/images/20.jpg)
+![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has six zero highlighted degrees. Another, representing ten degrees each, has two highlighted LEDs. Caption: 20 degrees Celsius.](/assets/images/20.jpg)

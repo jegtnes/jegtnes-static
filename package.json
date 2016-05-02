@@ -11,6 +11,8 @@
   "devDependencies": {
     "browser-sync": "^2.12.5",
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-newer": "^1.1.0",
     "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
     "metalsmith-layouts": "^1.6.4",

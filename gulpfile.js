@@ -1,4 +1,6 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
+var imagemin = require('gulp-imagemin');
+var newer = require('gulp-newer');
 var browserSync = require('browser-sync').create();
 
 var exec = require('child_process').exec;
@@ -26,4 +28,14 @@ gulp.task('metalsmith', function(cb) {
       cb(false);
     }
   })
+});
+
+gulp.task('images', function(cb) {
+  return gulp.src('assets/images/*')
+  .pipe(newer('dist/assets/images'))
+  .pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}]
+  }))
+  .pipe(gulp.dest('dist/assets/images'));
 });

@@ -30,7 +30,13 @@ gulp.task('metalsmith', function(cb) {
       cb(err);
     }
     else {
-      cb(false);
+      exec('cp -R tmp-build/* dist', function(err) {
+        if (err) {
+          cb(err)
+        } else {
+          cb(false);
+        }
+      })
     }
   })
 });

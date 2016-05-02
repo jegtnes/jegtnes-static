@@ -38,7 +38,7 @@ Metalsmith(__dirname)
     "directory": config.layoutsFolder,
     "partials": config.partialsFolder
   }))
-  .destination('./dist')
+  .destination('./tmp-build')
   .build(function(err) {
     if(err) {
       console.log(err);

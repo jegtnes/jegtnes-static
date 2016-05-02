@@ -3,7 +3,6 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
-var browserSync = require('metalsmith-browser-sync');
 
 var handlebars = require('handlebars');
 
@@ -11,13 +10,6 @@ var config = require('./config');
 
 Metalsmith(__dirname)
   .source('content')
-  .use(browserSync({
-    server: "./dist",
-    files: [
-      config.content,
-      config.templates
-    ]
-  }))
   .use(collections({
     pages: {
       pattern: config.contentPages

@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
+var babel = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps');
 var newer = require('gulp-newer');
 var browserSync = require('browser-sync').create();
 
@@ -8,7 +10,7 @@ var exec = require('child_process').exec;
 
 var config = require('./config');
 
-gulp.task('serve', ['images', 'styles', 'metalsmith'], function() {
+gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts'], function() {
   browserSync.init({
     server: {
       baseDir: config.outputFolder
@@ -38,6 +40,16 @@ gulp.task('styles', function(cb) {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(config.outputCssFolder))
     .pipe(browserSync.stream());
+});
+
+gulp.task('scripts', function(cb) {
+  return gulp.src(config.jsEntry)
+  	.pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.outputJsFolder));
 });
 
 gulp.task('images', function(cb) {

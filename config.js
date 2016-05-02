@@ -9,8 +9,11 @@ module.exports = {
   assetsImages: "assets/images/**/*",
   scss: "assets/scss/**/*.scss",
   scssFolder: "assets/scss/**/*",
+  jsEntry: "assets/js/main.js",
+  jsFolder: "assets/js/**/*.js",
   outputFolder: "./dist",
   outputImagesFolder: "./dist/assets/images",
   outputCssFolder: "./dist/assets/css",
+  outputJsFolder: "./dist/assets/js",
   generators: "*.js"
 }

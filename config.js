@@ -7,7 +7,10 @@ module.exports = {
   partialsFolder: "templates/partials",
   assetsFolder: "assets",
   assetsImages: "assets/images/**/*",
+  scss: "assets/scss/**/*.scss",
+  scssFolder: "assets/scss/**/*",
   outputFolder: "./dist",
   outputImagesFolder: "./dist/assets/images",
+  outputCssFolder: "./dist/assets/css",
   generators: "*.js"
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp ./node_modules/normalize.css/normalize.css ./assets/scss/vendor"
+    "postinstall": "cp -R ./node_modules/normalize.css/normalize.css ./assets/scss/vendor/normalize.scss"
   },
   "author": "Alex Jegtnes <alex@jegtnes.co.uk> (http://jegtnes.co.uk)",
   "license": "UNLICENSED",

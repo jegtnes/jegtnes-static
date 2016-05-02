@@ -7,7 +7,7 @@ var exec = require('child_process').exec;
 
 var config = require('./config');
 
-gulp.task('serve', function() {
+gulp.task('serve', ['images', 'metalsmith'], function() {
   browserSync.init({
     server: {
       baseDir: config.outputFolder
@@ -16,6 +16,7 @@ gulp.task('serve', function() {
   });
 
   gulp.watch([config.content, config.templates], ['metalsmith', browserSync.reload]);
+  gulp.watch([config.assetsImages], ['images'], browserSync.reload());
 });
 
 gulp.task('metalsmith', function(cb) {
@@ -31,11 +32,11 @@ gulp.task('metalsmith', function(cb) {
 });
 
 gulp.task('images', function(cb) {
-  return gulp.src('assets/images/*')
-  .pipe(newer('dist/assets/images'))
+  return gulp.src(config.assetsImages)
+  .pipe(newer(config.outputImagesFolder))
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}]
   }))
-  .pipe(gulp.dest('dist/assets/images'));
+  .pipe(gulp.dest(config.outputImagesFolder));
 });

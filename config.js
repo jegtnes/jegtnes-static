@@ -5,7 +5,9 @@ module.exports = {
   templates: "templates/**/*",
   layoutsFolder: "templates/layouts",
   partialsFolder: "templates/partials",
+  assetsFolder: "assets",
+  assetsImages: "assets/images/**/*",
   outputFolder: "./dist",
-  outputHtml: "./dist/**/*.html",
+  outputImagesFolder: "./dist/assets/images",
   generators: "*.js"
 }

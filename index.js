@@ -7,21 +7,23 @@ var browserSync = require('metalsmith-browser-sync');
 
 var handlebars = require('handlebars');
 
+var config = require('./config');
+
 Metalsmith(__dirname)
   .source('content')
   .use(browserSync({
     server: "./dist",
     files: [
-      "content/**/*.md",
-      "templates/**/*.hbs"
+      config.content,
+      config.templates
     ]
   }))
   .use(collections({
     pages: {
-      pattern: './*.md'
+      pattern: config.contentPages
     },
     blog: {
-      pattern: 'posts/*.md',
+      pattern: config.contentPosts,
       sortBy: 'date',
       reverse: true
     }
@@ -41,8 +43,8 @@ Metalsmith(__dirname)
   }))
   .use(layouts({
     "engine": "handlebars",
-    "directory": "templates/layouts",
-    "partials": "templates/partials"
+    "directory": config.layoutsFolder,
+    "partials": config.partialsFolder
   }))
   .destination('./dist')
   .build(function(err) {

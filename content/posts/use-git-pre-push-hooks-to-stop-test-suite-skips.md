@@ -49,4 +49,4 @@ And that's about it. This will save me a few premature pushes in the future—ho
 
 Here's a quick gif of the hook in action.
 
-![](/content/images/2016/Mar/2016-03-09-07_43_28.gif)
+![](content/images/2016-03-09-07_43_28.gif)

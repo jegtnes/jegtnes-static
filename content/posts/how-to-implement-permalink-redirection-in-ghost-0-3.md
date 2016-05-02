@@ -33,7 +33,7 @@ Until then, I wanted to migrate my blog to Ghost for a clean slate sooner rather
 
 Knowing little JavaScript, no NodeJS whatsoever, and barely having heard of Express before digging into the source code of Ghost, this was the perfect opportunity to get down and dirty.
 
-{<1>}![](/content/images/2013/Oct/Screen_Shot_2013_10_24_at_17_47_42.png)
+![](content/images/Screen_Shot_2013_10_24_at_17_47_42.png)
 _A small piece of Ghost's redirection rules. What does all of this mean? I have no idea, really. But that's okay. Figuring it out is half the fun!_
 
 It turns out most of Ghost's URL handling action happens in /core/server.js. Not knowing where to start, I copied a few lines that dealt with the redirection using regular expressions and changed a couple of words around, and hey presto—armed with just a little bit of regex knowledge, I made the redirect work!

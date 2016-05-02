@@ -4,7 +4,7 @@ date: 2012-05-06
 layout: blog-post.hbs
 ---
 
-![](/content/images/2013/Oct/cover_1.jpg)
+![](content/images/cover_1.jpg)
 <p>So, here we go. After much mulling, a fair bit of indecisiveness, an existential crisis or two, and a wholesome dose of procrastination, I have finally launched my new site. It also has a blog, as you may have figured.</p>
 
 <h2>17-year old Alex would probably not return the emails of 21-year old Alex.</h2>

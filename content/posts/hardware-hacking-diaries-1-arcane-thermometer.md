@@ -1,5 +1,5 @@
 ---
-title: Hardware Hacking Diaries 1: Arcane Thermometer
+title: "Hardware Hacking Diaries 1: Arcane Thermometer"
 date: 2015-10-12
 layout: blog-post.hbs
 ---

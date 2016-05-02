@@ -1,5 +1,5 @@
 ---
-title: Antiviral: Tweetbot regular expressions to mute hyperbole and listicles
+title: "Antiviral: Tweetbot regular expressions to mute hyperbole and listicles"
 date: 2014-02-24
 layout: blog-post.hbs
 ---

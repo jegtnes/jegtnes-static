@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp -R ./node_modules/normalize.css/normalize.css ./assets/scss/vendor/normalize.scss"
+    "postinstall": "cp -R ./node_modules/normalize.css/normalize.css ./assets/scss/vendor/normalize.scss && cp -R ./node_modules/susy/sass ./assets/scss/vendor/susy"
   },
   "author": "Alex Jegtnes <alex@jegtnes.co.uk> (http://jegtnes.co.uk)",
   "license": "UNLICENSED",
@@ -27,6 +27,7 @@
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-copy": "^0.2.1",
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.1.1",
+    "susy": "^2.2.12"
   }
 }

@@ -19,6 +19,7 @@
 
         {{#each collections.blog}}
         <li>
+          {{{ excerpt this.contents 200 }}}
           <a href=/{{this.path}}>{{{this.title}}}</a>
         </li>
         {{/each}}

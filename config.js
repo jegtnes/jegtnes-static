@@ -3,6 +3,7 @@ module.exports = {
   contentPages: "./*.md",
   contentPosts: "posts/*.md",
   templates: "templates/**/*",
+  helpers: "helpers/**/*.js",
   layoutsFolder: "templates/layouts",
   partialsFolder: "templates/partials",
   assetsFolder: "assets",

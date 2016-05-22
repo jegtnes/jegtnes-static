@@ -3,6 +3,7 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
+var helpers = require('metalsmith-register-helpers');
 
 var handlebars = require('handlebars');
 
@@ -32,6 +33,9 @@ Metalsmith(__dirname)
         pattern: ':title'
       },
     ]
+  }))
+  .use(helpers({
+    directory: "helpers"
   }))
   .use(layouts({
     "engine": "handlebars",

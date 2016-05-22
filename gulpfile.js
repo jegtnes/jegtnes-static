@@ -18,7 +18,7 @@ gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts'], function() {
     open: false
   });
 
-  gulp.watch([config.content, config.templates], ['metalsmith', browserSync.reload]);
+  gulp.watch([config.content, config.templates, config.helpers], ['metalsmith', browserSync.reload]);
   gulp.watch([config.assetsImages], ['images'], browserSync.reload());
   gulp.watch([config.scssFolder], ['styles']);
 });

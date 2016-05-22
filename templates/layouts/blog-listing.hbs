@@ -19,8 +19,9 @@
 
         {{#each collections.blog}}
         <li>
-          {{{ excerpt this.contents 200 }}}
-          <a href=/{{this.path}}>{{{this.title}}}</a>
+          <h2><a href=/{{this.path}}>{{{this.title}}}</a></h2>
+          <p><time datetime="{{this.date}}">{{this.date}}</time></p>
+          <p>{{{ excerpt this.excerpt this.contents 200 }}}</p>
         </li>
         {{/each}}
 

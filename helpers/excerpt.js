@@ -1,5 +1,9 @@
-module.exports = function(content, charCount, ellipses = true) {
-  if (!content) {
+module.exports = function(existingExcerpt, postContent, charCount, ellipses = true) {
+  if (existingExcerpt) {
+    return existingExcerpt;
+  }
+
+  if (!postContent) {
     console.error("You need to pass some content");
     return false;
   }
@@ -10,7 +14,7 @@ module.exports = function(content, charCount, ellipses = true) {
   }
 
   // Cast content to string if it may be considered something else
-  let excerpt = `${content}`;
+  let excerpt = `${postContent}`;
 
   if (excerpt < charCount) {
     return excerpt;

@@ -2,6 +2,7 @@
 title: A love letter to New Adventures
 date: 2013-01-31
 layout: blog-post.hbs
+excerpt: "Attending the New Adventures conference is the single greatest thing that has happened to my career thus far for plenty of reasons."
 ---
 
 <p>It is without any hesitation I say that New Adventures is the single greatest thing that has happened to my career thus far.

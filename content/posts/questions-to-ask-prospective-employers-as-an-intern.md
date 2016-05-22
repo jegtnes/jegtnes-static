@@ -2,6 +2,7 @@
 title: Questions to ask prospective employers as an intern
 date: 2014-09-22
 layout: blog-post.hbs
+excerpt: "If you're looking for a placement or internship at a tech company, here are some questions you might want to ask in job interviews or similar scenarios."
 ---
 
 The talented student [Tom de Wit](//twitter.com/ttomdewit) is looking for an internship and wanted to figure out what kinds of questions he should be asking his prospective employees. (You should totally hire him, by the way).

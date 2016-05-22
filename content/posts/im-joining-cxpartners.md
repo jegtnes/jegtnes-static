@@ -2,6 +2,7 @@
 title: I'm joining cxpartners
 date: 2014-06-24
 layout: blog-post.hbs
+excerpt: "I'm delighted to be joining cxpartners this June as a full-time developer."
 ---
 
 First off, thank you to all the brilliant people who got in touch with after I posted my [last post](/blog/you-should-totally-hire-me), and if you passed it on to someone, I'm just as grateful.

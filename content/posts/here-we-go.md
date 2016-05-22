@@ -2,6 +2,7 @@
 title: Here We Go
 date: 2012-05-06
 layout: blog-post.hbs
+excerpt: "A new website. Again? Really?"
 ---
 
 ![](/assets/images/cover_1.jpg)

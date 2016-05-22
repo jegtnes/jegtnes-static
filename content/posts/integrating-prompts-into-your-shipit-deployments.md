@@ -2,6 +2,7 @@
 title: Integrating prompts into your Shipit deployments
 date: 2015-10-27
 layout: blog-post.hbs
+excerpt: If you use Shipit to deploy things and want to be able to take certain actions depending on user input, this might be the thing for you.
 ---
 
 The best deployment tool I've used for Node.js applications has been [shipit](https://github.com/shipitjs/shipit) combined with [shipit-deploy](https://github.com/shipitjs/shipit-deploy). When I dabbled in Ruby, Capistrano was a very slick tool to manage deployments, and Shipit is very Capistrano-like, which is nice. I know you can use Capistrano to deploy any language/framework, but if you're not using Ruby already, it's an overhead I like to avoid.

@@ -2,6 +2,7 @@
 title: Today I Learnt (JS)
 date: 2016-01-12
 layout: blog-post.hbs
+excerpt: "I'm launching a new microblog experiment focusing on JavaScript, TILJS."
 ---
 
 In 2016 I want to get a hell of a lot better at JavaScript. Part of that involves getting a deeper understanding of what I'm actually writing instead of blindly googling my way around problems.

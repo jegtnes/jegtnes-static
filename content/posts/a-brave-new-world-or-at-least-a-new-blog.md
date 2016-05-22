@@ -2,6 +2,7 @@
 title: A Brave New World—Or At Least A New Blog
 date: 2013-08-28
 layout: blog-post.hbs
+excerpt: "This blog is now powered by Ghost, which comes with plenty of benefits and some drawbacks."
 ---
 
 Hello, world. After trying out Ghost for a while, and being most pleased with the interface, especially the beautiful Markdown editor—and for utterly irrational reasons, disliking the last version of the site so much [that I didn't even want to post on it](https://twitter.com/jegtnes/status/392578950926729217).

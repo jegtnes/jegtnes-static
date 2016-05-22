@@ -2,6 +2,7 @@
 title: Happy (belated) ninth birthday, Firefox!
 date: 2013-10-10
 layout: blog-post.hbs
+excerpt: "Celebrating Firefox and how it shaped my experience of the web growing up."
 ---
 
 Firefox celebrated its [ninth birthday](https://blog.mozilla.org/blog/2013/11/07/happy-ninth-birthday-firefox/) yesterday. Despite not having been a web developer or web enthusiast for nearly as long as that, I have been using Firefox for about eight years since Firefox 1.5 was released and some local enthusiast put up a poster advertising it in my local grocery store. I stumbled upon it by complete accident, and if I hadn't seen that poster, there's a chance I wouldn't have heard of it until several years later.

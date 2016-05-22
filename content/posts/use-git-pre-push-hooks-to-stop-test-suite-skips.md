@@ -2,6 +2,7 @@
 title: Use Git pre-push hooks to stop test suite skips
 date: 2016-03-09
 layout: blog-post.hbs
+excerpt: "Git pre-push hooks are powerful, and can stop embarassing premature pushes of your half-finished stuff. I'll hook you up with some tips and tricks."
 ---
 
 When working on larger refactors, I occasionally find it useful to use the test framework's skipping methods; either to only run a single test or to skip a few failing tests you'll get to later. This reduces your build-to-test time, sometimes drastically, and also reduces the noise of the build output. In Mocha, which I'm currently working with, you can use `.skip()` or `.only()` to [skip a single test or skip all but the selected test respectively](http://unitjs.com/guide/mocha.html#only-suite-or-test-case).

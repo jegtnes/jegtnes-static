@@ -2,6 +2,7 @@
 title: Adjustments (not resolutions)
 date: 2012-12-30
 layout: blog-post.hbs
+excerpt: "On what resolutions really mean, and some adjustments I'm making in their place for 2013."
 ---
 
 ![](/assets/images/newyears_cover.jpg)

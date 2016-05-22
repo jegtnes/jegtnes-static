@@ -2,6 +2,7 @@
 title: Reasons to be Creative
 date: 2012-09-12
 layout: blog-post.hbs
+excerpt: "A summary of the eminent conference Reasons to be Creative 2012."
 ---
 
 ![The Reasons to be Creative main stage](/assets/images/reasonsheader.jpg)

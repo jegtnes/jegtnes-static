@@ -2,6 +2,7 @@
 title: Migrating your current permalink structure to Ghost 0.4
 date: 2014-05-01
 layout: blog-post.hbs
+excerpt: "If you're using Ghost 0.4 and want some form of permalink redirection, it's now a lot easier and less hacky than with 0.3."
 ---
 
 Migrating your old blog over to shiny new Ghost? Have a permalink structure that is unlike Ghost's? Did all your blog posts have a URL with a subfolder of something like /blog/? Unable to edit your nginx config? Any existing links to any of your blog posts *will* be broken. And cool URIs don't change.

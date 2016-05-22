@@ -2,6 +2,7 @@
 title: On the word 'guys'
 date: 2015-07-14
 layout: blog-post.hbs
+excerpt: "On the implications of gendered language and why I believe we should try to avoid it if appropriate."
 ---
 
 Hey, folks.

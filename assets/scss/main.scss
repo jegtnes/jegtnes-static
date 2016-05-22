@@ -6,6 +6,6 @@ $susy: (
   gutters: 1/4,
 );
 
-main {
+.main-container {
   @include container(75em);
 }

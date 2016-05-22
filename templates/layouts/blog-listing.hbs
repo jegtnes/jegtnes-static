@@ -7,25 +7,26 @@
   {{>head}}
 </head>
 <body>
+  <div class="main-container">
 
-  {{>header}}
+    {{>header}}
 
-  <main>
+    <main>
 
-    {{{ contents }}}
+      {{{ contents }}}
 
-    <ul>
+      <ul>
 
-      {{#each collections.blog}}
-      <li>
-        <a href=/{{this.path}}>{{{this.title}}}</a>
-      </li>
-      {{/each}}
+        {{#each collections.blog}}
+        <li>
+          <a href=/{{this.path}}>{{{this.title}}}</a>
+        </li>
+        {{/each}}
 
-    </ul>
-  </main>
+      </ul>
+    </main>
 
-  {{>footer}}
-
+    {{>footer}}
+  </div>
 </body>
 </html>

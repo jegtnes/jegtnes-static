@@ -24,7 +24,7 @@ gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts'], function() {
 });
 
 gulp.task('metalsmith', function(cb) {
-  exec('node index.js', function(err) {
+  exec('node index.js', { maxBuffer: 1024 * 20000 }, function(err) {
     if (err) {
       console.error(err);
       cb(err);

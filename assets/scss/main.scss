@@ -1,11 +1,1 @@
-@import 'vendor/normalize';
-@import 'vendor/susy/susy';
-
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-);
-
-.main-container {
-  @include container(75em);
-}
+@import 'vendor/tachyons';

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp -R ./node_modules/normalize.css/normalize.css ./assets/scss/vendor/normalize.scss && cp -R ./node_modules/susy/sass ./assets/scss/vendor/susy"
+    "postinstall": "cp -R ./node_modules/tachyons/css/tachyons.css ./assets/scss/vendor/tachyons.scss"
   },
   "author": "Alex Jegtnes <alex@jegtnes.co.uk> (http://jegtnes.co.uk)",
   "license": "UNLICENSED",
@@ -21,14 +21,13 @@
     "metalsmith-layouts": "^1.6.4",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-register-helpers": "^0.1.2"
+    "metalsmith-register-helpers": "^0.1.2",
+    "tachyons": "^4.0.0-beta.28"
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.0.0-alpha",
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-collections": "^0.7.0",
-    "metalsmith-copy": "^0.2.1",
-    "normalize.css": "^4.1.1",
-    "susy": "^2.2.12"
+    "metalsmith-copy": "^0.2.1"
   }
 }

@@ -18,10 +18,10 @@
       <ul class="list pl0">
 
         {{#each collections.blog}}
-        <li>
-          <h2><a href=/{{this.path}}>{{{this.title}}}</a></h2>
-          <p><time datetime="{{this.date}}">{{this.date}}</time></p>
-          <p>{{{ excerpt this.excerpt this.contents 200 }}}</p>
+        <li class="m0 mb4">
+          <h2 class="ma0 mb2"><a href=/{{this.path}}>{{{this.title}}}</a></h2>
+          <p class="ma0 mb2"><time datetime="{{this.date}}">{{this.date}}</time></p>
+          <p class="ma0">{{{ excerpt this.excerpt this.contents 200 }}}</p>
         </li>
         {{/each}}
 

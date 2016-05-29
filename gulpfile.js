@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
-var babel = require('gulp-babel');
-var sourcemaps = require('gulp-sourcemaps');
+var babelify = require('babelify');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 var newer = require('gulp-newer');
 var browserSync = require('browser-sync').create();
 
@@ -21,6 +22,7 @@ gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts'], function() {
   gulp.watch([config.content, config.templates, config.helpers], ['metalsmith', browserSync.reload]);
   gulp.watch([config.assetsImages], ['images'], browserSync.reload());
   gulp.watch([config.scssFolder], ['styles']);
+  gulp.watch([config.jsFolder], ['scripts']);
 });
 
 gulp.task('metalsmith', function(cb) {
@@ -49,12 +51,12 @@ gulp.task('styles', function(cb) {
 });
 
 gulp.task('scripts', function(cb) {
-  return gulp.src(config.jsEntry)
-  	.pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-    .pipe(sourcemaps.write('.'))
+  var bundleStream = browserify(config.jsEntry)
+    .transform(babelify, {presets: ['es2015']})
+    .bundle();
+
+  return bundleStream
+    .pipe(source('main.js'))
     .pipe(gulp.dest(config.outputJsFolder));
 });
 

@@ -11,7 +11,7 @@ var exec = require('child_process').exec;
 
 var config = require('./config');
 
-gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts'], function() {
+gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts', 'fonts'], function() {
   browserSync.init({
     server: {
       baseDir: config.outputFolder
@@ -48,6 +48,12 @@ gulp.task('styles', function(cb) {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(config.outputCssFolder))
     .pipe(browserSync.stream());
+});
+
+gulp.task('fonts', function(cb) {
+  return gulp.src(config.fontsFolder)
+    .pipe(newer(config.outputFontsFolder))
+    .pipe(gulp.dest(config.outputFontsFolder))
 });
 
 gulp.task('scripts', function(cb) {

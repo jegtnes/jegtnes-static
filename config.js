@@ -8,7 +8,7 @@ module.exports = {
   partialsFolder: "templates/partials",
   assetsFolder: "assets",
   assetsImages: "assets/images/**/*",
-  scss: "assets/scss/**/*.scss",
+  scssEntry: "assets/scss/main.scss",
   scssFolder: "assets/scss/**/*",
   jsEntry: "assets/js/main.js",
   jsFolder: "assets/js/**/*.js",

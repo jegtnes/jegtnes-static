@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp -R ./node_modules/tachyons/css/tachyons.css ./assets/scss/vendor/tachyons.scss"
+    "postinstall": "cp -R ./node_modules/tachyons/css/tachyons.css ./assets/scss/vendor/_tachyons.scss"
   },
   "author": "Alex Jegtnes <alex@jegtnes.co.uk> (http://jegtnes.co.uk)",
   "license": "UNLICENSED",

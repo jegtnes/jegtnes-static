@@ -44,7 +44,7 @@ gulp.task('metalsmith', function(cb) {
 });
 
 gulp.task('styles', function(cb) {
-  return gulp.src(config.scss)
+  return gulp.src(config.scssEntry)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(config.outputCssFolder))
     .pipe(browserSync.stream());

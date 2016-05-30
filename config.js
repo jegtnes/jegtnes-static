@@ -10,13 +10,12 @@ module.exports = {
   assetsImages: "assets/images/**/*",
   scssEntry: "assets/scss/main.scss",
   scssFolder: "assets/scss/**/*",
-  jsEntry: "assets/js/main.js",
+  jsEntries: "./assets/js/*.js",
   jsFolder: "assets/js/**/*.js",
   fontsFolder: "assets/fonts/**",
   outputFolder: "./dist",
   outputImagesFolder: "./dist/assets/images",
   outputCssFolder: "./dist/assets/css",
-  outputJsFolder: "./dist/assets/js",
   outputFontsFolder: "./dist/assets/fonts",
   generators: "*.js"
 }

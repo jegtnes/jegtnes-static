@@ -4,6 +4,8 @@ var sass = require('gulp-sass');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var glob = require('glob');
+var eventStream = require('event-stream');
 var newer = require('gulp-newer');
 var browserSync = require('browser-sync').create();
 
@@ -56,14 +58,23 @@ gulp.task('fonts', function(cb) {
     .pipe(gulp.dest(config.outputFontsFolder))
 });
 
+// This one's got a bit of a weird approach, but it works
+// heavily inspired / lifted from:
+// https://fettblog.eu/gulp-browserify-multiple-bundles/
 gulp.task('scripts', function(cb) {
-  var bundleStream = browserify(config.jsEntry)
-    .transform(babelify, {presets: ['es2015']})
-    .bundle();
+  glob(config.jsEntries, (err, files) => {
+    if (err) cb(err);
 
-  return bundleStream
-    .pipe(source('main.js'))
-    .pipe(gulp.dest(config.outputJsFolder));
+    var streams = files.map((entry) => {
+      return browserify(entry)
+      .transform(babelify, {presets: ['es2015']})
+      .bundle()
+      .pipe(source(entry))
+      .pipe(gulp.dest(config.outputFolder));
+    });
+
+    eventStream.merge(streams).on('end', cb)
+  })
 });
 
 gulp.task('images', function(cb) {

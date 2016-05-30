@@ -13,7 +13,7 @@ To the rescue comes [Git pre-push hooks](http://blog.ittybittyapps.com/blog/2013
 
 `.git/hooks/pre-push`:
 
-<pre class="language-clike"><code style="font-size: .75em">#!/bin/bash
+<pre><code data-syntax-highlight class="language-clike" style="font-size: .75em">#!/bin/bash
 
 mochaSkip=`git grep -e "\.only" --or -e "\.skip" HEAD`
 

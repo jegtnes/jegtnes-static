@@ -21,7 +21,7 @@ I assume you're working with a single concatenated CSS file. If you're not, you'
 
 First off, find your nearest command line, and run `npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries`, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
 
-<pre><code class="language-javascript">
+<pre><code data-syntaxhighlight class="language-javascript">
 var gulp = require('gulp');
 
 var sass = require('gulp-sass'); // skip this if you're working with vanilla CSS
@@ -52,7 +52,7 @@ This will especially be of use if you make use of Sass' nested media queries. It
 
 Pipe your assets through `gulp-combine-media-queries` below `rename`.
 
-<code class="language-javascript">.pipe(cmq({ log: true }))</code>
+<code data-syntaxhighlight class="language-javascript">.pipe(cmq({ log: true }))</code>
 
 File size: **91KB**. That's 2 whole KB shaved off!  As you may have guessed, combining media queries is only a tiny optimisation—especially as gzip takes care of repetition extremely well. However, as with any performance optimisation process, make sure it doesn't mess up anything. If you don't really have that many media queries, it may not be worth doing.
 
@@ -64,7 +64,7 @@ For Ghost, this can be done by tapping into the site's RSS feed, convert the pos
 ### Download your site's RSS feed
 We need the Node module `download` to do this.
 
-<pre><code class="language-javascript">
+<pre><code data-syntaxhighlight class="language-javascript">
 gulp.task('download-rss-feed', function(callback) {
   dl = download({
     url: 'http://yoursitehere.com/rss',
@@ -86,7 +86,7 @@ Now that we’ve got the RSS feed saved, we need to convert this to something th
 
 Fortunately for us, there’s an XML2JS Gulp module. Create a new task depending on the previous task, pipe this through XML2JS, rename it to something more suitable, and save it.
 
-<pre><code class="language-javascript">
+<pre><code data-syntaxhighlight class="language-javascript">
 
 gulp.task('create-sitemap', ['download-rss-feed'], function() {
     return gulp.src('./rss.xml')
@@ -100,7 +100,7 @@ gulp.task('create-sitemap', ['download-rss-feed'], function() {
 
 Now that we have the RSS feed in a lovely JSON format, we need to find the information we need from it. Fortunately, this is quite simple. Create another task depending on the previous one, again, and loop through this in plain JavaScript.
 
-<pre><code class="language-javascript">
+<pre><code data-syntaxhighlight class="language-javascript">
 gulp.task('find-site-files', ['create-sitemap'], function() {
   var json = require('./rss.json');
   json.rss.channel[0].item.forEach(function(value) {
@@ -116,7 +116,7 @@ At the end, we delete the files we’ve created using the `clean` Gulp module.
 
 Observant readers will once again notice that we have an unfamiliar variable called `filesToUncss`. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
 
-<pre><code class=“language-javascript”>
+<pre><code data-syntaxhighlight class=“language-javascript”>
 var filesToUncss = [
     'http://jegtnes.co.uk',
     'http://jegtnes.co.uk/portfolio',
@@ -129,7 +129,7 @@ As we’re pushing the RSS feed items to this variable, and we’ll be using thi
 ### Use JavaScript array in UnCSS
 And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your `cmq` pipe.
 
-<pre><code class=“language-javascript”>
+<pre><code data-syntaxhighlight class=“language-javascript”>
 .pipe(uncss({
     html: filesToUncss
 }))
@@ -142,7 +142,7 @@ File size: **61KB**. This is still pretty huge, because about 90% of it is inuit
 ## Minify
 gulp-cssmin ensures that all unnecessary whitespace, comments, etc. will be thoroughly purged. We have a lot of it, so let's get started.
 
-Add <code class="language-javascript">.pipe(cssmin())</code> after your UnCSS pipe.
+Add <code data-syntaxhighlight class="language-javascript">.pipe(cssmin())</code> after your UnCSS pipe.
 
 Final file size: **6.8KB**, down from **93KB**. Not bad for something you can automate, fire, and forget, eh?
 

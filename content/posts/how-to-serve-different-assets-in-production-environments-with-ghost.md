@@ -23,12 +23,12 @@ Here we need to register a new Handlebar helper and export this, so Node can req
 
 First off, you need to require `express-hbs` to be able to register a helper, and requiring `config` in order to grab the URL for your development environment.
 
-<pre><code class="language-javascript">var hbs = require('express-hbs');
+<pre><code data-syntaxhighlight class="language-javascript">var hbs = require('express-hbs');
 var config = require('config');
 </code></pre>
 
 Then we need to create a function to register the helper:
-<pre><code class="language-javascript">registerHelper = function (){
+<pre><code data-syntaxhighlight class="language-javascript">registerHelper = function (){
   hbs.registerHelper("isLocal", function(url) {
     return url === config.development.url
   });
@@ -38,16 +38,16 @@ Then we need to create a function to register the helper:
 This creates a helper called isLocal which accepts one parameter, `url`, which returns true if your development URL is the same as the parameter you're passing to it in the view.
 
 Then we need to register this module:
-<pre><code class="language-javascript">module.exports = registerHelper;
+<pre><code data-syntaxhighlight class="language-javascript">module.exports = registerHelper;
 </code></pre>
 And that's the helper all done with. Save it to your root directory. Call it whatever you want, I'm not your mum. I called it `handlebarsHelpers.js`.
 
 ## Registering the helper
-Now open up your index.js file and cringe at the fact you're about to edit a core file. Require the newly created helper at the start of the file like you'd require anything else in Node: <pre><code class="language-javascript">var hbs_helpers = require('./handlebarsHelpers');
+Now open up your index.js file and cringe at the fact you're about to edit a core file. Require the newly created helper at the start of the file like you'd require anything else in Node: <pre><code data-syntaxhighlight class="language-javascript">var hbs_helpers = require('./handlebarsHelpers');
 </code></pre>
 
 And call it after you've called Ghost:
-<pre><code class="language-javascript">hbs_helpers();
+<pre><code data-syntaxhighlight class="language-javascript">hbs_helpers();
 </code></pre>
 Restart your Node application and this should all work.
 
@@ -57,7 +57,7 @@ In the view where you're currently serving your assets, typically `default.hbs`,
 
 Hopefully you remembered we need a parameter for this, which is going to be the Ghost-provided `@blog.url`. This will give you the full URL for the environment you're in.
 
-Here's how you use it:<pre><code class="language-javascript">{{#if (isLocal @blog.url)}}
+Here's how you use it:<pre><code data-syntaxhighlight class="language-javascript">{{#if (isLocal @blog.url)}}
   {{! Local, unminifed }}
   <link rel="stylesheet" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
 {{else}}
@@ -70,7 +70,7 @@ Here's how you use it:<pre><code class="language-javascript">{{#if (isLocal @blo
 <h2>All The Code</h2>
 
 <h3>handlebarsHelpers.js</h3>
-<pre><code class="language-javascript">var hbs = require('express-hbs');
+<pre><code data-syntaxhighlight class="language-javascript">var hbs = require('express-hbs');
 var config = require('config');
 registerHelper = function (){
   hbs.registerHelper("isLocal", function(url) {
@@ -81,7 +81,7 @@ registerHelper = function (){
 module.exports = registerHelper;
 </code></pre>
 ### Modified index.js
-<pre><code class="language-javascript">// # Ghost bootloader
+<pre><code data-syntaxhighlight class="language-javascript">// # Ghost bootloader
 // Orchestrates the loading of Ghost
 // When run from command line.
 
@@ -96,7 +96,7 @@ ghost().otherwise(function (err) {
 hbs_helpers();
 </code></pre>
 ### Usage in Handlebars template
-<pre><code class="language-javascript">{{#if (isLocal @blog.url)}}
+<pre><code data-syntaxhighlight class="language-javascript">{{#if (isLocal @blog.url)}}
   {{! Put your local, unminifed assets here }}
 {{else}}
   {{! Put your hyper-optimised, minified assets here }}

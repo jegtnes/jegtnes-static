@@ -16,14 +16,14 @@ To alleviate this, I thought I'd ask for confirmation before wiping the database
 Instead, we can make use of the splendiferous [inquirer.js](https://github.com/SBoudrias/Inquirer.js/) library instead. It took me about half an hour to integrate this into my Shipit configuration, and it was well worth the time. Here's how:
 
 First off, install Inquirer so we can use it.
-<code class="language-javascript>npm install --save-dev inquirer</code>.
+<code data-syntaxhighlight class="language-javascript">npm install --save-dev inquirer</code>.
 
 Then, In your Shipit configuration file, require inquirer as you would any other Node module:
-<code class="language-javascript>var inquirer = require('inquirer');</code>
+<code data-syntaxhighlight class="language-javascript">var inquirer = require('inquirer');</code>
 
 Create a new blocking task where you want to act on user input, and make sure it takes a callback, so we can act on the input when appropriate. You want this to be blocking if it has the chance to affect any other part of the deployment workflow, but if it's a completely stand-alone task, it may be safe to not block. (I'm not sure. I haven't tried. I'm not your dad. Do whatever you want)
 
-<pre><code class="language-javascript">shipit.blTask('wipeDB', function(callback) {
+<pre><code data-syntaxhighlight class="language-javascript">shipit.blTask('wipeDB', function(callback) {
   // magic goes here
 });
 </code></pre>
@@ -32,7 +32,7 @@ Inquirer only has one method, `.prompt`. This method takes two parameters: one t
 
 As you can see below, we give the prompt a type, a name to refer to later, a default answer (as we're dealing with a production database here, it's probably a good idea to err on the side of caution and set the default to _nope_), and the question to ask the user.
 
-<pre><code class="language-javascript">inquirer.prompt({
+<pre><code data-syntaxhighlight class="language-javascript">inquirer.prompt({
       type: 'confirm',
       name: 'wipeConfirmation',
       default: false,
@@ -47,7 +47,7 @@ So far, so good!
 
 The `answer` parameter in the callback will be a single object, with the key we created earlier, `wipeConfirmation`. This will let us check for the user's answer and take actions accordingly:
 
-<pre><code class="language-javascript">if (answer.wipeConfirmation === true) {
+<pre><code data-syntaxhighlight class="language-javascript">if (answer.wipeConfirmation === true) {
     // wipe DB
     callback();
 }
@@ -59,7 +59,7 @@ else {
 
 In my case, this is what the full Shipit function looks like:
 
-<pre><code class="language-javascript">var inquirer = require('inquirer');
+<pre><code data-syntaxhighlight class="language-javascript">var inquirer = require('inquirer');
 shipit.blTask('wipeDB', function(callback) {
     var dbPath = path.join(shipit.config.deployTo, 'shared', 'storage', 'db.sqlite3');
 

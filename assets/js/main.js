@@ -14,11 +14,13 @@ bodySansBold.load().then(()   => rootElement.classList.add('body-bold-loaded'), 
 bodySansItalic.load().then(() => rootElement.classList.add('body-italic-loaded'), () => {});
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  // lazy load syntax highlighting if code is in the DOM
+  // this approach saves a download if there's no code
+  // and saves Prism having to do a DOM traversal, as we've already done it
+
   const syntaxHighlightBlocks = document.querySelectorAll('[data-syntaxhighlight]');
 
-  // lazy load syntax highlighting if required
-  // this approach saves both bytes and DOM traversal, as Prism doesn't
-  // need to re-scan the entire DOM.
   if (syntaxHighlightBlocks) {
     loadjs('/assets/js/syntax.js', () => {
       for (var block of syntaxHighlightBlocks) Prism.highlightElement(block);

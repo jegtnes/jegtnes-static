@@ -1,7 +1,7 @@
 var moment = require('moment');
 
-module.exports = function(timestamp, isUTC = false) {
-  if (isUTC === true) {
+module.exports = function(timestamp, isISOFormat = false) {
+  if (isISOFormat === true) {
     return moment(timestamp).format('YYYY-MM-DD');
   }
 

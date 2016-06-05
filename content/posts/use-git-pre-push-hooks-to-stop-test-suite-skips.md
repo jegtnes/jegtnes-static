@@ -28,8 +28,6 @@ fi
 exit 0
 </code></pre>
 
-([view this snippet on Github Gists for better syntax highlighting](https://gist.github.com/jegtnes/c456ba31148b17a3cec6))
-
 I'm hardly a wizard with bash scripts and Git hooks, this is largely based off [Peter Goldsmith's examples linked to earlier](http://blog.ittybittyapps.com/blog/2013/09/03/git-pre-push/), adapted to suit my needs. Thanks, Peter!
 
 ## Wait, what?

@@ -3,3 +3,7 @@
 code {
   font-size: .85em;
 }
+
+:not(pre) > code[class*="language-"] {
+  padding: .25em;
+}

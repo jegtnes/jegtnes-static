@@ -21,8 +21,7 @@ I assume you're working with a single concatenated CSS file. If you're not, you'
 
 First off, find your nearest command line, and run `npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries`, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
 
-<pre><code data-syntaxhighlight class="language-javascript">
-var gulp = require('gulp');
+<pre><code data-syntaxhighlight class="language-javascript">var gulp = require('gulp');
 
 var sass = require('gulp-sass'); // skip this if you're working with vanilla CSS
 var rename = require('gulp-rename');
@@ -41,7 +40,6 @@ gulp.task('styles-build', function() {
 })
 
 gulp.task('default', ['styles-build']);
-
 </code></pre>
 
 So for now, if you run the task this will do nothing but compile your CSS and rename your CSS file to style.min.css. File size: **93KB**.
@@ -64,8 +62,7 @@ For Ghost, this can be done by tapping into the site's RSS feed, convert the pos
 ### Download your site's RSS feed
 We need the Node module `download` to do this.
 
-<pre><code data-syntaxhighlight class="language-javascript">
-gulp.task('download-rss-feed', function(callback) {
+<pre><code data-syntaxhighlight class="language-javascript">gulp.task('download-rss-feed', function(callback) {
   dl = download({
     url: 'http://yoursitehere.com/rss',
     name: 'rss.xml'
@@ -86,9 +83,7 @@ Now that we’ve got the RSS feed saved, we need to convert this to something th
 
 Fortunately for us, there’s an XML2JS Gulp module. Create a new task depending on the previous task, pipe this through XML2JS, rename it to something more suitable, and save it.
 
-<pre><code data-syntaxhighlight class="language-javascript">
-
-gulp.task('create-sitemap', ['download-rss-feed'], function() {
+<pre><code data-syntaxhighlight class="language-javascript">gulp.task('create-sitemap', ['download-rss-feed'], function() {
     return gulp.src('./rss.xml')
     .pipe(xml2js())
     .pipe(rename('rss.json'))
@@ -100,8 +95,7 @@ gulp.task('create-sitemap', ['download-rss-feed'], function() {
 
 Now that we have the RSS feed in a lovely JSON format, we need to find the information we need from it. Fortunately, this is quite simple. Create another task depending on the previous one, again, and loop through this in plain JavaScript.
 
-<pre><code data-syntaxhighlight class="language-javascript">
-gulp.task('find-site-files', ['create-sitemap'], function() {
+<pre><code data-syntaxhighlight class="language-javascript">gulp.task('find-site-files', ['create-sitemap'], function() {
   var json = require('./rss.json');
   json.rss.channel[0].item.forEach(function(value) {
     link = value.link[0]
@@ -116,8 +110,7 @@ At the end, we delete the files we’ve created using the `clean` Gulp module.
 
 Observant readers will once again notice that we have an unfamiliar variable called `filesToUncss`. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
 
-<pre><code data-syntaxhighlight class=“language-javascript”>
-var filesToUncss = [
+<pre><code data-syntaxhighlight class=“language-javascript”>var filesToUncss = [
     'http://jegtnes.co.uk',
     'http://jegtnes.co.uk/portfolio',
     'http://jegtnes.co.uk/contact'
@@ -129,8 +122,7 @@ As we’re pushing the RSS feed items to this variable, and we’ll be using thi
 ### Use JavaScript array in UnCSS
 And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your `cmq` pipe.
 
-<pre><code data-syntaxhighlight class=“language-javascript”>
-.pipe(uncss({
+<pre><code data-syntaxhighlight class=“language-javascript”>.pipe(uncss({
     html: filesToUncss
 }))
 </code></pre>

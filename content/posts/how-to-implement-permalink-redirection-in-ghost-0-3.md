@@ -39,8 +39,7 @@ _A small piece of Ghost's redirection rules. What does all of this mean? I have 
 
 It turns out most of Ghost's URL handling action happens in /core/server.js. Not knowing where to start, I copied a few lines that dealt with the redirection using regular expressions and changed a couple of words around, and hey presto—armed with just a little bit of regex knowledge, I made the redirect work!
 
-<pre><code data-syntaxhighlight class="language-javascript">
-server.get(/^\/(blog\/?).*/, function redirect(req, res) {
+<pre><code data-syntaxhighlight class="language-javascript">server.get(/^\/(blog\/?).*/, function redirect(req, res) {
     res.redirect(301, req.url.substr(5));
 });
 </code></pre>

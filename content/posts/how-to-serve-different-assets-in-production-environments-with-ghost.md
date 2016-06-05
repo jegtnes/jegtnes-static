@@ -57,7 +57,7 @@ In the view where you're currently serving your assets, typically `default.hbs`,
 
 Hopefully you remembered we need a parameter for this, which is going to be the Ghost-provided `@blog.url`. This will give you the full URL for the environment you're in.
 
-Here's how you use it:<pre><code data-syntaxhighlight class="language-javascript">{{#if (isLocal @blog.url)}}
+Here's how you use it:<pre><code data-syntaxhighlight class="language-handlebars">{{#if (isLocal @blog.url)}}
   {{! Local, unminifed }}
   <link rel="stylesheet" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
 {{else}}
@@ -96,7 +96,7 @@ ghost().otherwise(function (err) {
 hbs_helpers();
 </code></pre>
 ### Usage in Handlebars template
-<pre><code data-syntaxhighlight class="language-javascript">{{#if (isLocal @blog.url)}}
+<pre><code data-syntaxhighlight class="language-handlebars">{{#if (isLocal @blog.url)}}
   {{! Put your local, unminifed assets here }}
 {{else}}
   {{! Put your hyper-optimised, minified assets here }}

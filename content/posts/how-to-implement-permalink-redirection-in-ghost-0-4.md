@@ -11,7 +11,8 @@ I have [blogged earlier](http://jegtnes.co.uk/blog/how-to-implement-url-redirect
 
 If you're currently migrating your blog from another content service provider to Ghost, you have 2 options right now:
 
-1) If you don't mind changing your links structure permanently to Ghost's default structure of `blog.com/slug`, and you have no access to your Nginx config to implement redirection there, you can follow the same advice as my [last post](http://jegtnes.co.uk/how-to-implement-url-redirection-in-ghost-0-3/), and implement your own redirection pattern. The file structure has changed quite dramatically since Ghost 0.3 (for the better!), so the best place to put this seems to be in /core/server/routes/frontend.js. You can put this anywhere in the file you want. you want, as long as it's before `server.get('*', frontend.single);`.
+1) If you don't mind changing your links structure permanently to Ghost's default structure of `blog.com/slug`, and you have no access to your Nginx config to implement redirection there, you can follow the same advice as my [last post](http://jegtnes.co.uk/how-to-implement-url-redirection-in-ghost-0-3/), and implement your own redirection pattern. The file structure has changed quite dramatically since Ghost 0.3 (for the better!), so the best place to put this seems to be in /core/server/routes/frontend.js. You can put this anywhere in the file you want. you want, as long as it's before <code data-syntaxhighlight class="language-javascript">server.get('*', frontend.single);</code>.
+
 **Warning: This is super hacky. Don't edit core files unless you need to. Here be dragons etc.**
 
 2) (Recommended) Retain your links structure. Find your SQLite database and change the `permalinks` key in the `settings` table (which should be under `/content/data/ghost.db`), like such:

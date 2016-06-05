@@ -27,7 +27,7 @@ Only having 20 LEDs to work with, I couldn't represent each degree by an LED. Th
 
 A few hours later and I had my thermometer. Here's what I learnt:
 
-### Hardware is _tricky_ to debug.
+### Hardware is tricky to debug.
 At one point, when I attempted to turn all the LEDs off/on, one LED was consistently turned on. Turns out, if you're using the serial port to pass data from the Arduino to the computer (for logging), you can't rely on pins 0 and 1. It would have been useful if the guide mentioned this when first talking about the serial port. That being said, it was relieving that the universal software debugging strategy of _remove everything_ still applied. In this case, I found this nugget when googling "serial port bug pin 1 arduino".
 
 ![A screenshot of Arduino documentation. The important part says: Serial (…) communicates on digital pins 0 (RX) and 1 (TX) as well as the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input and output](/assets/images/Screen-Shot-2015-10-07-at-00-12-19.png)

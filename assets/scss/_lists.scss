@@ -1,0 +1,10 @@
+.csl {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    &:not(:last-of-type):after {
+      content: ", "
+    }
+  }
+}

@@ -22,7 +22,7 @@ module.exports = function(existingExcerpt, postContent, charCount, ellipses = tr
 
   excerpt = excerpt.substr(0, charCount);
 
-  if (ellipses) {
+  if (ellipses && excerpt.length > charCount) {
     excerpt = excerpt + "…";
   }
 

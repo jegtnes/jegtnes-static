@@ -2,6 +2,7 @@ module.exports = {
   content: "content/**/*",
   contentPages: "./*.md",
   contentPosts: "posts/*.md",
+  portfolioItems: "portfolio/*.md",
   templates: "templates/**/*",
   helpers: "helpers/**/*.js",
   layoutsFolder: "templates/layouts",

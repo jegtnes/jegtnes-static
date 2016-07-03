@@ -20,6 +20,9 @@ Metalsmith(__dirname)
       pattern: config.contentPosts,
       sortBy: 'date',
       reverse: true
+    },
+    portfolio: {
+      pattern: config.portfolioItems,
     }
   }))
   .use(markdown())
@@ -28,6 +31,10 @@ Metalsmith(__dirname)
       {
         match: { collection: 'blog' },
         pattern: 'blog/:title'
+      },
+      {
+        match: { collection: 'portfolio' },
+        pattern: 'portfolio/:title'
       },
       {
         match: { collection: 'pages' },

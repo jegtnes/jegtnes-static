@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-layout: home.hbs
+layout: portfolio-listing.hbs
 ---
 
 # Portfolio

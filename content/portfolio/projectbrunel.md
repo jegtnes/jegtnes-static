@@ -1,4 +1,13 @@
+---
+title: Project Brunel
+excerpt: My final year uni project. I designed and implemented an algorithm for finding better journeys for medium-to-long-distance train travel in the form of a web application. I took into account a variety of factors related to journey pleasantness, instead of focusing on a single metric like price, which all current train booking services do.
+tags: research, design, development, prototyping, open-source
+priority: 1
+---
+
 # Project Brunel
+
+_PSA: This case study is a couple of years old. I wasn't able to keep the project online due to its reliance on screenscraping National Rail, which changed their markup too frequently for this to be viable and maintainable post-university. I'm still proud of it, and you [can check out the source on GitHub](https://github.com/jegtnes/dmp)._
 
 My final year university project allowed me to research and develop practically anything as long as it was related to technology.
 

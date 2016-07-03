@@ -15,10 +15,10 @@
       {{{ contents }}}
     </main>
 
-    <ul class="list pl0">
+    <ul class="list pl0 portfolio-list">
 
-      {{#each collections.portfolio 5}}
-      <li class="m0 mb4">
+      {{#each collections.portfolio}}
+      <li class="m0 mb4 portfolio-list__item">
         <h2 class="ttu f3 ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
         <p class="ma0">{{{ excerpt this.excerpt this.contents 200 }}}</p>
       </li>

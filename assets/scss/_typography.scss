@@ -15,11 +15,13 @@
 .body-bold-loaded {
   strong, b {
     font-family: 'Alegreya Bold', serif;
+    font-weight: normal;
   }
 }
 
 .body-italic-loaded {
   em, i, cite {
     font-family: 'Alegreya Italic', serif;
+    font-style: normal;
   }
 }

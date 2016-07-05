@@ -39,7 +39,7 @@ I have lately come to favour developing interactive prototypes as a high-fidelit
 
 We prototyped the user-interface prototype in two stages: The mediator-facing side of the application and the administrative side of the application. These were tested with mediators and administrators respectively in order to get a feel for whether the interface was intuitive and satisfied the requirements we had drawn up in cooperation with Bristol Mediation.
 
-![An animation of the availability system prototype. Availability slots are laid out in a table of hours from 9am-9pm over the course of 7 days. Clicking once turns the slot green, indicating your availability, and clicking twice turns it yellow, indicating you may be available.](//assets/images/content-images/bm.gif)
+![An animation of the availability system prototype. Availability slots are laid out in a table of hours from 9am-9pm over the course of 7 days. Clicking once turns the slot green, indicating your availability, and clicking twice turns it yellow, indicating you may be available.](/assets/images/content-images/bm.gif)
 
 _Prototyping the availability system interactions_
 
@@ -47,7 +47,7 @@ These prototypes went through a few feedback-iteration cycles before starting th
 
 Because of the tight deadlines imposed by the university module in order to avoid scope creep and encouraging plenty of reflection towards the end of the module, there was not enough time to fully develop all of the features and functionality that was envisaged at the start of the project. However, I am certain that the large chunk of time we invested in making the availability tool user-friendly and efficient has been well worth it.
 
-![A grid of the administrator's view of the mediators' availability. It's laid out like a calendar, with each hour of each day showing which mediators are available or potentially available, as well as the transport modes they use.](//assets/images/content-images/BM_availability_sample.png)
+![A grid of the administrator's view of the mediators' availability. It's laid out like a calendar, with each hour of each day showing which mediators are available or potentially available, as well as the transport modes they use.](/assets/images/content-images/BM_availability_sample.png)
 
 _An image of the admin's view of the system as it is being used, with mediator names swapped with names of some my favourite band members due to confidentiality and data protection reasons._
 

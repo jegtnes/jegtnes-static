@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }} | Alex Jegtnes</title>
+
+  {{>head}}
+</head>
+<body class="w-100">
+
+  <div class="pa3 mw7 center">
+    {{>header}}
+  </div>
+  <main>
+    <div class="f4 pl3 pr3 mw7 center">
+      <h1 class="f3 f2-ns">{{title}}</h1>
+      <p>{{date}}</p>
+      <article class="measure lh-copy f5 f4-ns markdown-content">
+        {{{ contents }}}
+      </article>
+    </div>
+  </main>
+
+  {{>footer}}
+  {{>foot}}
+</body>
+</html>

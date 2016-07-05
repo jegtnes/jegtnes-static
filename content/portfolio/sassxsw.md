@@ -3,6 +3,7 @@ title: Post-preprocessing
 date: July 2015
 excerpt: I spoke at the local meetup SassxSW on when to consider avoiding the use of Sass, and why.
 tags: development, talk
+layout: portfolio-item.hbs
 priority: 3
 ---
 

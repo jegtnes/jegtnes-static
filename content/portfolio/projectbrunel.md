@@ -30,7 +30,7 @@ In a way, the algorithm was the easier part. I spoke to train users candidly, co
 
 In order to meet the assignment deadline and to ensure focus, the only factors presently included in the algorithm are price, journey time, and number of changes.
 
-![A screenshot of Project Brunel search results from Bristol Temple Meads to Aberdeen. The results are ranked from 1-10, with the cheapest journey first, and is also direct; the second result is the second cheapest one of the results, and one of the fastest. The last result has three changes and is one of the most expensive journeys.](//assets/images/content-images/Screen-Shot-2014-06-05-at-09-01-21.png)
+![A screenshot of Project Brunel search results from Bristol Temple Meads to Aberdeen. The results are ranked from 1-10, with the cheapest journey first, and is also direct; the second result is the second cheapest one of the results, and one of the fastest. The last result has three changes and is one of the most expensive journeys.](/assets/images/content-images/Screen-Shot-2014-06-05-at-09-01-21.png)
 
 _A sample of the results returned when searching for a long-distance journey. Naturally, price mostly takes precedence here, but the amount of changes also factor in quite heavily in places._
 

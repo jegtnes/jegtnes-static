@@ -3,6 +3,7 @@ title: Bristol Mediation
 date: September 2013 – April 2014
 excerpt: For a final year university module, my team helped a local charity design and build a tool to organise their volunteers.
 tags: research, design, development, prototyping, open-source
+layout: portfolio-item.hbs
 priority: 1
 ---
 

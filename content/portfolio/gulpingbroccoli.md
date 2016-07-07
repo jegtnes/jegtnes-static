@@ -10,4 +10,4 @@ In 2015 I delivered a talk on popular JavaScript build tools at the long-standin
 
 This talk covered the current state of build tools in the JavaScript world, comparing Broccoli, Gulp, and Grunt; as well as demonstrating some advanced build tools techniques live, including automatically generating responsive images and responsive images markup, and outputting critical path CSS.
 
-[View the slides here](http://static.jegtnes.co.uk/talks/2015-07-csssummit) and [see the demos on GitHub](https://github.com/jegtnes/gulping-your-broccoli).
+Unfortunately the talk wasn't recorded, but you can [view the slides here](http://static.jegtnes.co.uk/talks/2015-07-csssummit) and [see the demos on GitHub](https://github.com/jegtnes/gulping-your-broccoli).

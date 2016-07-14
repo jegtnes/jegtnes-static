@@ -12,19 +12,20 @@
     {{>header}}
 
     <main>
+      <h1 class="f3 f1-ns ttu mb3">{{title}}</h1>
       {{{ contents }}}
+
+      <ul class="list pl0 portfolio-list">
+
+        {{#each collections.portfolio}}
+        <li class="m0 mb4 portfolio-list__item">
+          <h2 class="ttu f3 f2-ns ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
+          <p class="ma0 f4 f3-ns">{{{ excerpt this.excerpt this.contents 200 }}}</p>
+        </li>
+        {{/each}}
+
+      </ul>
     </main>
-
-    <ul class="list pl0 portfolio-list">
-
-      {{#each collections.portfolio}}
-      <li class="m0 mb4 portfolio-list__item">
-        <h2 class="ttu f3 ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
-        <p class="ma0">{{{ excerpt this.excerpt this.contents 200 }}}</p>
-      </li>
-      {{/each}}
-
-    </ul>
 
     {{>footer}}
   </div>

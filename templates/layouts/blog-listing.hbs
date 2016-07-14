@@ -19,9 +19,9 @@
 
         {{#each collections.blog}}
         <li class="m0 mb4">
-          <h2 class="ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
-          <p class="ma0 mb2"><time datetime="{{time this.date true}}">{{time this.date}}</time></p>
-          <p class="ma0">{{{ excerpt this.excerpt this.contents 200 }}}</p>
+          <h2 class="ttu f3 f2-ns ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
+          <p class="ma0 mb2 f4 f3-ns"><time datetime="{{time this.date true}}">{{time this.date}}</time></p>
+          <p class="ma0 f4 f3-ns">{{{ excerpt this.excerpt this.contents 200 }}}</p>
         </li>
         {{/each}}
 

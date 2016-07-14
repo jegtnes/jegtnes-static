@@ -13,6 +13,8 @@ My first project while working at [cxpartners](https://cxpartners.co.uk) was wor
 
 We worked closely with Matt Jokes, Rob Chambers, and the rest of the alpha team from the ONS to establish a new design language and identity to shake off the previous reputation of the website, which was once described as [the worst, most important, website in the UK](http://schedule.sxsw.com/2015/events/event_IAP30821). The pattern library was originally only scoped to support an Alpha release, but went on to outlive its lifespan, and [underpinned the Beta release](https://blog.ons.digital/2015/06/05/anatomy-of-a-modern-web-page/) as well.
 
+My role in the project was as the main front-end developer. I worked with the cx design team to distil and unify their designs into a composable, re-usable set of flexible patterns, and helped the ONS and their systems integration team, Methods Digital, use the pattern library to its fullest potential, through a combination of extensive documentation and on-site training.
+
 <blockquote><p>Sophie, Steve, Jon, Chris, Alex, Michelle et al at CX Partners were also incredibly important to the success of the Alpha. The collaborative work we did, especially in the early phases, really helped set the direction of the project and the pattern library is something I am very proud of.</p>
 <p><cite><a href="https://blog.ons.digital/2014/12/24/seasonally-adjusted-greetings-and-a-big-thank-you/">– Matt Jukes, Head of Digital Transformation, ONS</a></cite></p>
 </blockquote>

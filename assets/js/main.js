@@ -1,8 +1,7 @@
 import FontFaceObserver from 'fontfaceobserver';
 
 const rootElement = document.documentElement;
-
-const headline       = new FontFaceObserver('TitilliumWeb');
+const headline    = new FontFaceObserver('TitilliumWeb');
 
 // This slightly weird , () => {}); at the end just swallows timeout errors on slow networks
 headline.load().then(() => rootElement.classList.add('headline-loaded'), () => {});

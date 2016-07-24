@@ -13,9 +13,13 @@
   </div>
   <main>
     <div class="f4 pl3 pr3 mw7 center">
-      <h1 class="f3 f2-m f1-l ttu mb3">{{title}}</h1>
-      <time class="f4 f3-ns" datetime="{{time date true}}">{{time date}}</time>
-      <article class="measure lh-copy f5 f4-ns markdown-content">
+      <header class="item-header bdb pb3">
+        <h1 class="f3 f2-m f1-l ttu bdt mb0 pt3">{{title}}</h1>
+        <p class="f6 f3-ns ttu pb0 mb0">
+          <time class="" datetime="{{time date true}}">{{time date}}</time>
+        </p>
+      </header>
+      <article class="measure lh-copy f6 f4-ns markdown-content">
         {{{ contents }}}
       </article>
     </div>

@@ -2,16 +2,10 @@ import FontFaceObserver from 'fontfaceobserver';
 
 const rootElement = document.documentElement;
 
-const headline       = new FontFaceObserver('Roboto Condensed');
-const bodyCopy   = new FontFaceObserver('Alegreya ');
-const bodyBold   = new FontFaceObserver('Alegreya  Bold');
-const bodyItalic = new FontFaceObserver('Alegreya  Italic');
+const headline       = new FontFaceObserver('TitilliumWeb');
 
 // This slightly weird , () => {}); at the end just swallows timeout errors on slow networks
-bodyCopy.load().then(()   => rootElement.classList.add('body-copy-loaded'), () => {});
-headline.load().then(()       => rootElement.classList.add('headline-loaded'), () => {});
-bodyBold.load().then(()   => rootElement.classList.add('body-bold-loaded'), () => {});
-bodyItalic.load().then(() => rootElement.classList.add('body-italic-loaded'), () => {});
+headline.load().then(() => rootElement.classList.add('headline-loaded'), () => {});
 
 document.addEventListener('DOMContentLoaded', () => {
 

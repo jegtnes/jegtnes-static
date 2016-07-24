@@ -28,3 +28,8 @@ body {
     "Helvetica Neue",   // OS X 10.10-
     sans-serif;         // ¯\_(ツ)_/¯
 }
+
+// Avoid the default :visited colour change. Useful for header links etc.
+.no-visited {
+  color: inherit;
+}

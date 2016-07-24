@@ -12,13 +12,18 @@
     {{>header}}
   </div>
   <main>
-    <div class="f4 pl3 pr3 mw7 center">
-      <h1 class="f3 f2-m f1-l ttu mb3">{{title}}</h1>
-      <p class="f4 f3-ns">{{date}}</p>
-      <article class="measure lh-copy f5 f3-ns markdown-content">
+    <article class="f4 pl3 pr3 mw7 center">
+      <header class="item-header bdb pb3 pt3">
+        <h1 class="f3 f2-m f1-l ttu bdt mb0 pt3">
+          <a class="link" href=/{{this.path}}>{{{title}}}</a>
+        </h1>
+        <div class="f6 f3-ns ttu pb0 mb0">{{date}}</div>
+      </header>
+
+      <div class="measure lh-copy f5 f3-ns markdown-content">
         {{{ contents }}}
-      </article>
-    </div>
+      </div>
+    </article>
   </main>
 
   {{>footer}}

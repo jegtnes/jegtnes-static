@@ -3,7 +3,7 @@
   color: $white;
   padding: 1.25em;
 
-  @media (min-width: 35em) {
+  @media (min-width: 30em) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -16,14 +16,14 @@
   display: block;
   margin-bottom: .25rem;
 
-  @media (min-width: 35em) {
+  @media (min-width: 30em) {
     flex: 1 0 auto;
     font-size: 2.5rem;
   }
 }
 
 .jegtnes-header__nav {
-  @media (min-width: 35em) {
+  @media (min-width: 30em) {
     flex: 1 0 auto;
     text-align: right;
     font-size: 1.25rem;

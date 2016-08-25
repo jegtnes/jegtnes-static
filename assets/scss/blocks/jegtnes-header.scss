@@ -1,4 +1,8 @@
 .jegtnes-header {
+  background-color: $black;
+  color: $white;
+  padding: 1.25em;
+
   @media (min-width: 35em) {
     display: flex;
     align-items: baseline;
@@ -8,6 +12,9 @@
 
 .jegtnes-header__logo {
   font-size: 2rem;
+  vertical-align: middle;
+  display: block;
+  margin-bottom: .25rem;
 
   @media (min-width: 35em) {
     flex: 1 0 auto;

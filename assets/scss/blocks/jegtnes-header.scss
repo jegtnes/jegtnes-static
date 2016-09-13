@@ -1,8 +1,6 @@
 .jegtnes-header {
-  position: relative;
   background-color: $black;
   color: $white;
-  z-index: 2;
 
   @media (min-width: 30em) {
     display: flex;
@@ -11,13 +9,6 @@
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 9999em;
-    left: -4999.5em;
-    top: 0;
-    bottom: 0;
     background-color: $black;
   }
 }

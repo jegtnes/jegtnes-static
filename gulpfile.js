@@ -82,7 +82,10 @@ gulp.task('images', function(cb) {
   .pipe(newer(config.outputImagesFolder))
   .pipe(imagemin({
     progressive: true,
-    svgoPlugins: [{removeViewBox: false}]
+    svgoPlugins: [{
+      cleanupIDs: false,
+      removeUselessDefs: false,
+    }]
   }))
   .pipe(gulp.dest(config.outputImagesFolder));
 });

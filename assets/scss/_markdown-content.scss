@@ -9,4 +9,8 @@
   picture {
     max-width: calc(100vw - 2em);
   }
+
+  a {
+    @extend .jegtnes-link;
+  }
 }

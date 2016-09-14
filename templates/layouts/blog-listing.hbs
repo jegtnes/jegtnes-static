@@ -15,22 +15,20 @@
 
       {{{ contents }}}
 
-        {{#each collections.blog}}
-          <section class="m0 mb4">
-            <header class="item-header bdb pb3 mb3">
-              <h2 class="f3 f2-m f1-l ttu bdt mb0 pt3">
-                <a class="link" href=/{{this.path}}>{{{this.title}}}</a>
-              </h2>
-              <p class="f6 f3-ns ttu pb0 mb0">
-                <time datetime="{{time this.date true}}">{{time this.date}}</time>
-              </p>
-            </header>
+      {{#each collections.blog}}
+        <section class="m0 mb4">
+          <header class="item-header bdb pb3 mb3">
+            <h2 class="f3 f2-m f1-l ttu bdt mb0 pt3">
+              <a class="link" href=/{{this.path}}>{{{this.title}}}</a>
+            </h2>
+            <p class="f6 f3-ns ttu pb0 mb0">
+              <time datetime="{{time this.date true}}">{{time this.date}}</time>
+            </p>
+          </header>
 
-            <p class="ma0 f4 f3-ns">{{{ excerpt this.excerpt this.contents 200 }}}</p>
-          </section>
-        {{/each}}
-
-      </ul>
+          <p class="ma0 f4 f3-ns">{{{ excerpt this.excerpt this.contents 200 }}}</p>
+        </section>
+      {{/each}}
     </main>
   </div>
 

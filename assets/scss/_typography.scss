@@ -41,6 +41,10 @@ body {
   &:focus {
     color: $red;
   }
+
+  &:not(.no-visited):visited {
+    color: lighten($black, 10%);
+  }
 }
 
 .link-inverse {

@@ -16,11 +16,12 @@
         {{#each collections.portfolio}}
           <section class="m0 mb4">
             <header class="item-header bdb pb3 mb3">
-              <h2 class="f3 f2-m f1-l ttu bdt mb0 pt3">
+              <h2 class="lh-title f3 f2-m f1-l ttu mb0 mt2">
                 <a class="link" href=/{{this.path}}>{{{this.title}}}</a>
               </h2>
+              <p class="f6 ttu pb0 mb0 bdt pt3">{{date}}</p>
             </header>
-            <p class="ma0 f4 f3-ns">
+            <p class="measure lh-copy f5 f3-ns">
               {{{ excerpt this.excerpt this.contents 200 }}}
             </p>
           </section>

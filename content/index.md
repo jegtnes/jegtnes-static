@@ -4,7 +4,7 @@ layout: home.hbs
 permalink: false
 ---
 
-<h1 class="f-subheadline tracked-tight ttu mb1 mt1">Hello, world.</h1>
+<h1 class="f-subheadline tracked-tight ttu ma0">Hello, world.</h1>
 
 <p class="f3">I'm Alex, a freelance full-stack web developer in Bristol, UK. I make prototypes, pattern libraries, websites, and webapps that run fast, work well, and solve real user problems.</p>
 

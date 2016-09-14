@@ -34,6 +34,34 @@ body {
   color: inherit;
 }
 
+.link {
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.link-inverse {
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+
+.jegtnes-link {
+  color: $red;
+
+  &:hover,
+  &:focus {
+    color: darken($red, 10%)
+  }
+}
+
 // smallcaps:
 .sc {
   font-variant: small-caps;

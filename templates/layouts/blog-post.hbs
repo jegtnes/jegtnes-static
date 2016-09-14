@@ -12,13 +12,15 @@
   <main>
     <article class="f4 pl3 pr3 mw7 center">
       <header class="item-header bdb pb3 pt3">
-        <h1 class="f3 f2-m f1-l ttu bdt mb0 pt3">
+        <h1 class="lh-title f3 f2-m f1-l ttu mb0 mt2">
           <a class="link" href=/{{this.path}}>{{{this.title}}}</a>
         </h1>
-        <time class="f6 f3-ns ttu pb0 mb0" datetime="{{time date true}}">{{time date}}</time>
+        <p class="f6 ttu pb0 mb0 bdt pt3">
+          <time datetime="{{time date true}}">{{time date}}</time>
+        </p>
       </header>
 
-      <div class="measure lh-copy f5 f3-ns markdown-content">
+      <div class="measure lh-copy-ns f5 f3-ns markdown-content">
         {{{ contents }}}
       </div>
     </article>

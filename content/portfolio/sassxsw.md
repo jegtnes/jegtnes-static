@@ -7,8 +7,6 @@ layout: portfolio-item.hbs
 priority: 3
 ---
 
-# Post-preprocessing: When using Sass isn't the best solution
-
 At the local web meetup SassxSW in July 2015, I gave a brief 15-minute talk on when you might want to consider avoiding the use of Sass, and what you should use instead.
 
 [Watch the video on YouTube](https://www.youtube.com/watch?v=FuYbSTKVFo4).

@@ -29,26 +29,35 @@ body {
     sans-serif;         // ¯\_(ツ)_/¯
 }
 
-// Avoid the default :visited colour change. Useful for header links etc.
-.no-visited {
-  color: inherit;
-}
-
 .link {
   color: $black;
 
-  &:hover,
-  &:focus {
-    color: $red;
+  &:visited {
+    color: lighten($black, 10%);
   }
 
-  &:not(.no-visited):visited {
-    color: lighten($black, 10%);
+  &:hover,
+  &:focus {
+    &,
+    &:visited {
+      color: $red;
+    }
+  }
+}
+
+// Avoid the default :visited colour change. Useful for header links etc.
+.no-visited {
+  &,
+  &:visited {
+    color: inherit;
   }
 }
 
 .link-inverse {
-  color: $white;
+  &,
+  &:visited {
+    color: $white;
+  }
 
   &:hover,
   &:focus {
@@ -56,13 +65,18 @@ body {
   }
 }
 
-
 .jegtnes-link {
-  color: $red;
+  &,
+  &:visited {
+    color: $red;
+  }
 
   &:hover,
   &:focus {
-    color: darken($red, 10%)
+    &,
+    &:visited {
+      color: darken($red, 10%)
+    }
   }
 }
 

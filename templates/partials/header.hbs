@@ -1,26 +1,26 @@
 <header class="overflow-hidden">
   <nav class="jegtnes-header bg-jegtnes-black jegtnes-white full-width-bar pa3 mw7 center">
-    <a href="/" class="jegtnes-header__logo headline link link-inverse no-visited">Alex Jegtnes</a>
+    <a href="/" class="jegtnes-header__logo headline link link-inverse">Alex Jegtnes</a>
     <div class="jegtnes-header__nav">
       {{! This isn't webscale, kids, but bite me, I'm not your dad. This is my site and I can't scale if I want to }}
       {{#if (beginsWith path 'blog')}}
-        <a class="link-inverse jegtnes-link headline no-visited link mr3"
+        <a class="no-visited jegtnes-link headline link mr3"
           href="/blog">
           Blog
         </a>
       {{else}}
-        <a class="link-inverse headline no-visited link mr3"
+        <a class="no-visited link-inverse headline link mr3"
           href="/blog">
           Blog
         </a>
       {{/if}}
       {{#if (beginsWith path "portfolio")}}
-        <a class="link-inverse jegtnes-link headline no-visited link mr3"
+        <a class="no-visited link-inverse jegtnes-link headline link mr3"
           href="/portfolio">
           Portfolio
         </a>
       {{else}}
-        <a class="link-inverse headline no-visited link mr3"
+        <a class="no-visited link-inverse headline link mr3"
           href="/portfolio">
           Portfolio
         </a>

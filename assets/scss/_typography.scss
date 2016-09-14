@@ -29,57 +29,6 @@ body {
     sans-serif;         // ¯\_(ツ)_/¯
 }
 
-.link {
-  color: $black;
-
-  &:visited {
-    color: lighten($black, 10%);
-  }
-
-  &:hover,
-  &:focus {
-    &,
-    &:visited {
-      color: $red;
-    }
-  }
-}
-
-// Avoid the default :visited colour change. Useful for header links etc.
-.no-visited {
-  &,
-  &:visited {
-    color: inherit;
-  }
-}
-
-.link-inverse {
-  &,
-  &:visited {
-    color: $white;
-  }
-
-  &:hover,
-  &:focus {
-    color: $red;
-  }
-}
-
-.jegtnes-link {
-  &,
-  &:visited {
-    color: $red;
-  }
-
-  &:hover,
-  &:focus {
-    &,
-    &:visited {
-      color: darken($red, 10%)
-    }
-  }
-}
-
 // smallcaps:
 .sc {
   font-variant: small-caps;

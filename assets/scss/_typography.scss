@@ -9,12 +9,12 @@
   }
 }
 
-body {
+/*!
+ * System font stack. Thanks to Marcin Wichary:
+ * https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+ */
 
-  /*!
-   * System font stack. Thanks to Marcin Wichary:
-   * https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-   */
+body {
   font-family:
     -apple-system,      // OS X 10.11+
     BlinkMacSystemFont, // OS X 10.11+ (Chrome/Opera)

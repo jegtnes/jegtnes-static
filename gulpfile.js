@@ -1,12 +1,15 @@
 var gulp = require('gulp');
+var source = require('vinyl-source-stream');
+var eventStream = require('event-stream');
+var glob = require('glob');
+var newer = require('gulp-newer');
+var rename = require('gulp-rename');
+
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
+var cssmin = require('gulp-cssmin');
 var babelify = require('babelify');
 var browserify = require('browserify');
-var source = require('vinyl-source-stream');
-var glob = require('glob');
-var eventStream = require('event-stream');
-var newer = require('gulp-newer');
 var browserSync = require('browser-sync').create();
 
 var exec = require('child_process').exec;
@@ -51,6 +54,13 @@ gulp.task('styles', function(cb) {
     .pipe(gulp.dest(config.outputCssFolder))
     .pipe(browserSync.stream());
 });
+
+gulp.task('min-styles', ['styles'] ,function(cb) {
+  return gulp.src(config.outputCssFolder + '/**/*.css')
+    .pipe(cssmin())
+    .pipe(rename({ suffix: '.min'} ))
+    .pipe(gulp.dest(config.outputCssFolder))
+})
 
 gulp.task('fonts', function(cb) {
   return gulp.src(config.fontsFolder)

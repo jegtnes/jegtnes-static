@@ -11,6 +11,7 @@ var cssmin = require('gulp-cssmin');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
+var htmlreplace = require('gulp-html-replace');
 
 var exec = require('child_process').exec;
 
@@ -47,6 +48,12 @@ gulp.task('metalsmith', function(cb) {
     }
   })
 });
+
+gulp.task('htmlreplace', function(cb) {
+  return gulp.src(config.outputFolder + '/**/*.html')
+  .pipe(htmlreplace({css: '/assets/css/main.min.css'}))
+  .pipe(gulp.dest(config.outputFolder));
+})
 
 gulp.task('styles', function(cb) {
   return gulp.src(config.scssEntry)

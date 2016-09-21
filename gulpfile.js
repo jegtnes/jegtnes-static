@@ -70,7 +70,7 @@ gulp.task('min-styles', function(cb) {
     .pipe(cssmin())
     .pipe(rename({ suffix: '.min'} ))
     .pipe(uncss({
-      html: config.outputFolder + '/**/*.html',
+      html: [config.outputFolder + '/**/*.html'],
     }))
     .pipe(gulp.dest(config.outputCssFolder))
 });

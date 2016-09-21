@@ -4,10 +4,13 @@ var eventStream = require('event-stream');
 var glob = require('glob');
 var newer = require('gulp-newer');
 var rename = require('gulp-rename');
+var del = require('del');
+var runSequence = require('run-sequence');
 
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
+var uncss = require('gulp-uncss');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
@@ -32,7 +35,7 @@ gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts', 'fonts'], funct
 });
 
 gulp.task('metalsmith', function(cb) {
-  exec('node index.js', { maxBuffer: 1024 * 20000 }, function(err) {
+  return exec('node index.js', { maxBuffer: 1024 * 20000 }, function(err) {
     if (err) {
       console.error(err);
       cb(err);
@@ -62,12 +65,30 @@ gulp.task('styles', function(cb) {
     .pipe(browserSync.stream());
 });
 
-gulp.task('min-styles', ['styles'] ,function(cb) {
+gulp.task('min-styles', function(cb) {
   return gulp.src(config.outputCssFolder + '/**/*.css')
     .pipe(cssmin())
     .pipe(rename({ suffix: '.min'} ))
+    .pipe(uncss({
+      html: config.outputFolder + '/**/*.html',
+    }))
     .pipe(gulp.dest(config.outputCssFolder))
+});
+
+gulp.task('build', function(cb) {
+  runSequence(
+    'clean',
+    ['metalsmith', 'images', 'scripts', 'fonts', 'styles'],
+    'htmlreplace',
+    'min-styles'
+  )
 })
+
+gulp.task('clean', function(cb) {
+  return del([
+    'dist'
+  ]);
+});
 
 gulp.task('fonts', function(cb) {
   return gulp.src(config.fontsFolder)

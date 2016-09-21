@@ -17,6 +17,7 @@ module.exports = {
   outputFolder: "./dist",
   outputImagesFolder: "./dist/assets/images",
   outputCssFolder: "./dist/assets/css",
+  outputJsFolder: "./dist/assets/js",
   outputFontsFolder: "./dist/assets/fonts",
   generators: "*.js"
 }

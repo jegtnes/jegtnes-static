@@ -4,7 +4,7 @@ const rootElement = document.documentElement;
 const headline    = new FontFaceObserver('TitilliumWeb');
 
 // This slightly weird , () => {}); at the end just swallows timeout errors on slow networks
-headline.load().then(() => rootElement.classList.add('headline-loaded'), () => {});
+headline.load().then(() => rootElement.classList.add('js-headline-loaded'), () => {});
 
 document.addEventListener('DOMContentLoaded', () => {
 

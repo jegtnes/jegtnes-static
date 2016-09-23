@@ -7,7 +7,13 @@
 
   img,
   picture {
-    max-width: calc(100vw - 2em);
+    max-width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .embed {
+    max-width: 100%;
   }
 
   a {

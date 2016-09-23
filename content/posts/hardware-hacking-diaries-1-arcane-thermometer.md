@@ -51,7 +51,7 @@ However, actually building this has been incredibly satisfying. Learning new thi
 
 So, here's what I made:
 
-<iframe src="https://vine.co/v/eE7dV3lmB5W/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+<iframe class="embed" src="https://vine.co/v/eE7dV3lmB5W/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
 ![A photo of an Arduino breadboard with two rows of LEDs. One row, representing one degree each, has six highlighted LEDs. Another, representing ten degrees each, has one highlighted LED. Caption: 16 degrees Celsius.](/assets/images/content-images/16.jpg)
 

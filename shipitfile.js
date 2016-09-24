@@ -18,4 +18,12 @@ module.exports = function (shipit) {
       servers: 'deploy@46.101.75.113'
     }
   });
+
+  shipit.blTask('dependencies', function() {
+    return shipit.remote('cd ' + shipit.releasePath + ' && npm install && gulp build')
+  });
+
+  shipit.on('updated', function () {
+    return shipit.start('dependencies');
+});
 };

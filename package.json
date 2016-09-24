@@ -36,6 +36,8 @@
     "metalsmith-register-helpers": "^0.1.2",
     "pump": "^1.0.1",
     "run-sequence": "^1.2.2",
+    "shipit-cli": "^1.4.1",
+    "shipit-deploy": "^2.2.0",
     "tachyons": "^4.0.4",
     "vinyl-source-stream": "^1.1.0"
   },

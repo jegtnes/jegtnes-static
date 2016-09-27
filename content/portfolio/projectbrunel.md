@@ -4,7 +4,7 @@ date: September 2013 – April 2014
 excerpt: My final year uni project. I designed and implemented an algorithm for finding better journeys for medium-to-long-distance train travel in the form of a web application. I took into account a variety of factors related to journey pleasantness, instead of focusing on a single metric like price, which all current train booking services do.
 tags: research, design, development, prototyping, open-source
 layout: portfolio-item.hbs
-priority: 1
+priority: 2
 ---
 
 # Project Brunel

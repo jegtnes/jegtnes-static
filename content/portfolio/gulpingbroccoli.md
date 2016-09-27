@@ -3,7 +3,7 @@ title: Gulping your Broccoli
 date: February 2015 & July 2015
 excerpt: In 2015 I delivered a talk twice on modern JavaScript build tools, covering the different build tools available and some more advanced build tools optimisations the 'hello world' examples rarely cover.
 layout: portfolio-item.hbs
-priority: 1
+priority: 3
 ---
 
 In 2015 I delivered a talk on popular JavaScript build tools at the long-standing reputable online conference [CSSSummit](http://environmentsforhumans.com/2015/css-summit/) and at the [Bristol JS meetup](http://www.meetup.com/BristolJS/events/209519022/).

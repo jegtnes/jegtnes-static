@@ -23,6 +23,7 @@ Metalsmith(__dirname)
     },
     portfolio: {
       pattern: config.portfolioItems,
+      sortBy: 'priority',
     }
   }))
   .use(markdown())

@@ -103,6 +103,7 @@ gulp.task('min-html', function(cb) {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
       decodeEntities: true,
+      minifyJS: true,
       removeAttributeQuotes: true,
       removeComments: true,
       removeEmptyAttributes: true,

@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadCommentsButton = document.createElement('button');
     loadCommentsButton.classList.add(...['ba','br4','bw1','link','dib','jegtnes-black','ph3','pv2']);
     loadCommentsButton.textContent = 'Load comments';
+    loadCommentsButton.addEventListener('click', () => {
+      loadjs('//jegtnes.disqus.com/embed.js');
+    });
     disqusThread.insertBefore(loadCommentsButton, null);
   }
 });

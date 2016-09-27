@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (disqusThread) {
     const loadCommentsButton = document.createElement('button');
-    loadCommentsButton.classList.add(...['ba','br4','bw1','link','dib','jegtnes-black','ph3','pv2']);
+    loadCommentsButton.classList.add(...['link', 'ba', 'br4', 'bw1', 'dib', 'ph3', 'pv2', 'jegtnes-black', 'bg-transparent', 'f4', 'bci']);
     loadCommentsButton.textContent = 'Load comments';
     loadCommentsButton.addEventListener('click', () => {
       loadjs('//jegtnes.disqus.com/embed.js');

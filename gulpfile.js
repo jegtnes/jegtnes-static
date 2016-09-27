@@ -55,7 +55,7 @@ gulp.task('metalsmith', function(cb) {
   })
 });
 
-gulp.task('htmlreplace', function(cb) {
+gulp.task('html-replace-links', function(cb) {
   return gulp.src(config.outputFolder + '/**/*.html')
   .pipe(htmlreplace({
     css: '/assets/css/main.min.css',
@@ -120,7 +120,7 @@ gulp.task('build', function(cb) {
   runSequence(
     'clean',
     ['metalsmith', 'images', 'scripts', 'fonts', 'styles'],
-    'htmlreplace',
+    'html-replace-links',
     ['min-styles', 'min-scripts', 'min-html']
   )
 })

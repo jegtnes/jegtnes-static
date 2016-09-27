@@ -121,7 +121,8 @@ gulp.task('build', function(cb) {
     'clean',
     ['metalsmith', 'images', 'scripts', 'fonts', 'styles'],
     'html-replace-links',
-    ['min-styles', 'min-scripts', 'min-html']
+    ['min-scripts', 'min-styles'],
+    'min-html'
   )
 })
 

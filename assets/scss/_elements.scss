@@ -2,3 +2,16 @@ nav,
 header {
   box-sizing: border-box;
 }
+
+blockquote {
+  position: relative;
+}
+
+blockquote:before {
+  content: "“";
+  position: absolute;
+  left: -.5em;
+  font-size: 3em;
+  line-height: 1;
+  opacity: .75;
+}

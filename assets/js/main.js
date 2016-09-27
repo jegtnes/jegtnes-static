@@ -19,4 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
       for (var block of syntaxHighlightBlocks) Prism.highlightElement(block);
     });
   }
+
+  const disqusThread = document.getElementById('disqus_thread');
+
+  if (disqusThread) {
+    const loadCommentsButton = document.createElement('button');
+    loadCommentsButton.classList.add(...['ba','br4','bw1','link','dib','jegtnes-black','ph3','pv2']);
+    loadCommentsButton.textContent = 'Load comments';
+    disqusThread.insertBefore(loadCommentsButton, null);
+  }
 });

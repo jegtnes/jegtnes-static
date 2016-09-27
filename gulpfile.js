@@ -13,6 +13,7 @@ var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var uncss = require('gulp-uncss');
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
@@ -94,6 +95,25 @@ gulp.task('min-scripts', function(cb) {
     uglify(),
     gulp.dest(config.outputJsFolder)
   ])
+});
+
+gulp.task('min-html', function(cb) {
+  return gulp.src(config.outputFolder + '/**/*.html')
+    .pipe(htmlmin({
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      decodeEntities: true,
+      removeAttributeQuotes: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      removeEmptyElements: true,
+      removeRedundantAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      sortAttributes: true,
+      sortClassName: true,
+    }))
+    .pipe(gulp.dest(config.outputFolder));
 });
 
 gulp.task('build', function(cb) {

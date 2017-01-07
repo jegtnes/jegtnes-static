@@ -2,7 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ title }} | Alex Jegtnes</title>
+  <title>{{ title }} | Alex Jegtnes ✨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name=description content="{{{ excerpt this.excerpt this.contents 200 }}}">
+  <meta property=og:description content="{{{ excerpt this.excerpt this.contents 200 }}}">
+  <meta property=og:title content="{{title}}">
+  <meta property=og:type content="article">
+  <meta property=og:site_name content="Jegtnes">
+  <meta name=twitter:card content="summary">
+  <meta name=twitter:creator content="@jegtnes">
+  <meta name=twitter:label1 content="Author:">
+  <meta name=twitter:data1 content="Alex Jegtnes">
+  <meta name=twitter:label2 content="Published on:">
+  <meta name=twitter:data2 content="{{time date}}">
+  <meta name=twitter:site content="@jegtnes">
+  <meta name=twitter:domain content="jegtnes.com">
 
   {{>head}}
 </head>

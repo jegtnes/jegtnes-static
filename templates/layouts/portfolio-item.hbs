@@ -5,6 +5,15 @@
   <title>{{ title }} | Alex Jegtnes ✨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="{{{ excerpt this.excerpt this.contents 200 }}}">
+  <meta property="og:description" content="{{{ excerpt this.excerpt this.contents 200 }}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:site_name" content="Jegtnes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@jegtnes">
+  <meta name="twitter:site" content="@jegtnes">
+  <meta name="twitter:domain" content="jegtnes.com">
+
   {{>head}}
 </head>
 <body class="w-100">

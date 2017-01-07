@@ -10,7 +10,7 @@ permalink: false
 
 <div class="measure lh-copy f4">
 
-<p>I'm available for hire for remote and Bristol-based contracting opportunities from **January 2017**.</p>
+<p>I'm available for hire for remote and Bristol-based contracting opportunities from **16th-27th January** and **6th March onwards**.</p>
 
 <p>I'm infinitely curious about every aspect of the technologies that power modern websites and web applications, but more importantly, about the people that use them. I believe we make better things by focusing on design and people over tech for tech's sake.</p>
 

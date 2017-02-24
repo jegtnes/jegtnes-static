@@ -18,6 +18,6 @@ permalink: false
 
 <p>Most importantly, I have a relentless drive to make things better. If you do, too, let's talk!</p>
 
-<a href="mailto:alex@jegtnes.co.uk" class="ba br4 bw1 link dib jegtnes-black ph3 pv2">alex@jegtnes.co.uk</a>
+<a href="mailto:alex@jegtnes.com" class="ba br4 bw1 link dib jegtnes-black ph3 pv2">alex@jegtnes.com</a>
 
 </div>

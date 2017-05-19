@@ -45,7 +45,7 @@ Metalsmith(__dirname)
   }))
   .use(feed({
     collection: 'blog',
-    site_url: 'http://jegtnes.co.uk'
+    site_url: 'http://jegtnes.com'
   }))
   .use(helpers({
     directory: "helpers"

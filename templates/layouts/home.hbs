@@ -16,7 +16,7 @@
 
   {{>head}}
 </head>
-<body class="w-100">
+<body class="w-100 ma0">
   {{>header}}
 
   <div class="pt3 pb4 ph3 mw7 center">
@@ -30,7 +30,7 @@
     <ul class="list pl0">
 
       {{#each (arraySlice collections.blog 5)}}
-      <li class="m0 mb4">
+      <li class="mb4">
         <h2 class="ttu f3 ma0 mb2"><a class="link" href=/{{this.path}}>{{{this.title}}}</a></h2>
         <p class="ma0 mb2"><time datetime="{{time this.date true}}">{{time this.date}}</time></p>
         <p class="ma0">{{{ excerpt this.excerpt this.contents 200 }}}</p>

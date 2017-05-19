@@ -16,7 +16,7 @@
 
   {{>head}}
 </head>
-<body class="w-100">
+<body class="w-100 ma0">
   {{>header}}
 
   <div class="pa3 mw7 center">
@@ -24,7 +24,7 @@
       {{{ contents }}}
 
       {{#each collections.blog}}
-        <section class="m0 mb4">
+        <section class="mb4">
           <header class="item-header bdb pb3 mb3">
             <h2 class="lh-title f3 f2-m f1-l ttu mb0 mt2">
               <a class="link" href=/{{this.path}}>{{{this.title}}}</a>

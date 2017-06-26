@@ -10,7 +10,7 @@ permalink: false
 
 <div class="measure lh-copy f4">
 
-<p>I'm available for remote and Bristol/Bath/Cardiff-based contracts from <strong>19th June</strong>.</p>
+<p>I'm available for remote and Bristol/Bath/Cardiff-based contracts from <strong>31st July</strong>.</p>
 
 <p>I'm infinitely curious about every aspect of the technologies that power the modern web. These days I mostly write full-stack JavaScript, but can comfortably wrangle PHP, Ruby, and MySQL/PostgreSQL/MongoDB into submission in a more front-end focused role.</p>
 

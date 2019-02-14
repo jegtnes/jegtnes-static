@@ -1,11 +1,11 @@
 ---
-title: CV
+title: CV – Alex Jegtnes
 layout: page.hbs
 description: The CV of Alex Jegtnes, a freelance developer.
 ---
 
 <article>
-  <h1 class="f1 f-subheadline-ns tracked-tight ttu ma0">CV – Alex Jegtnes</h1>
+  <h1 class="f1 tracked-tight ttu ma0">CV – Alex Jegtnes</h1>
 
   <p class="f4">I'm an infinitely curious, design-minded web developer, with a focus on web performance, prototyping, pattern libraries, front-end architecture, and accessibility.</p>
 

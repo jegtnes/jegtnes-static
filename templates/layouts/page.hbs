@@ -40,7 +40,11 @@
 
   <div class="pt3 pb4 ph3 mw7 center">
 
-    <main id="{{slugify title}}">
+    {{#if id}}
+      <main id="{{slugify id}}">
+    {{else}}
+      <main id="{{slugify title}}">
+    {{/if}}
       {{{ contents }}}
     </main>
 

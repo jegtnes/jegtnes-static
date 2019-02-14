@@ -1,0 +1,16 @@
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  #site-header,
+  #site-footer {
+    display: none !important;
+  }
+
+  #cv section > section {
+    page-break-inside: avoid;
+  }
+}

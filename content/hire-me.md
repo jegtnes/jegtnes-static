@@ -3,7 +3,7 @@ title: Hire
 layout: page.hbs
 description: Hire Alex Jegtnes, a freelance developer.
 twitterLabel1: Availability
-twitterData1: From 10th January 2019
+twitterData1: From 25th February 2019
 twitterLabel2: Proficiencies
 twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
 
@@ -16,7 +16,7 @@ twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web per
 </p>
 
 <p class="f3">
-  <strong>I’m currently available for hire for projects in Vancouver, BC, or remote.</strong>
+  <strong>I’m currently available for hire starting the 25th February, for on-site projects in Bristol, Bath, Cardiff, or London, UK, or remote.</strong>
 </p>
 
 <div class="measure lh-copy f4">

@@ -16,5 +16,8 @@ $white: #eee;
 }
 
 .jegtnes-white {
-  color: $white;
+  &,
+  & a:visited {
+    color: $white;
+  }
 }

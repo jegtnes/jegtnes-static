@@ -14,8 +14,7 @@
  * System font stack. Thanks to Marcin Wichary:
  * https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
  */
-
-body {
+@mixin system-font {
   font-family:
     -apple-system,      // OS X 10.11+
     BlinkMacSystemFont, // OS X 10.11+ (Chrome/Opera)
@@ -28,6 +27,10 @@ body {
     "Droid Sans",       // Android 3-
     "Helvetica Neue",   // OS X 10.10-
     sans-serif;         // ¯\_(ツ)_/¯
+}
+
+body {
+  @include system-font;
 }
 
 // smallcaps:

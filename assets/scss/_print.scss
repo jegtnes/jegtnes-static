@@ -5,6 +5,7 @@
 }
 
 @media print {
+  .screen-only,
   #site-header,
   #site-footer {
     display: none !important;
@@ -12,5 +13,16 @@
 
   #cv section > section {
     page-break-inside: avoid;
+  }
+
+  #cv {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include system-font;
+    }
   }
 }

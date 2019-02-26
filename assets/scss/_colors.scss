@@ -17,7 +17,8 @@ $white: #eee;
 
 .jegtnes-white {
   &,
-  & a:visited {
+  a,
+  a:visited {
     color: $white;
   }
 }

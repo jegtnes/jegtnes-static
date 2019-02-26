@@ -23,7 +23,7 @@ var exec = require('child_process').exec;
 
 var config = require('./config');
 
-gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts', 'fonts'], function() {
+gulp.task('serve', ['metalsmith', 'images', 'styles', 'scripts', 'fonts', 'static'], function() {
   browserSync.init({
     server: {
       baseDir: config.outputFolder
@@ -120,7 +120,7 @@ gulp.task('min-html', function(cb) {
 gulp.task('build', function(cb) {
   runSequence(
     'clean',
-    ['metalsmith', 'images', 'scripts', 'fonts', 'styles'],
+    ['metalsmith', 'images', 'scripts', 'fonts', 'static', 'styles'],
     'html-replace-links',
     ['min-scripts', 'min-styles'],
     'min-html'
@@ -137,6 +137,12 @@ gulp.task('fonts', function(cb) {
   return gulp.src(config.fontsFolder)
     .pipe(newer(config.outputFontsFolder))
     .pipe(gulp.dest(config.outputFontsFolder))
+});
+
+gulp.task('static', function(cb) {
+  return gulp.src(config.staticFolder)
+    .pipe(newer(config.outputStaticFolder))
+    .pipe(gulp.dest(config.outputStaticFolder))
 });
 
 // This one's got a bit of a weird approach, but it works

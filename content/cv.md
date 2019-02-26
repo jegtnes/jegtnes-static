@@ -6,6 +6,19 @@ description: The CV of Alex Jegtnes, a freelance developer.
 ---
 
 <article>
+  <div class="bg-jegtnes-black jegtnes-white pa3 screen-only flex br4 mt4 mb4">
+    <div class="mr3 mt3">
+      <svg class="icon db">
+        <use xlink:href="/assets/images/sprite.svg#printer" />
+      </svg>
+    </div>
+    <div>
+      <p class="ma0">This page is printer-optimised for modern browsers and will print out cleanly, without any headers, footers, or decorative content (including this notice!)</p>
+      <p class="mt3 mb0">Alternatively, you can <a href="/assets/static/CV-AlexJegtnes.pdf">download this as a PDF</a>.</p>
+    </div>
+  </div>
+
+
   <h1 class="f1 tracked-tight ttu ma0">CV<span class="print-only"> – Alex Jegtnes</span></h1>
 
   <p class="f4">I'm an infinitely curious, design-minded web developer, with a focus on web performance, prototyping, pattern libraries, front-end architecture, and accessibility.</p>

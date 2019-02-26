@@ -64,7 +64,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">Mid-weight developer at <strong>cxpartners</strong></h3>
+        <h3 class="f3 mb0">Mid-weight developer <span class="visuallyhidden"> at </span><br /> <strong>cxpartners</strong></h3>
         <h4 class="mt1">
           <time datetime="2014-06-01">June 2014</time> -
           <time datetime="2016-05-31">May 2016</time>
@@ -87,7 +87,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">University placement developer at <strong>Simpleweb</strong></h3>
+        <h3 class="f3 mb0">University placement developer <span class="visuallyhidden"> at </span><br /> <strong>Simpleweb</strong></h3>
         <h4 class="mt1">
           <time datetime="2012-07-01">July 2012</time> -
           <time datetime="2013-08-31">August 2013</time>
@@ -110,7 +110,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">Part-time developer, translator, copywriter, customer service at <strong>FreestyleXtreme</strong></h3>
+        <h3 class="f3 mb0">Part-time developer, translator, copywriter, customer service<span class="visuallyhidden"> at </span><br /><strong>FreestyleXtreme</strong></h3>
         <h4 class="mt1">
           <time datetime="2011-01-01">January 2011</time> -
           <time datetime="2012-06-31">June 2012</time>
@@ -133,7 +133,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">Peer-Assisted Learning Leader at <strong>The University of the West of England</strong></h3>
+        <h3 class="f3 mb0">Peer-Assisted Learning Leader <span class="visuallyhidden"> at </span><br /> <strong>The University of the West of England</strong></h3>
         <h4 class="mt1">
           <time datetime="2011-08-01">August 2011</time> -
           <time datetime="2012-05-31">May 2012</time>
@@ -153,7 +153,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">Student Representative at <strong>The University of the West of England Students' Union</strong></h3>
+        <h3 class="f3 mb0">Student Representative <span class="visuallyhidden"> at </span><br /> <strong>The University of the West of England Students' Union</strong></h3>
         <h4 class="mt1">
           <time datetime="2011-09-01">September 2011</time> -
           <time datetime="2012-05-31">May 2012</time>
@@ -173,7 +173,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">General Assistant at <strong>Scottish Youth Hostel Association</strong></h3>
+        <h3 class="f3 mb0">General Assistant <span class="visuallyhidden"> at </span><br /> <strong>Scottish Youth Hostel Association</strong></h3>
         <h4 class="mt1">
           <time datetime="2009-06-01">June 2009</time> -
           <time datetime="2010-09-31">September 2010</time>
@@ -185,7 +185,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     <h2 class="f2 mb3 mt4">Academic experience</h2>
     <section>
       <header>
-        <h3 class="f3 ma0">BSc. Web Design at <strong>University of the West of England</strong></h3>
+        <h3 class="f3 ma0">BSc. Web Design <span class="visuallyhidden"> at </span><br /> <strong>University of the West of England</strong></h3>
         <h4 class="mt1">
           <time datetime="2010-09-01">September 2009</time> -
           <time datetime="2014-06-31">June 2014</time>
@@ -223,7 +223,7 @@ description: The CV of Alex Jegtnes, a freelance developer.
     </section>
     <section>
       <header>
-        <h3 class="f3 mb0">General Education at <strong>Hetland High School, Stavanger, Norway</strong></h3>
+        <h3 class="f3 mb0">General Education <span class="visuallyhidden"> at </span><br /> <strong>Hetland High School, Stavanger, Norway</strong></h3>
         <h4 class="mt1">
           <time datetime="2006-08-01">August 2006</time> -
           <time datetime="2009-06-31">June 2009</time>

@@ -10,4 +10,4 @@ permalink: false
 
 <p class="f3">It's nice to meet you. I make prototypes, pattern libraries, websites, and webapps that run fast, work well, and solve real user problems.</p>
 
-<p class="f4"><a href="/hire-me">I'm available for hire</a> starting the 25th February, for on-site projects in Bristol, Bath, Cardiff, or London, UK, or remote.</p>
+<p class="f4"><a href="/hire-me">I'm currently available for hire</a> for remote or on-site projects in Bristol, Bath, Cardiff, or London, UK.</p>

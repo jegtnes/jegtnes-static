@@ -2,3 +2,4 @@ node_modules
 dist
 tmp-build
 assets/scss/vendor
+.DS_Store

@@ -3,7 +3,7 @@ title: Hire
 layout: page.hbs
 description: Hire Alex Jegtnes, a freelance developer.
 twitterLabel1: Availability
-twitterData1: From 25th February 2019
+twitterData1: 🚫 Fully booked
 twitterLabel2: Proficiencies
 twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
 
@@ -15,9 +15,9 @@ twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web per
   My name is Alex (he/him) 👋🏼. I'm a web developer with 5 years of experience working with agencies and as an on-site and remote freelancer.
 </p>
 
-<p class="f3">
+<!--- <p class="f3">
   <strong>I’m currently available for hire for remote or on-site projects in Bristol, Bath, Cardiff, or London, UK.</strong>
-</p>
+</p> -->
 
 <div class="measure lh-copy f4">
   <p>

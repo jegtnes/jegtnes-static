@@ -1,7 +1,7 @@
 ---
 title: Using UnCSS and Gulp in Ghost to create tiny assets
 date: 2015-05-31
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: A tutorial on using UnCSS and Gulp with Ghost (or a similar dynamic blogging system) to drastically reduce the size of your assets.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: I'm joining cxpartners
 date: 2014-06-24
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "I'm delighted to be joining cxpartners this June as a full-time developer."
 ---
 

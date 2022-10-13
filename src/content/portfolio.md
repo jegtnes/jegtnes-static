@@ -1,4 +1,4 @@
 ---
 title: Portfolio
-layout: portfolio-listing.hbs
+layout: portfolio-listing.njk
 ---

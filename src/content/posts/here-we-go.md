@@ -1,7 +1,7 @@
 ---
 title: Here We Go
 date: 2012-05-06
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "A new website. Again? Really?"
 ---
 

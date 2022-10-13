@@ -1,7 +1,7 @@
 ---
 title: Today I Learnt (JS)
 date: 2016-01-12
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "I'm launching a new microblog experiment focusing on JavaScript, TILJS."
 ---
 

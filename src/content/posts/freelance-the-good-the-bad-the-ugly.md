@@ -1,7 +1,7 @@
 ---
 title: "Freelance: The good, the bad, and the ugly"
 date: 2017-01-07
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "In which I take a look at my fledgling freelance career and question everything."
 ---
 

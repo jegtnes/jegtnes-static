@@ -1,7 +1,7 @@
 ---
 title: How to serve different assets in production environments with Ghost
 date: 2014-05-01
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "On implementing Handlebars helpers in Ghost and using them to serve different assets locally and in production."
 ---
 
@@ -23,32 +23,39 @@ Here we need to register a new Handlebar helper and export this, so Node can req
 
 First off, you need to require `express-hbs` to be able to register a helper, and requiring `config` in order to grab the URL for your development environment.
 
-<pre><code data-syntaxhighlight class="language-javascript">var hbs = require('express-hbs');
+```js
+var hbs = require('express-hbs');
 var config = require('config');
-</code></pre>
+```
 
 Then we need to create a function to register the helper:
-<pre><code data-syntaxhighlight class="language-javascript">registerHelper = function (){
+```js
+registerHelper = function (){
   hbs.registerHelper("isLocal", function(url) {
     return url === config.development.url
   });
 }
-</code></pre>
+```
 
 This creates a helper called isLocal which accepts one parameter, `url`, which returns true if your development URL is the same as the parameter you're passing to it in the view.
 
 Then we need to register this module:
-<pre><code data-syntaxhighlight class="language-javascript">module.exports = registerHelper;
-</code></pre>
+```js
+module.exports = registerHelper;
+```
 And that's the helper all done with. Save it to your root directory. Call it whatever you want, I'm not your mum. I called it `handlebarsHelpers.js`.
 
 ## Registering the helper
-Now open up your index.js file and cringe at the fact you're about to edit a core file. Require the newly created helper at the start of the file like you'd require anything else in Node: <pre><code data-syntaxhighlight class="language-javascript">var hbs_helpers = require('./handlebarsHelpers');
-</code></pre>
+Now open up your index.js file and cringe at the fact you're about to edit a core file. Require the newly created helper at the start of the file like you'd require anything else in Node:
+```js
+var hbs_helpers = require('./handlebarsHelpers');
+```
 
 And call it after you've called Ghost:
-<pre><code data-syntaxhighlight class="language-javascript">hbs_helpers();
-</code></pre>
+
+```js
+hbs_helpers();
+```
 Restart your Node application and this should all work.
 
 ## Using the helper
@@ -57,20 +64,29 @@ In the view where you're currently serving your assets, typically `default.hbs`,
 
 Hopefully you remembered we need a parameter for this, which is going to be the Ghost-provided `@blog.url`. This will give you the full URL for the environment you're in.
 
-Here's how you use it:<pre><code data-syntaxhighlight class="language-handlebars">{{#if (isLocal @blog.url)}}
+Here's how you use it:
+
+{% raw %}
+```handlebars
+{{#if (isLocal @blog.url)}}
   {{! Local, unminifed }}
   <link rel="stylesheet" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
 {{else}}
   {{! Production, minified }}
   <link rel="stylesheet" href="{{asset 'css/style.min.css'}}" type="text/css" media="all" />
 {{/if}}
-</code></pre>…aaand that's it! Here's to minified assets everywhere.
+```
+{% endraw %}
+
+…aaand that's it! Here's to minified assets everywhere.
 
 
 <h2>All The Code</h2>
 
 <h3>handlebarsHelpers.js</h3>
-<pre><code data-syntaxhighlight class="language-javascript">var hbs = require('express-hbs');
+
+```js
+var hbs = require('express-hbs');
 var config = require('config');
 registerHelper = function (){
   hbs.registerHelper("isLocal", function(url) {
@@ -79,9 +95,11 @@ registerHelper = function (){
 }
 
 module.exports = registerHelper;
-</code></pre>
+```
+
 ### Modified index.js
-<pre><code data-syntaxhighlight class="language-javascript">// # Ghost bootloader
+```js
+// # Ghost bootloader
 // Orchestrates the loading of Ghost
 // When run from command line.
 
@@ -94,11 +112,15 @@ ghost().otherwise(function (err) {
 });
 
 hbs_helpers();
-</code></pre>
+```
+
 ### Usage in Handlebars template
-<pre><code data-syntaxhighlight class="language-handlebars">{{#if (isLocal @blog.url)}}
+{% raw %}
+```handlebars
+{{#if (isLocal @blog.url)}}
   {{! Put your local, unminifed assets here }}
 {{else}}
   {{! Put your hyper-optimised, minified assets here }}
 {{/if}}
-</code></pre>
+```
+{% endraw %}

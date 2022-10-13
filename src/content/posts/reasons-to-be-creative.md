@@ -1,7 +1,7 @@
 ---
 title: Reasons to be Creative
 date: 2012-09-12
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "A summary of the eminent conference Reasons to be Creative 2012."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Hire
-layout: page.hbs
+layout: page.njk
 description: Hire Alex Jegtnes, a freelance developer.
 twitterLabel1: Availability
 twitterData1: 🚫 Fully booked

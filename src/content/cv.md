@@ -1,7 +1,7 @@
 ---
 title: CV – Alex Jegtnes
 id: cv
-layout: page.hbs
+layout: page.njk
 description: The CV of Alex Jegtnes, a freelance developer.
 ---
 

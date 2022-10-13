@@ -1,4 +1,4 @@
 ---
 title: Blog
-layout: blog-listing.hbs
+layout: blog-listing.njk
 ---

@@ -1,6 +1,6 @@
 ---
 title: Index
-layout: home.hbs
+layout: home.njk
 permalink: false
 ---
 

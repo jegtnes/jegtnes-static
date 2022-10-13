@@ -1,7 +1,7 @@
 ---
 title: A Brave New World—Or At Least A New Blog
 date: 2013-08-28
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "This blog is now powered by Ghost, which comes with plenty of benefits and some drawbacks."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: About
-layout: home.hbs
+layout: home.njk
 ---
 
 # About

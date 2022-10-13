@@ -1,7 +1,7 @@
 ---
 title: Happy (belated) ninth birthday, Firefox!
 date: 2013-10-10
-layout: blog-post.hbs
+layout: blog-post.njk
 excerpt: "Celebrating Firefox and how it shaped my experience of the web growing up."
 ---
 

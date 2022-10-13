@@ -1,7 +1,6 @@
 ---
 title: Index
 layout: home.njk
-permalink: false
 ---
 
 <h1 class="f1 f-subheadline-ns tracked-tight ttu ma0">Hello, world!</h1>

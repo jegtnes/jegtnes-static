@@ -6,6 +6,7 @@ excerpt: "On what resolutions really mean, and some adjustments I'm making in th
 ---
 
 ![](/assets/images/content-images/newyears_cover.jpg)
+
 <p>I'm a fan of personal growth. There's always something about yourself you can improve on, whether it's giving your cat better belly-rubs or finally kicking your nasty meth habit. That being said, setting yourself arbitrary, immutable and measurable goals for the start of a new calendar year has never quite been my cup of tea. If you solemnly swear to lose two stone in a year and you "only" end up losing 1 stone and 11 pounds, by most measures you have been tremendously successful, but according to your resolutions, well, you've ultimately <strong>failed</strong>.
 </p>
 <p>That doesn't quite sit right with me.

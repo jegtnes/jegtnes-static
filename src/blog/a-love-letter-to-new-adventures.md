@@ -11,6 +11,7 @@ excerpt: "Attending the New Adventures conference is the single greatest thing t
 </p>
 
 ![](/assets/images/content-images/hemingway.jpg)
+
 <p><i>Wayne Hemingway delivering the second last keynote of New Adventures. Photo by <a href="http://www.flickr.com/photos/szene/8416312295/in/photostream/" alt=" ">Andreas Dantz</a></i>.</p>
 
 <p>Then came New Adventures 2012. I bought tickets on a spur of the moment as I heard one or two people say nice things about it on Twitter, and the student tickets were reasonably priced. I arrived without having previously met a single attendee in person, and departed with a bunch of new friends, more inspiration than I’ve ever previously had, and a tiny man-crush on Robbie Manson – and not just because of his accent.
@@ -22,7 +23,9 @@ excerpt: "Attending the New Adventures conference is the single greatest thing t
 <p>What made New Adventures so special for me was the meticulous love and craft put into every single touchpoint of the conference. Take the emails: They’re very simple and straight to the point, but excellently written, always eliciting a chuckle or two, and they even apologise for the time I spent reading them – which is odd, as they’re one of the very few emails I was delighted to receive.
 </p>
 <p>
+
 ![](/assets/images/content-images/jsm.jpg)
+
 <i>Jason Santa Maria delivering the first talk of the day. Photo by <a href="http://twitter.com/ashleybaxter">Ashley Baxter</a></i></p>
 <p>The associated events are another example. This year featured both a relaxed evening of talks in the form of a regular Nottingham web event, Second Wednesday, plus another round of Erskine Bowling. Choosing between these genuinely broke my heart, as I love great talks from clever people as well as occasionally hitting a few pins down with a bowling ball, but there was no way on earth I’d miss the talks from the brilliant <a href="http://twitter.com/missrachilli" title="http://twitter.com/missrachilli">Rachel</a> and <a href="http://twitter.com/robertmills" title="http://twitter.com/robertmills">Robert</a>.
 </p>
@@ -33,7 +36,9 @@ excerpt: "Attending the New Adventures conference is the single greatest thing t
 <p>What I will say, however, is that every single one of the speakers were truly fantastic in their own right, talking about multiple diverse subjects. Much like last year, emphasis was on taking risks, expanding your horizons, and thinking about your craft and the way you work. A special mention will go out to Wayne Hemingway’s talk – while the web is unique in so many ways, I believe we have a lot to learn from other, much more mature industries.
 </p>
 <p>
+
 ![](/assets/images/content-images/cupcakes.jpg)
+
 <i>Since New Adventures, events without cupcakes are now considered inferior. <a href="http://www.flickr.com/photos/szene/8417423740/">Photo by Andreas Dantz</a></i>.</p>
 <p>The afterparty was hosted in a casino – a most excellent choice. The large amounts of space and reasonable music volume facilitated both insightful discussion and hilarious banter, and the novelty of a casino made for plenty of talking points – I watched a guy lose £200 on a single round of blackjack – he seemed on the verge of crying. As seems to be the case at every conference, ever, I met a few people I wanted to meet, had a couple of new acquaintances, and spectacularly managed to miss even more people I wanted to chat to.
 </p>

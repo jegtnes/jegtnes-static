@@ -6,6 +6,7 @@ excerpt: "A new website. Again? Really?"
 ---
 
 ![](/assets/images/content-images/cover_1.jpg)
+
 <p>So, here we go. After much mulling, a fair bit of indecisiveness, an existential crisis or two, and a wholesome dose of procrastination, I have finally launched my new site. It also has a blog, as you may have figured.</p>
 
 <h2>17-year old Alex would probably not return the emails of 21-year old Alex.</h2>

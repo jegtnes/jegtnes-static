@@ -1,6 +1,6 @@
 ---
 title: Index
-layout: home.njk
+layout: page.njk
 ---
 
 <h1 class="f1 f-subheadline-ns tracked-tight ttu ma0">Hello, world!</h1>

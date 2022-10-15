@@ -1,5 +1,5 @@
 ---
-title: Hire
+title: Work with me
 layout: page.njk
 description: Hire Alex Jegtnes, a freelance developer.
 twitterLabel1: Availability

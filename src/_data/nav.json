@@ -1,0 +1,16 @@
+{
+  "logo": {
+    "label": "Alex Jegtnes",
+    "url": "/"
+  },
+  "items": [
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "Work with me",
+      "url": "/work-with-me/"
+    }
+  ]
+}

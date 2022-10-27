@@ -1,11 +1,10 @@
-<a href='/'>Alex Jegtnes</a>
 <nav>
+  <a href={{nav.logo.url}}>{{nav.logo.label}}</a>
   <ul>
-    <li>
-      <a href="/blog">Blog</a>
-    </li>
-    <li>
-      <a href="/work-with-me">Work with me</a>
-    </li>
+    {% for item in nav.items %}
+      <li>
+        <a href={{item.url}}>{{item.label}}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>

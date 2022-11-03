@@ -1,9 +1,9 @@
 {
-  "logo": {
-    "label": "Alex Jegtnes",
-    "url": "/"
-  },
   "items": [
+    {
+      "label": "Alex Jegtnes",
+      "url": "/"
+    },
     {
       "label": "Blog",
       "url": "/blog/"

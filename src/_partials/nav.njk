@@ -1,9 +1,13 @@
 <nav>
-  <a href={{nav.logo.url}}>{{nav.logo.label}}</a>
   <ul>
     {% for item in nav.items %}
       <li>
-        <a href={{item.url}}>{{item.label}}</a>
+        <a
+          href={{item.url}}
+          {% ariaCurrent item.url, page.url %}
+        >
+          {{item.label}}
+        </a>
       </li>
     {% endfor %}
   </ul>

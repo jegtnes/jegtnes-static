@@ -2,13 +2,16 @@
 layout: global.njk
 ---
 
-<div>
+<section>
   <h1>{{ title }}</h1>
-  <ul>
+  <ol>
     {% for post in collections.post | reverse %}
       <li>
-        <a href={{post.data.href}}>{{ post.data.title }}</a>
+        <a href={{post.data.href}}>
+          <h2>{{post.data.title}}</h2>
+          <p>{{post.data.excerpt}}</p>
+        </a>
       </li>
     {% endfor %}
-  </ul>
-</div>
+  </ol>
+</section>

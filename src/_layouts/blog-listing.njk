@@ -4,5 +4,11 @@ layout: global.njk
 
 <div>
   <h1>{{ title }}</h1>
-  Blog posts go here innit
+  <ul>
+    {% for post in collections.post | reverse %}
+      <li>
+        <a href={{post.data.href}}>{{ post.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

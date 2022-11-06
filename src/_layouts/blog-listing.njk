@@ -9,6 +9,8 @@ layout: global.njk
       <li>
         <a href={{post.data.href}}>
           <h2>{{post.data.title}}</h2>
+          <!-- todo datetime attr -->
+          <time>{{post.data.date | humanPostDate}}</time>
           <p>{{post.data.excerpt}}</p>
         </a>
       </li>

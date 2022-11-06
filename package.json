@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "jest": "^29.2.2"
+    "jest": "^29.2.2",
+    "luxon": "^3.1.0",
+    "ordinal": "^1.0.3"
   }
 }

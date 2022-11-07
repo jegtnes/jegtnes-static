@@ -7,3 +7,7 @@ module.exports.humanPostDate = function (date) {
   const ordinaledDay = ordinal(luxonDate.day);
   return `${ordinaledDay} ${luxonDate.monthLong} ${luxonDate.year}`;
 };
+
+module.exports.isoPostDate = function (date) {
+  return DateTime.fromJSDate(date).toUTC().toISODate();
+};

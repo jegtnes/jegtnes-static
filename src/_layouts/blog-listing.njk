@@ -2,17 +2,13 @@
 layout: global.njk
 ---
 
-<section>
-  <h1>{{ title }}</h1>
-  <ol>
-    {% for post in collections.post | reverse %}
-      <li>
-        <a href={{post.data.page.url}}>
-          <h2>{{post.data.title}}</h2>
-          <time datetime={{post.data.date | isoPostDate}}>{{post.data.date | humanPostDate}}</time>
-          <p>{{post.data.excerpt}}</p>
-        </a>
-      </li>
-    {% endfor %}
-  </ol>
-</section>
+<h1>{{ title }}</h1>
+{% for post in collections.post | reverse %}
+  <article>
+    <a href={{post.data.page.url}}>
+      <h2>{{post.data.title}}</h2>
+      <time datetime={{post.data.date | isoPostDate}}>{{post.data.date | humanPostDate}}</time>
+    </a>
+    <p>{{post.data.excerpt}}</p>
+  </article>
+{% endfor %}

@@ -7,7 +7,7 @@ layout: global.njk
   <ol>
     {% for post in collections.post | reverse %}
       <li>
-        <a href={{post.data.href}}>
+        <a href={{post.data.page.url}}>
           <h2>{{post.data.title}}</h2>
           <time datetime={{post.data.date | isoPostDate}}>{{post.data.date | humanPostDate}}</time>
           <p>{{post.data.excerpt}}</p>

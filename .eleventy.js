@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("humanPostDate", humanPostDate);
   eleventyConfig.addFilter("isoPostDate", isoPostDate);
 
+  eleventyConfig.addFilter("log", function (value) {
+    console.log(value);
+  });
+
   return {
     dir: {
       input: "src",

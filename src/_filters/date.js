@@ -1,7 +1,7 @@
 const ordinal = require("ordinal");
 const { DateTime } = require("luxon");
 
-module.exports = function humanPostDate(date) {
+module.exports.humanPostDate = function (date) {
   const luxonDate = DateTime.fromJSDate(date).toUTC();
 
   const ordinaledDay = ordinal(luxonDate.day);

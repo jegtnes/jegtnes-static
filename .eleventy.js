@@ -1,7 +1,7 @@
 const ariaCurrent = require("./src/_shortcodes/aria-current");
 const activeSection = require("./src/_shortcodes/active-section");
 
-const humanPostDate = require("./src/_filters/date");
+const { humanPostDate } = require("./src/_filters/date");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");

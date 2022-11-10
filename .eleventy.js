@@ -5,8 +5,9 @@ const { humanPostDate, isoPostDate } = require("./src/_filters/date");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addWatchTarget("src/_shortcodes");
   eleventyConfig.addWatchTarget("src/_filters");
+  eleventyConfig.addWatchTarget("src/_shortcodes");
+  eleventyConfig.addWatchTarget("src/_styles");
 
   eleventyConfig.addShortcode("ariaCurrent", ariaCurrent);
   eleventyConfig.addShortcode("activeSection", activeSection);

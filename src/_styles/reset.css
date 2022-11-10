@@ -1,3 +1,38 @@
+/*
+ * Mostly inspired by:
+ * Andy Bell: https://piccalil.li/blog/a-modern-css-reset/
+ * Josh Comeau: https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
-  color: red;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* I can't find any resources from the last five years about perf issues with
+ * ligatures and nice typographic flourishes, so I'm going to cautiously apply
+ * them on headlines, like an absolute mad lad */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
 }

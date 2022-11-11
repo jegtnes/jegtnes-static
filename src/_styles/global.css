@@ -5,4 +5,6 @@
 
 body {
   font-family: var(--font-system);
+  background: var(--color-white);
+  color: var(--color-black);
 }

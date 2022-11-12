@@ -1,0 +1,23 @@
+.site-header {
+  margin-bottom: var(--space-s-m);
+}
+
+.main-nav {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  margin: 0 var(--space-s);
+}
+
+.main-nav__item:first-of-type {
+  flex-grow: 1;
+  margin-left: 0; 
+}
+
+.main-nav__item:last-of-type {
+  margin-right: 0;
+}

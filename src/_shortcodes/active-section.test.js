@@ -19,5 +19,5 @@ it("should add a class to items that are a part of the section", () => {
       "/mongolian-throat-singing/",
       "/mongolian-throat-singing/kargyraa"
     )
-  ).toEqual('class="current"');
+  ).toEqual("current");
 });

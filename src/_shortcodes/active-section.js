@@ -4,5 +4,5 @@ module.exports = function activeSection(itemUrl, pageUrl) {
 
   if (!pageUrl.startsWith(itemUrl)) return "";
 
-  return 'class="current"';
+  return "current";
 };

@@ -6,7 +6,9 @@
   display: flex;
   padding: 0;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
+  font-size: var(--space-s-m)
 }
 
 .main-nav__item {
@@ -16,8 +18,26 @@
 .main-nav__item:first-of-type {
   flex-grow: 1;
   margin-left: 0; 
+  font-size: var(--step-2)
 }
 
 .main-nav__item:last-of-type {
   margin-right: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+}
+
+.main-nav__link,
+.main-nav__link:visited {
+  color: var(--color-black);
+}
+
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+
+.main-nav__link.current {
+  color: var(--color-brand)
 }

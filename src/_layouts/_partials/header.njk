@@ -7,8 +7,9 @@
         <li class="main-nav__item">
           <a
             href={{item.url}}
-            class={{ anchorClass }}
+            class="main-nav__link {% activeSection item.url, page.url %}"
             {% ariaCurrent item.url, page.url %}
+            data-text={{item.label}}
           >
             {{item.label}}
           </a>

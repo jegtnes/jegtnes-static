@@ -36,6 +36,9 @@
 body {
   padding: var(--space-s-m);
   margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   background: var(--color-white);
   color: var(--color-black);
   font-family: var(--font-system);
@@ -77,5 +80,11 @@ li {
 }
 
 .container {
-  max-width: 80rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: inherit auto;
+}
+
+footer {
+  margin-top: var(--space-s-m);
 }

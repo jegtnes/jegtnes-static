@@ -1,3 +1,5 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 const ariaCurrent = require("./src/_shortcodes/aria-current");
 const activeSection = require("./src/_shortcodes/active-section");
 
@@ -18,6 +20,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("log", function (value) {
     console.log(value);
   });
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

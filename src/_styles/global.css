@@ -67,7 +67,7 @@ h2,
 h3,
 h4 {
   line-height: 1.1;
-  max-width: 25ch;
+  max-width: 20ch;
 }
 
 p,
@@ -82,9 +82,18 @@ li {
 .container {
   width: 100%;
   max-width: 70rem;
-  margin: inherit auto;
+  margin-inline: auto;
 }
 
 footer {
   margin-top: var(--space-s-m);
+}
+
+
+a {
+  color: var(--color-blue);
+}
+
+a:visited {
+  color: var(--color-purple);
 }

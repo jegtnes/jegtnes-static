@@ -81,9 +81,9 @@ Here's how you use it:
 …aaand that's it! Here's to minified assets everywhere.
 
 
-<h2>All The Code</h2>
+## All The Code
 
-<h3>handlebarsHelpers.js</h3>
+### handlebarsHelpers.js
 
 ```js
 var hbs = require('express-hbs');

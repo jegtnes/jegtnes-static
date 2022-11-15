@@ -7,7 +7,7 @@ excerpt: "Attending the New Adventures conference is the single greatest thing t
 
 It is without any hesitation I say that New Adventures is the single greatest thing that has happened to my career thus far.
 
-This is a very bold statement, but allow me to explain. My first three acquaintances with web conferences were <a href="http://twitter.com/webdevconf" title="http://twitter.com/webdevconf">WDC2010</a>, <a href="http://twitter.com/heartandsoleweb" title="http://twitter.com/heartandsoleweb">Heart &amp; Sole 2</a>, and WDC2011. I had started to get into web events, but I was still not really all that passionate about the web; I mostly just did what I could get away with in order to get decent marks at university.
+This is a very bold statement, but allow me to explain. My first three acquaintances with web conferences were [WebDevConf 2010](http://twitter.com/webdevconf), [Heart & Sole 2](http://twitter.com/heartandsoleweb), and WebDevConf 2011. I had started to get into web events, but I was still not really all that passionate about the web; I mostly just did what I could get away with in order to get decent marks at university.
 
 ![Wayne Hemingway standing at the New Adventures lectern](/assets/images/content-images/hemingway.jpg)
 

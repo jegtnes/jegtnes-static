@@ -7,8 +7,6 @@ excerpt: "How to calculate a Net Promoter Score in one query using your favourit
 
 At my job, when we need to gather data or get feedback in survey format, we normally use external survey tools like SurveyMonkey for a reason: They're well-built, well-tested, and they come with everything you need to get the job done. However, for this current project we lacked the clearance to use external tools in time, so I had to build a home-grown survey.
 
-(<a href="#finalquery">TL;DR? Jump straight to the query.</a>)
-
 Like many others, we rely on [Net Promoter Scores](https://www.netpromoter.com/know/) to get a more accurate overview of customer satisfaction, and we needed it for this survey as well, so I set out a way to calculate it.
 
 For those uninitated, you ask the user to rank "How likely are you to recommend FooOnTheBar.io to your friends or family?" on a scale of 0 to 10. If this sounds familiar, you've likely been asked to answer this a few times yourself.

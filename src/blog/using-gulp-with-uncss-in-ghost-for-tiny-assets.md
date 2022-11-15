@@ -111,9 +111,9 @@ At the end, we delete the files we’ve created using the `clean` Gulp module.
 Observant readers will once again notice that we have an unfamiliar variable called `filesToUncss`. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
 
 <pre><code data-syntaxhighlight class=“language-javascript”>var filesToUncss = [
-    'http://jegtnes.co.uk',
-    'http://jegtnes.co.uk/portfolio',
-    'http://jegtnes.co.uk/contact'
+    'http://jegtnes.com',
+    'http://jegtnes.com/portfolio',
+    'http://jegtnes.com/contact'
 ];
 </code></pre>
 

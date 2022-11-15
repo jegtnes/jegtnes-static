@@ -26,4 +26,4 @@ Because lists are all the rage these days, here are 5 reasons to hire me:
 
 5) I **love** baking. [Birthday cakes will be a regular occurrence.](https://twitter.com/jegtnes/status/313608374556192769/photo/1)
 
-If you're hiring or know someone who's hiring, I'd love to hear from you. <3 Send me an email at [alex@jegtnes.co.uk](mailto:alex@jegtnes.co.uk), or you can [tweet me](https://twitter.com/jegtnes).
+If you're hiring or know someone who's hiring, I'd love to hear from you. <3 Send me an email at [alex@jegtnes.com](mailto:alex@jegtnes.com), or you can [tweet me](https://twitter.com/jegtnes).

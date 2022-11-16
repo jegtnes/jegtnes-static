@@ -46,7 +46,7 @@ server.get(/^\/(blog\/?).*/, function redirect(req, res) {
 });
 ```
 
-I put this snippet in server.js at line 372, below the block `// ### Frontend routes`. This felt like the natural place to put it, as it doesn't deal with admin routing or core functionality.
+I put this snippet in server.js at line 372, below the block <code class="language-js">// ### Frontend routes</code>. This felt like the natural place to put it, as it doesn't deal with admin routing or core functionality.
 
 What the above piece of code does is match any request to the site that starts with /blog in the request URI, and redirects them to the exact same URI, except with the first 5 characters stripped off (/blog). If your permalinks are structured differently you'll need a different regex, and a different redirect function, but this should be adaptable to some WordPress permalinks, except the ones that include dates, tags, and categories.
 

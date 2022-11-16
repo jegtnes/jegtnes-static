@@ -17,11 +17,13 @@ You need to have installed:
 - [node.js](http://nodejs.org/)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
-I assume you're working with a single concatenated CSS file. If you're not, you'll need to add `gulp-concat` to your workflow to produce one manageable CSS file by the end of it (this is great for performance reasons, too).
+I assume you're working with a single concatenated CSS file. If you're not, you'll need to add <code class="language-">gulp-concat</code> to your workflow to produce one manageable CSS file by the end of it (this is great for performance reasons, too).
 
-First off, find your nearest command line, and run `npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries`, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
+First off, find your nearest command line, and run <code class="language-">npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries</code>, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
 
-<pre><code data-syntaxhighlight class="language-javascript">var gulp = require('gulp');
+
+```js
+var gulp = require('gulp');
 
 var sass = require('gulp-sass'); // skip this if you're working with vanilla CSS
 var rename = require('gulp-rename');
@@ -40,7 +42,7 @@ gulp.task('styles-build', function() {
 })
 
 gulp.task('default', ['styles-build']);
-</code></pre>
+```
 
 So for now, if you run the task this will do nothing but compile your CSS and rename your CSS file to style.min.css. File size: **93KB**.
 
@@ -48,9 +50,9 @@ So for now, if you run the task this will do nothing but compile your CSS and re
 
 This will especially be of use if you make use of Sass' nested media queries. It combines all the matching media queries scattered across the compiled CSS into one single media query block.
 
-Pipe your assets through `gulp-combine-media-queries` below `rename`.
+Pipe your assets through <code class="language-">gulp-combine-media-queries</code> below <code class="language-">rename</code>.
 
-<code data-syntaxhighlight class="language-javascript">.pipe(cmq({ log: true }))</code>
+<code class="language-">.pipe(cmq({ log: true }))</code>
 
 File size: **91KB**. That's 2 whole KB shaved off!  As you may have guessed, combining media queries is only a tiny optimisation—especially as gzip takes care of repetition extremely well. However, as with any performance optimisation process, make sure it doesn't mess up anything. If you don't really have that many media queries, it may not be worth doing.
 
@@ -60,9 +62,10 @@ This is the meat of the optimisation process. [UnCSS](https://github.com/giakki/
 For Ghost, this can be done by tapping into the site's RSS feed, convert the post URIs to a JSON array, and hand it over to UnCSS.
 
 ### Download your site's RSS feed
-We need the Node module `download` to do this.
+We need the Node module <code class="language-">download</code> to do this.
 
-<pre><code data-syntaxhighlight class="language-javascript">gulp.task('download-rss-feed', function(callback) {
+```js
+gulp.task('download-rss-feed', function(callback) {
   dl = download({
     url: 'http://yoursitehere.com/rss',
     name: 'rss.xml'
@@ -72,9 +75,9 @@ We need the Node module `download` to do this.
     callback();
   });
 });
-</code></pre>
+```
 
-This will synchronously download your site's RSS feed to your root directory, and indicates that the task is complete via a callback once the `download` module sends out the the `close` event emitter. This is important, as Gulp is asynchronous, and if we didn’t have this, the next step would attempt running before the file completed.
+This will synchronously download your site's RSS feed to your root directory, and indicates that the task is complete via a callback once the <code class="language-">download</code> module sends out the the <code class="language-">close</code> event emitter. This is important, as Gulp is asynchronous, and if we didn’t have this, the next step would attempt running before the file completed.
 
 [Cameron Spear has some more information on Gulp synchronity](http://cameronspear.com/blog/handling-sync-tasks-with-gulp-js/), if you’re curious.
 
@@ -83,19 +86,21 @@ Now that we’ve got the RSS feed saved, we need to convert this to something th
 
 Fortunately for us, there’s an XML2JS Gulp module. Create a new task depending on the previous task, pipe this through XML2JS, rename it to something more suitable, and save it.
 
-<pre><code data-syntaxhighlight class="language-javascript">gulp.task('create-sitemap', ['download-rss-feed'], function() {
+```js
+gulp.task('create-sitemap', ['download-rss-feed'], function() {
     return gulp.src('./rss.xml')
     .pipe(xml2js())
     .pipe(rename('rss.json'))
     .pipe(gulp.dest('./'));
 });
-</code></pre>
+```
 
 ### Convert JSON feed to JavaScript array
 
 Now that we have the RSS feed in a lovely JSON format, we need to find the information we need from it. Fortunately, this is quite simple. Create another task depending on the previous one, again, and loop through this in plain JavaScript.
 
-<pre><code data-syntaxhighlight class="language-javascript">gulp.task('find-site-files', ['create-sitemap'], function() {
+```js
+gulp.task('find-site-files', ['create-sitemap'], function() {
   var json = require('./rss.json');
   json.rss.channel[0].item.forEach(function(value) {
     link = value.link[0]
@@ -104,28 +109,30 @@ Now that we have the RSS feed in a lovely JSON format, we need to find the infor
 
 return gulp.src(['rss.json', 'rss.xml'], {read: false})
     .pipe(clean());
-</code></pre>
+```
 
 At the end, we delete the files we’ve created using the `clean` Gulp module.
 
-Observant readers will once again notice that we have an unfamiliar variable called `filesToUncss`. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
+Observant readers will once again notice that we have an unfamiliar variable called <code class="language-">filesToUncss</code>. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
 
-<pre><code data-syntaxhighlight class=“language-javascript”>var filesToUncss = [
+```js
+var filesToUncss = [
     'http://jegtnes.com',
     'http://jegtnes.com/portfolio',
     'http://jegtnes.com/contact'
 ];
-</code></pre>
+```
 
-As we’re pushing the RSS feed items to this variable, and we’ll be using this variable in `styles-build` that will call `find-site-files`, the variable value will persist, and all of our pages and posts will be covered by UnCSS. Nifty, eh?
+As we’re pushing the RSS feed items to this variable, and we’ll be using this variable in <code class="language-">styles-build</code> that will call <code class="language-">find-site-files</code>, the variable value will persist, and all of our pages and posts will be covered by UnCSS. Nifty, eh?
 
 ### Use JavaScript array in UnCSS
-And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your `cmq` pipe.
+And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your <code class="language-">cmq</code> pipe.
 
-<pre><code data-syntaxhighlight class=“language-javascript”>.pipe(uncss({
+```js
+.pipe(uncss({
     html: filesToUncss
 }))
-</code></pre>
+```
 
 Depending on the size of your blog, this will take a while. You don’t want to do minify your CSS in development, so just integrate running this task into your build system before you deploy.
 
@@ -134,7 +141,7 @@ File size: **61KB**. This is still pretty huge, because about 90% of it is inuit
 ## Minify
 gulp-cssmin ensures that all unnecessary whitespace, comments, etc. will be thoroughly purged. We have a lot of it, so let's get started.
 
-Add <code data-syntaxhighlight class="language-javascript">.pipe(cssmin())</code> after your UnCSS pipe.
+Add <code class="language-">.pipe(cssmin())</code> after your UnCSS pipe.
 
 Final file size: **6.8KB**, down from **93KB**. Not bad for something you can automate, fire, and forget, eh?
 
@@ -147,4 +154,3 @@ Into WordPress and Grunt instead? [Liam Gladdy has you covered](http://www.gladd
 
 The final Gulpfile that I created in this post can be [found on Gist](https://gist.github.com/jegtnes/780e68e85b7ca8008079).
 
-Does the way I organise my Gulpfile suck? Should some of these tasks be combined? Probably. Please tell me in the comments. :)

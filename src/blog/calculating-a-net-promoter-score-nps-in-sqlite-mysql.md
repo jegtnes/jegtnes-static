@@ -5,6 +5,8 @@ layout: blog-post.njk
 excerpt: "How to calculate a Net Promoter Score in one query using your favourite SQL-based DBMS."
 ---
 
+<p lang="pt">(<a href="https://medium.com/luigipontello/como-calcular-o-nps-com-mysql-444a177ffe3b">Este post do blog foi traduzido para o português por Luigi Pontello — obrigado!</a>)</p>
+
 At my job, when we need to gather data or get feedback in survey format, we normally use external survey tools like SurveyMonkey for a reason: They're well-built, well-tested, and they come with everything you need to get the job done. However, for this current project we lacked the clearance to use external tools in time, so I had to build a home-grown survey.
 
 Like many others, we rely on [Net Promoter Scores](https://www.netpromoter.com/know/) to get a more accurate overview of customer satisfaction, and we needed it for this survey as well, so I set out a way to calculate it.

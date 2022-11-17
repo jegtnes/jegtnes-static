@@ -116,3 +116,7 @@ a {
 a:visited {
   color: var(--color-purple);
 }
+
+time {
+  display: block;
+}

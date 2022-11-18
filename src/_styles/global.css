@@ -89,7 +89,8 @@ h3,
 }
 
 p,
-li {
+li,
+blockquote {
   max-width: 60ch;
 }
 
@@ -108,7 +109,6 @@ footer {
   margin-top: var(--space-s-m);
 }
 
-
 a {
   color: var(--color-blue);
 }
@@ -119,4 +119,11 @@ a:visited {
 
 time {
   display: block;
+}
+
+blockquote {
+  border-left: var(--space-2xs) solid var(--color-brand);
+  font-size: 1.2em;
+  font-style: italic;
+  padding: var(--space-2xs) var(--space-s);
 }

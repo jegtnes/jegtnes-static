@@ -6,6 +6,7 @@
   "author": "Alex Jegtnes <alex@jegtnes.com> (http://jegtnes.com)",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "shipit-cli": "^1.4.1",
     "shipit-deploy": "^2.2.0"
   },

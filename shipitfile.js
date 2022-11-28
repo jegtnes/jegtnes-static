@@ -3,26 +3,26 @@ module.exports = function (shipit) {
 
   shipit.initConfig({
     default: {
-      workspace: '/tmp/jegtnes',
-      dirToCopy: 'dist',
-      deployTo: '/var/www/jegtnes',
-      repositoryUrl: 'git@github.com:jegtnes/jegtnes-static.git',
-      ignores: ['.git', 'node_modules'],
-      rsync: ['--del'],
+      workspace: "/tmp/jegtnes-new",
+      dirToCopy: "dist",
+      deployTo: "/var/www/jegtnes/v2",
+      repositoryUrl: "git@github.com:jegtnes/jegtnes-static.git",
+      ignores: [".git", "node_modules"],
+      rsync: ["--del"],
       keepReleases: 5,
       shallowClone: true,
       pm2: {
-        json: '/var/www/pm2conf.json'
+        json: "/var/www/pm2conf.json",
       },
     },
     prod: {
-      servers: 'deploy@46.101.75.113'
-    }
+      servers: "deploy@46.101.75.113",
+    },
   });
 
-  shipit.blTask('build', function() {
+  shipit.blTask("build", function () {
     console.log(shipit);
-    return shipit.local('cd /tmp/jegtnes && npm install && gulp build');
+    return shipit.local("cd /tmp/jegtnes/new && npm install && npm run build");
   });
 
 

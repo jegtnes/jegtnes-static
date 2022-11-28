@@ -78,9 +78,13 @@ h4,
   line-height: 1.1;
 }
 
-h1, h2,
-.alpha, .beta {
+h1, .alpha {
   max-width: 22.5ch;
+}
+
+h2,
+.beta { 
+  max-width: 30ch;
 }
 
 h3,

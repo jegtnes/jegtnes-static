@@ -25,6 +25,48 @@ Additionally, I am not a computer scientist and I do not have a computer science
 
 But overall, I am a damn fine generalist web developer, and my foundational skills are based on solid timeless principles. I have a few properties that I'm proud of and that other people have praised me for when working with me, if you'd care to read on.
 
+## Technologies I work with
+
+<article class="flex-grid flex-grid--equal">
+  <section class="flow">
+    <h3>Expert proficiency</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS/Sass</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Accessibility</li>
+      <li>Web performance</li>
+    </ul>
+  </section>
+  <section class="flow">
+    <h3>Good competency</h3>
+    <ul>
+      <li>Node.js</li>
+      <li>GraphQL</li>
+      <li>PHP</li>
+      <li>WordPress</li>
+      <li>Serverless</li>
+      <li>Design systems</li>
+      <li>Storybook</li>
+      <li>TDD</li>
+      <li>Next.js</li>
+    </ul>
+  </section>
+  <section class="flow">
+    <h3>Basic familarity</h3>
+    <ul>
+      <li>MySQL/PostgreSQL</li>
+      <li>MongoDB</li>
+      <li>Laravel</li>
+      <li>Magento</li>
+      <li>Ruby</li>
+      <li>Rails</li>
+      <li>Shopify</li>
+    </ul>
+  </section>
+</article>
+
 ## ⛏️ I'm a seasoned code archaeologist
 
 My six years of contracting experience has given me exposure to a wide variety of codebases, and part and parcel of being a contractor is getting up to speed with these quickly.
@@ -60,35 +102,6 @@ We’ve all been there on dodgy train WiFi desperately trying to load a website 
 From hand-optimising SVGs and tuning responsive images, to sweating over the build process and keeping third-party dependencies down where it's otherwise tempting to grab a library to just add this one small utility from it, everything I build is made with solid web performance principles in mind.
 
 Speaking of responsive images, in the dark days when responsive images weren't natively supported in the majority of browsers, I was a contributor to and core team member of the responsive image polyfill [Picturefill](http://scottjehl.github.io/picturefill/), and when I was living in Bristol I co-organised the [Bristol Web Performance meetup](https://mobile.twitter.com/bristolwebperf).
-
-## Languages, frameworks, technologies, and practices I'm good at
-
-- HTML
-- CSS/Sass
-- JavaScript
-- React
-- Next.js
-- TDD
-- Accessibility
-- Web performance
-
-### That I'm decent at:
-- Node.js
-- GraphQL
-- PHP
-- WordPress
-- MySQL/PostgreSQL
-- MongoDB
-- Serverless
-- Design systems
-- Storybook
-
-### That I've worked with before (but I'm admittedly somewhat rusty at)
-- Laravel
-- Magento
-- Ruby
-- Rails
-- Shopify
 
 ## If any of this sounds of use to you and your organisation
 

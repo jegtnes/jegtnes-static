@@ -3,7 +3,7 @@ module.exports = function (shipit) {
 
   shipit.initConfig({
     default: {
-      workspace: "/tmp/jegtnes-new",
+      workspace: "/tmp/jegtnes",
       dirToCopy: "dist",
       deployTo: "/var/www/jegtnes/v2",
       repositoryUrl: "git@github.com:jegtnes/jegtnes-static.git",
@@ -22,7 +22,7 @@ module.exports = function (shipit) {
 
   shipit.blTask("build", function () {
     console.log(shipit);
-    return shipit.local("cd /tmp/jegtnes/new && npm install && npm run build");
+    return shipit.local("cd /tmp/jegtnes && npm install && npm run build");
   });
 
 

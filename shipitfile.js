@@ -16,7 +16,7 @@ module.exports = function (shipit) {
       },
     },
     prod: {
-      servers: "deploy@46.101.75.113",
+      servers: "deploy@jegtnes",
     },
   });
 

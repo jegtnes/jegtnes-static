@@ -84,7 +84,7 @@ h1, .alpha {
 
 h2,
 .beta { 
-  max-width: 30ch;
+  max-width: 27.5ch;
 }
 
 h3,
@@ -141,4 +141,21 @@ blockquote {
 .flex-grid--equal > * {
   flex-grow: 1;
   flex-basis: calc((45rem - 100%) * 999);
+}
+
+small {
+  font-size: .75em;
+}
+
+small p {
+  line-height: 1.1;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
 }

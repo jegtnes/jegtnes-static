@@ -105,4 +105,4 @@ Speaking of responsive images, in the dark days when responsive images weren't n
 
 ## If any of this sounds of use to you and your organisation
 
-Hit me up at [alex@jegtnes.com](mailto:alex@jegtnes.com?subject=Contracting%20inquiry)! I'd love to hear from you. ✨
+[Send me an email!](mailto:alex@jegtnes.com?subject=Contracting%20inquiry)! I'd love to hear from you. ✨

@@ -1,0 +1,30 @@
+---
+title: Greetings, the universe!
+layout: page.njk
+---
+<div class="flow">
+  <p>I'm Alex, a freelance web developer from Norway living in London, UK.</p>
+
+  <p>It's nice to meet you. I make websites, web apps, and prototypes that run fast, are accessible, and solve real user problems.</p>
+
+  <section>
+  {% if global.availability %}
+    <h2 class="gamma">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</h2>
+    <a href="/work-with-me">See what I can do for your organisation</a>
+  {% endif %}
+  </section>
+
+  <section class="flow flow--spacious">
+    <h2>Latest blog posts</h2>
+    {% set newestPosts = collections.post | reverse %}
+    {% for post in newestPosts.slice(0,2) %}
+      <article>
+        <a href={{post.data.page.url}}>
+          <h3>{{post.data.title}}</h2>
+          <time datetime={{post.data.date | isoPostDate}}>{{post.data.date | humanPostDate}}</time>
+        </a>
+        <p>{{post.data.excerpt}}</p>
+      </article>
+    {% endfor %}
+  </section>
+</div>

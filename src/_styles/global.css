@@ -103,6 +103,10 @@ blockquote {
   margin-block-start: var(--flow-space, 1em)
 }
 
+.flow--spacious {
+  --flow-space: 1.5em;
+}
+
 .container {
   width: 100%;
   max-width: 70rem;

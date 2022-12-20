@@ -19,11 +19,13 @@ I have eight years of experience working with everything from startups and desig
 
 ## Quick summary
 
-I’m an adept web developer, with a varied set of highly practical skills with a front-end focus. I’ve worked on every type of project, from rapid prototypes in tight feedback loops to complex projects lasting years, and I am judicious about cutting corners where justified and vehement about building things properly when they should be. While I am not a designer, I have a good eye for design and I love collaborating with designers as early and as frequently as possible, because this helps make better products more efficiently.
+I’m an adept web developer, possessing a varied set of highly practical skills with a front-end focus. I’ve worked on every type of project, from rapid prototypes with tight feedback loops to complex projects lasting years. I am vehement about building things properly when they should be, but also judicious about cutting corners where justified.
+
+While I am not a designer, I have a good eye for design and I love collaborating with designers as early and as frequently as possible, because this helps make better products more efficiently.
 
 Additionally, I am not a computer scientist and I do not have a computer science background. I’m not good at graph theory, I would not know where to begin if asked to reverse a linked tree on a whiteboard, and I am not fantastic at complex application architecture.
 
-But overall, I am a damn fine generalist web developer, and my foundational skills are based on solid timeless principles. I have a few properties that I'm proud of and that other people have praised me for when working with me, if you'd care to read on.
+But overall, I am a damn fine generalist web developer, and my foundational skills are based on solid timeless principles.
 
 ## Technologies I work with
 
@@ -67,6 +69,8 @@ But overall, I am a damn fine generalist web developer, and my foundational skil
   </section>
 </article>
 
+But I like to think I am a bit more than just a set of technologies. Here are some more reasons people have enjoyed working with me in the past:
+
 ## ⛏️ I'm a seasoned code archaeologist
 
 My six years of contracting experience has given me exposure to a wide variety of codebases, and part and parcel of being a contractor is getting up to speed with these quickly.
@@ -105,4 +109,4 @@ Speaking of responsive images, in the dark days when responsive images weren't n
 
 ## If any of this sounds of use to you and your organisation
 
-[Send me an email!](mailto:alex@jegtnes.com?subject=Contracting%20inquiry)! I'd love to hear from you. ✨
+[Send me an email!](mailto:alex@jegtnes.com?subject=Contracting%20inquiry) I'd love to hear from you. ✨

@@ -100,7 +100,7 @@ blockquote {
 
 .flow > * + *,
 .flow > dl > * { 
-  margin-top: var(--flow-space, 1em)
+  margin-block-start: var(--flow-space, 1em)
 }
 
 .container {
@@ -110,7 +110,8 @@ blockquote {
 }
 
 footer {
-  margin-top: var(--space-s-m);
+  padding-block-start: var(--space-m-l);
+  padding-block-end: var(--space-s-m);
 }
 
 a {
@@ -152,7 +153,7 @@ small p {
 }
 
 nav ul {
-  padding-left: 0;
+  padding-inline-start: 0;
 }
 
 nav ul li {

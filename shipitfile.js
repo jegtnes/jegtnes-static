@@ -5,11 +5,11 @@ module.exports = function (shipit) {
     default: {
       workspace: "/tmp/jegtnes",
       dirToCopy: "dist",
-      deployTo: "/var/www/jegtnes/v2",
+      deployTo: "/var/www/jegtnes",
       repositoryUrl: "git@github.com:jegtnes/jegtnes-static.git",
       ignores: [".git", "node_modules"],
       rsync: ["--del"],
-      keepReleases: 5,
+      keepReleases: 10,
       shallowClone: true,
       pm2: {
         json: "/var/www/pm2conf.json",

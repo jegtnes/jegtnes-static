@@ -1,4 +1,4 @@
 {
   "tags": "post",
-  "permalink": "/{{ title | slugify }}/"
+  "permalink": "blog/{{ title | slugify }}/"
 }

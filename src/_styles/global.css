@@ -164,3 +164,21 @@ nav ul li {
   display: inline;
   list-style: none;
 }
+
+.btn {
+  display: inline-block;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  background-color: var(--color-brand);
+  padding: var(--space-xs);
+}
+
+.btn,
+.btn:visited {
+  color: var(--color-white);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-brand-dark);
+}

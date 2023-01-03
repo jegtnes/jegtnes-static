@@ -114,7 +114,9 @@ blockquote {
 }
 
 footer {
-  padding-block-start: var(--space-m-l);
+  margin-block-start: var(--space-s-m);
+  border-top: 1px solid black;
+  padding-block-start: var(--space-s-m);
   padding-block-end: var(--space-s-m);
 }
 
@@ -146,14 +148,6 @@ blockquote {
 .flex-grid--equal > * {
   flex-grow: 1;
   flex-basis: calc((45rem - 100%) * 999);
-}
-
-small {
-  font-size: .75em;
-}
-
-small p {
-  line-height: 1.1;
 }
 
 nav ul {

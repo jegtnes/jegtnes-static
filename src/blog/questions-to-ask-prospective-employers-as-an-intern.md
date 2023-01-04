@@ -57,7 +57,7 @@ Don’t let that stop you, though. [Mark](//twitter.com/mark_js) and I were the 
 
 <dd>This obviously will depend on whether they company has hired interns before and how involved they have been. If you know they’ve done this, it’s a good question to ask to gauge the expectations they may have of you if you get the position.
 
-<dt class="gamma">
+<dt class="epsilon">
   <ul>
     <li>What tools do you use to get the job done?</li>
     <li>What are your processes within your agency?</li>

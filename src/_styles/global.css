@@ -70,26 +70,47 @@ h1,
 h2,
 h3,
 h4,
+h5,
 .alpha,
 .beta,
 .gamma,
-.delta {
+.delta,
+.epsilon {
   font-weight: bold;
   line-height: 1.1;
 }
 
-h1, .alpha {
+h1,
+.alpha {
   max-width: 22.5ch;
+  font-size: var(--step-4);
 }
 
 h2,
 .beta { 
   max-width: 27.5ch;
+  font-size: var(--step-3);
 }
 
 h3,
 .gamma {
   max-width: 40ch;
+  font-size: var(--step-2);
+}
+
+h4,
+.delta {
+  font-size: var(--step-1);
+}
+
+h5,
+.epsilon {
+  font-size: var(--step-0);
+}
+
+h6,
+.zeta {
+  font-size: var(--step--1);
 }
 
 p,

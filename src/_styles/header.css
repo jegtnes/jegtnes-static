@@ -34,8 +34,10 @@
   color: var(--color-black);
 }
 
-.main-nav__link:hover {
+.main-nav__link:hover,
+.main-nav__link:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .main-nav__link.current {

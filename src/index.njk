@@ -22,8 +22,10 @@ layout: page.njk
       <article>
         <a href={{post.data.page.url}}>
           <h3>{{post.data.title}}</h2>
-          <time datetime={{post.data.date | isoPostDate}}>{{post.data.date | humanPostDate}}</time>
         </a>
+        <time class="spacing-block-end" datetime={{post.data.date | isoPostDate}}>
+          {{post.data.date | humanPostDate}}
+        </time>
         <p>{{post.data.excerpt}}</p>
       </article>
     {% endfor %}

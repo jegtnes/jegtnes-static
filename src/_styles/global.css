@@ -74,8 +74,7 @@ h5,
 .alpha,
 .beta,
 .gamma,
-.delta,
-.epsilon {
+.delta {
   font-weight: bold;
   line-height: 1.1;
 }
@@ -202,4 +201,8 @@ nav ul li {
 .btn:hover,
 .btn:focus {
   background-color: var(--color-brand-dark);
+}
+
+.spacing-block-end {
+  margin-block-end: var(--space-2xs-xs);
 }

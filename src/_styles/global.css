@@ -124,6 +124,12 @@ a {
   color: var(--color-blue);
 }
 
+a:hover,
+a:focus {
+  text-decoration-thickness: 0.2em;
+  outline: none;
+}
+
 a:visited {
   color: var(--color-purple);
 }

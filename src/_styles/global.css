@@ -142,6 +142,8 @@ footer {
 
 a {
   color: var(--color-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
 }
 
 a:hover,

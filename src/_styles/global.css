@@ -115,7 +115,7 @@ blockquote {
 
 footer {
   margin-block-start: var(--space-s-m);
-  border-top: 1px solid black;
+  border-block-start: 1px solid black;
   padding-block-start: var(--space-s-m);
   padding-block-end: var(--space-s-m);
 }
@@ -133,7 +133,7 @@ time {
 }
 
 blockquote {
-  border-left: var(--space-2xs) solid var(--color-brand);
+  border-inline-start: var(--space-2xs) solid var(--color-brand);
   font-size: 1.2em;
   font-style: italic;
   padding: var(--space-2xs) var(--space-s);

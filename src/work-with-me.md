@@ -12,7 +12,7 @@ twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web per
 Hi there! I'm Alex, an independent web development contractor based in London. 
 
 {% if global.availability %}
-  ### I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.
+  <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
 {% endif %}
 
 I have eight years of experience working with everything from startups and design studios to large corporations and banks develop fast, accessible, and beautiful websites and web apps.

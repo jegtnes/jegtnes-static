@@ -1,12 +1,12 @@
 ---
 title: Work with me
 layout: page.njk
-description: Hire Alex Jegtnes, a freelance developer.
-twitterLabel1: Availability
-twitterData1: {{global.availability}}
-twitterLabel2: Proficiencies
-twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
-
+description: Hire Alex Jegtnes, a versatile freelance front-end developer.
+eleventyComputed:
+  twitterLabel1: Availability
+  twitterData1: "{%if global.availability%}{{global.availabilityDate}}{%else%}None{%endif%}"
+  twitterLabel2: Proficiencies
+  twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
 ---
 
 Hi there! I'm Alex, an independent web development contractor based in London. 

@@ -1,4 +1,7 @@
 {
   "availability": true,
-  "availabilityDate": "starting in January 2023"
+  "availabilityDate": "starting in January 2023",
+  "baseUrl": "https://jegtnes.com",
+  "siteName": "Alex Jegtnes",
+  "twitter": "@jegtnes"
 }

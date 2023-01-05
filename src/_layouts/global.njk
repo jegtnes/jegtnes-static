@@ -1,10 +1,29 @@
+{% if twitterLabel1 and twitterData1 and twitterLabel2 and twitterData2 %}
+  {% set custom = [
+    ["meta", "", {name: "twitter:label1", content: twitterLabel1 }],
+    ["meta", "", {name: "twitter:data1", content: twitterData1 }],
+    ["meta", "", {name: "twitter:label2", content: twitterLabel2 }],
+    ["meta", "", {name: "twitter:data2", content: twitterData2 }]
+  ] %}
+{% endif %}
+
+{% metagen
+  title=title + " | " + global.siteName,
+  desc=description or excerpt,
+  url=global.baseUrl + page.url,
+  twitter_card_type="summary",
+  twitter_handle="jegtnes",
+  name="Alex Jegtnes",
+  locale="en_GB",
+  generator=eleventy.generator,
+  custom=custom,
+  css=["/assets/styles/styles.css"]
+%}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ title }} | Alex Jegtnes</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="">
   </head>
   <body>
     {% include './_partials/header.njk' %}

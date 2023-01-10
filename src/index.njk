@@ -3,31 +3,30 @@ headline: Hi there! I'm Alex.
 title: Home
 layout: page.njk
 ---
-<div class="flow">
-  <p>I'm a freelance web developer from Norway living in London, UK.</p>
 
-  <p>It's nice to meet you. I make websites, web apps, and prototypes that run fast, are accessible, and solve real user problems.</p>
+<p>I'm a freelance web developer from Norway living in London, UK.</p>
 
-  <section class="flow">
-  {% if global.availability %}
-    <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
-    <a class="btn" href="/work-with-me">See what I can do for your organisation</a>
-  {% endif %}
-  </section>
+<p>It's nice to meet you. I make websites, web apps, and prototypes that run fast, are accessible, and solve real user problems.</p>
 
-  <section class="flow flow--spacious">
-    <h2>Latest blog posts</h2>
-    {% set newestPosts = collections.post | reverse %}
-    {% for post in newestPosts.slice(0,2) %}
-      <article>
-        <a href={{post.data.page.url}}>
-          <h3>{{post.data.title}}</h2>
-        </a>
-        <time class="spacing-block-end" datetime={{post.data.date | isoPostDate}}>
-          {{post.data.date | humanPostDate}}
-        </time>
-        <p>{{post.data.excerpt}}</p>
-      </article>
-    {% endfor %}
-  </section>
-</div>
+{% if global.availability %}
+  <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
+  <a class="btn" href="/work-with-me">See what I can do for your organisation</a>
+{% endif %}
+
+<section class="flow flow--spacious">
+  <h2>Latest blog posts</h2>
+  {% set newestPosts = collections.post | reverse %}
+  {% for post in newestPosts.slice(0,2) %}
+    <article>
+      <a href={{post.data.page.url}}>
+        <h3>{{post.data.title}}</h2>
+      </a>
+      <time class="spacing-block-end" datetime={{post.data.date | isoPostDate}}>
+        {{post.data.date | humanPostDate}}
+      </time>
+      <p>{{post.data.excerpt}}</p>
+    </article>
+  {% endfor %}
+
+  <p><a href="/blog">View older blog posts</a></p>
+</section>

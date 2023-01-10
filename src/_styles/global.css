@@ -195,10 +195,12 @@ nav ul li {
 
 .btn {
   display: inline-block;
-  border-radius: 0.25rem;
+  border: var(--space-2xs) solid var(--color-brand);
+  border-radius: var(--space-xs);
   text-decoration: none;
   background-color: var(--color-brand);
   padding: var(--space-xs);
+  line-height: 1;
 }
 
 .btn,
@@ -208,7 +210,8 @@ nav ul li {
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--color-brand-dark);
+  background-color: var(--white);
+  color: var(--color-brand);
 }
 
 .spacing-block-end {

@@ -107,8 +107,8 @@ From hand-optimising SVGs and tuning responsive images, to sweating over the bui
 
 Speaking of responsive images, in the dark days when responsive images weren't natively supported in the majority of browsers, I was a contributor to and core team member of the responsive image polyfill [Picturefill](http://scottjehl.github.io/picturefill/), and when I was living in Bristol I co-organised the [Bristol Web Performance meetup](https://mobile.twitter.com/bristolwebperf).
 
-## If my skills sound useful
+## Let's make a nice website together?
 
-I'd love to hear from you and to discuss your next project.
+If my skills sound relevant to anything you need help with I'd love to hear from you and to discuss your next project.
 
 <a class="btn" href="mailto:alex@jegtnes.com?subject=Contracting%20inquiry">Toss an email my way!</a>

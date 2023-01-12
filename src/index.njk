@@ -19,7 +19,7 @@ layout: page.njk
   {% for post in newestPosts.slice(0,2) %}
     <article class="h-entry">
       <a class="u-url" href={{post.data.page.url}}>
-        <h3 class="p-name">{{post.data.title}}</h2>
+        <h3 class="p-name">{{post.data.title}}</h3>
       </a>
       <time class="dt-published spacing-block-end" datetime={{post.data.date | isoPostDate}}>
         {{post.data.date | humanPostDate}}

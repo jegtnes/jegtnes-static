@@ -7,23 +7,21 @@
   ] %}
 {% endif %}
 
-{% metagen
-  title=title + " | " + global.siteName,
-  desc=description or excerpt,
-  url=global.baseUrl + page.url,
-  twitter_card_type="summary",
-  twitter_handle="jegtnes",
-  name="Alex Jegtnes",
-  locale="en_GB",
-  generator=eleventy.generator,
-  custom=custom,
-  css=["/assets/styles/styles.css"]
-%}
-
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <link rel="stylesheet" href="">
+    {% metagen
+      title=title + " | " + global.siteName,
+      desc=description or excerpt,
+      url=global.baseUrl + page.url,
+      twitter_card_type="summary",
+      twitter_handle="jegtnes",
+      name="Alex Jegtnes",
+      locale="en_GB",
+      generator=eleventy.generator,
+      custom=custom,
+      css=["/assets/styles/styles.css"]
+    %}
   </head>
   <body>
     {% include './_partials/header.njk' %}

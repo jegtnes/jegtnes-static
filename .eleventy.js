@@ -1,3 +1,6 @@
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+
 const rss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const metagen = require("eleventy-plugin-metagen");
@@ -27,6 +30,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(metagen);
+
+  const mdLib = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }).use(markdownItAnchor, {
+    tabIndex: false,
+  });
+
+  eleventyConfig.setLibrary("md", mdLib);
 
   return {
     dir: {

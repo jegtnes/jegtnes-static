@@ -31,7 +31,7 @@ But overall, I am a damn fine generalist web developer, and my foundational skil
 
 <article class="flex-grid flex-grid--equal">
   <section class="flow">
-    <h3 class="delta">Expert proficiency</h3>
+    <h3 class="delta" id="expert-proficiency">Expert proficiency</h3>
     <ul>
       <li>HTML</li>
       <li>CSS/Sass</li>
@@ -42,7 +42,7 @@ But overall, I am a damn fine generalist web developer, and my foundational skil
     </ul>
   </section>
   <section class="flow">
-    <h3 class="delta">Good competency</h3>
+    <h3 class="delta" id="good-competency">Good competency</h3>
     <ul>
       <li>Node.js</li>
       <li>GraphQL</li>
@@ -56,7 +56,7 @@ But overall, I am a damn fine generalist web developer, and my foundational skil
     </ul>
   </section>
   <section class="flow">
-    <h3 class="delta">Basic familarity</h3>
+    <h3 class="delta" id="basic-proficiency">Basic familarity</h3>
     <ul>
       <li>MySQL/PostgreSQL</li>
       <li>MongoDB</li>

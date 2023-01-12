@@ -27,7 +27,7 @@ Since I'm lazy, I initially wanted to toss a few separate queries at this proble
 
 After some tinkering, this is where I arrived at:
 
-<h2 id="finalquery">Final query</h2>
+## Final query
 
 ```sql
 SELECT CAST(((

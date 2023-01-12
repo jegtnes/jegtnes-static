@@ -217,3 +217,10 @@ nav ul li {
 .spacing-block-end {
   margin-block-end: var(--space-2xs-xs);
 }
+
+
+:not(pre) > code[class*="language-"] {
+  display: inline-block;
+  font-size: .8em;  
+  padding: 0 .33em;
+}

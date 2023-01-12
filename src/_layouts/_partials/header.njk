@@ -4,12 +4,15 @@
   <nav class="container">
     <ul class="main-nav">
       {% for item in nav.items %}
-        <li class="main-nav__item">
+        {% if item.url == "/" %}
+          <li class="main-nav__item hcard">
+        {% else %}
+          <li class="main-nav__item">
+        {% endif %}
           <a
             href={{item.url}}
             class="main-nav__link {% activeSection item.url, page.url %}"
             {% ariaCurrent item.url, page.url %}
-            data-text={{item.label}}
           >
             {{item.label}}
           </a>

@@ -1,6 +1,6 @@
 ---
 title: New year, new site
-date: 2022-01-09
+date: 2023-01-09
 layout: blog-post.njk
 excerpt: This website now uses 11ty. Some thoughts on this.
 ---

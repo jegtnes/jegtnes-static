@@ -10,7 +10,7 @@
           <li class="main-nav__item">
         {% endif %}
           <a
-            href={{item.url}}
+            href="{{item.url}}"
             class="main-nav__link {% activeSection item.url, page.url %}"
             {% ariaCurrent item.url, page.url %}
           >

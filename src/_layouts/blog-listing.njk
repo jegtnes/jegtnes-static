@@ -8,10 +8,10 @@ description: Occasional musings about tech, web development, and other miscellan
   <p class="p-summary">{{description}}</p>
   {% for post in collections.post | reverse %}
     <article class="h-entry">
-      <a class="u-url" href={{post.data.page.url}}>
+      <a class="u-url" href="{{post.data.page.url}}">
         <h2 class="p-name">{{post.data.title}}</h2>
       </a>
-      <time class="dt-published spacing-block-end" datetime={{post.data.date | isoPostDate}}>
+      <time class="dt-published spacing-block-end" datetime="{{post.data.date | isoPostDate}}">
         {{post.data.date | humanPostDate}}
       </time>
       <p class="p-summary">{{post.data.excerpt}}</p>

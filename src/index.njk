@@ -13,15 +13,15 @@ layout: page.njk
   <a class="btn" href="/work-with-me">See what I can do for your organisation</a>
 {% endif %}
 
-<section class="flow flow--spacious">
+<section class="flow flow--spacious h-feed">
   <h2>Latest blog posts</h2>
   {% set newestPosts = collections.post | reverse %}
   {% for post in newestPosts.slice(0,2) %}
-    <article>
-      <a href={{post.data.page.url}}>
-        <h3>{{post.data.title}}</h2>
+    <article class="h-entry">
+      <a class="u-url" href={{post.data.page.url}}>
+        <h3 class="p-name">{{post.data.title}}</h2>
       </a>
-      <time class="spacing-block-end" datetime={{post.data.date | isoPostDate}}>
+      <time class="dt-published spacing-block-end" datetime={{post.data.date | isoPostDate}}>
         {{post.data.date | humanPostDate}}
       </time>
       <p>{{post.data.excerpt}}</p>

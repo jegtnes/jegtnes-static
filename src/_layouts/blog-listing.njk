@@ -3,17 +3,18 @@ layout: global.njk
 description: Occasional musings about tech, web development, and other miscellany.
 ---
 
-<div class="container flow">
-  <h1>{{ title }}</h1>
+<div class="container flow h-feed">
+  <h1 class="p-name">{{ title }}</h1>
+  <p class="p-summary">{{description}}</p>
   {% for post in collections.post | reverse %}
-    <article>
-      <a href={{post.data.page.url}}>
-        <h2>{{post.data.title}}</h2>
+    <article class="h-entry">
+      <a class="u-url" href={{post.data.page.url}}>
+        <h2 class="p-name">{{post.data.title}}</h2>
       </a>
-      <time class="spacing-block-end" datetime={{post.data.date | isoPostDate}}>
+      <time class="dt-published spacing-block-end" datetime={{post.data.date | isoPostDate}}>
         {{post.data.date | humanPostDate}}
       </time>
-      <p>{{post.data.excerpt}}</p>
+      <p class="p-summary">{{post.data.excerpt}}</p>
     </article>
   {% endfor %}
 </div>

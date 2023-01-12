@@ -23,7 +23,7 @@ Instead of just calculating an average score, it's a bit more involved, to refle
 
 You will end up with a score ranging from -100 to 100, where any positive number is generally considered good, and you're doing exceptionally well if you're above 50.
 
-Since I'm lazy, I initially wanted to toss a few separate queries at this problem and calculate it server-side, but I figured this was a good opportunity to practice some more advanced queries than <code class="language-sql">SELECT * FROM table WHERE foo = bar;</code>.
+Since I'm lazy, I initially wanted to toss a few separate queries at this problem and calculate it server-side, but I figured this was a good opportunity to practice some more advanced queries than `SELECT * FROM table WHERE foo = bar;`{language=sql}.
 
 After some tinkering, this is where I arrived at:
 
@@ -57,7 +57,7 @@ This sets us up to cast the value of the calculation inside to a certain type (i
 SUM(CASE WHEN recommendRating BETWEEN 9 AND 10 THEN 1 ELSE 0 END) * 1.0 -
 ```
 
-<code class="language-sql">CASE WHEN</code> in SQL is something I haven't seen until I researched solutions for this problem. What happens here is:
+`CASE WHEN`{language=sql} in SQL is something I haven't seen until I researched solutions for this problem. What happens here is:
 
 1) Sum up everything inside the brackets
 2) the calculation inside the brackets searches for all the values in the `recommendRating` column
@@ -82,16 +82,16 @@ This is mostly identical to the line above, except this time we're counting the 
 
 This is a bit unreadable thanks to the multiple nested brackets necessary to make it work, but I'll try to explain.
 
-<code class="language-sql">) / COUNT(*) * 100)</code> divides the result of the previous calculation (line 2 minus line 3) by the total amount of rows in the table, and multiplies it by 100.
+`) / COUNT(*) * 100)`{language=sql} divides the result of the previous calculation (line 2 minus line 3) by the total amount of rows in the table, and multiplies it by 100.
 
-<code class="language-sql">AS int)</code> carries on from line 1. We need to cast our floated calculations to an integer as NPSs don't use decimals.
+`AS int)`{language=sql} carries on from line 1. We need to cast our floated calculations to an integer as NPSs don't use decimals.
 
-<code class="language-sql">NPS</code> names the column. This can be whatever you prefer.
+`NPS`{language=sql} names the column. This can be whatever you prefer.
 
-<code class="language-sql">FROM exitSurvey</code> is the table name you're selecting this whole thing from.
+`FROM exitSurvey`{language=sql} is the table name you're selecting this whole thing from.
 
 ## Line 5
-<code class="language-sql">WHERE recommendRating IS NOT NULL</code> makes sure that in the event that answering the NPS question is optional, you don't select additional rows to count which don't include an answer to the NPS question. If this is mandatory in your survey, you can remove this.
+`WHERE recommendRating IS NOT NULL`{language=sql} makes sure that in the event that answering the NPS question is optional, you don't select additional rows to count which don't include an answer to the NPS question. If this is mandatory in your survey, you can remove this.
 
 ## Conclusion
-And that's it! I love it when you think something's probably not feasible but it comes together in the end. This has been tested in SQLite 3, PostgreSQL 9.3, and MySQL 5.6 (with the caveat that you need to swap <code class="language-sql">AS int</code> with <code class="language-sql">AS signed</code> in mySQL, as mentioned above).
+And that's it! I love it when you think something's probably not feasible but it comes together in the end. This has been tested in SQLite 3, PostgreSQL 9.3, and MySQL 5.6 (with the caveat that you need to swap `AS int`{language=sql} with `AS signed`{language=sql} in mySQL, as mentioned above).

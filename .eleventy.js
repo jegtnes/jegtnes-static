@@ -1,8 +1,8 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItPrism = require("markdown-it-prism");
 
 const rss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const metagen = require("eleventy-plugin-metagen");
 
 const activeSection = require("./src/_shortcodes/active-section");
@@ -28,16 +28,20 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(rss);
-  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(metagen);
 
   const mdLib = markdownIt({
     html: true,
     breaks: true,
     linkify: true,
-  }).use(markdownItAnchor, {
-    tabIndex: false,
-  });
+  })
+    .use(markdownItAnchor, {
+      tabIndex: false,
+    })
+    .use(markdownItPrism, {
+      defaultLanguage: "plain",
+      highlightInlineCode: true,
+    });
 
   eleventyConfig.setLibrary("md", mdLib);
 

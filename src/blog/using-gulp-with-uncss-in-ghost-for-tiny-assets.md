@@ -17,9 +17,9 @@ You need to have installed:
 - [node.js](http://nodejs.org/)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
-I assume you're working with a single concatenated CSS file. If you're not, you'll need to add <code class="language-">gulp-concat</code> to your workflow to produce one manageable CSS file by the end of it (this is great for performance reasons, too).
+I assume you're working with a single concatenated CSS file. If you're not, you'll need to add `gulp-concat` to your workflow to produce one manageable CSS file by the end of it (this is great for performance reasons, too).
 
-First off, find your nearest command line, and run <code class="language-">npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries</code>, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
+First off, find your nearest command line, and run `npm install --save-dev gulp gulp-sass gulp-uncss gulp-rename gulp-cssmin gulp-xml2js gulp-clean gulp-combine-media-queries`{language=bash}, which will add Gulp and a bunch of Node modules to your NPM dependencies. Add this Gulpfile.js to your theme directory to get started; and I'll walk through the next steps as we go along:
 
 
 ```js
@@ -50,9 +50,9 @@ So for now, if you run the task this will do nothing but compile your CSS and re
 
 This will especially be of use if you make use of Sass' nested media queries. It combines all the matching media queries scattered across the compiled CSS into one single media query block.
 
-Pipe your assets through <code class="language-">gulp-combine-media-queries</code> below <code class="language-">rename</code>.
+Pipe your assets through `gulp-combine-media-queries` below `rename`.
 
-<code class="language-">.pipe(cmq({ log: true }))</code>
+`.pipe(cmq({ log: true }))`{language=js}
 
 File size: **91KB**. That's 2 whole KB shaved off!  As you may have guessed, combining media queries is only a tiny optimisation—especially as gzip takes care of repetition extremely well. However, as with any performance optimisation process, make sure it doesn't mess up anything. If you don't really have that many media queries, it may not be worth doing.
 
@@ -62,7 +62,7 @@ This is the meat of the optimisation process. [UnCSS](https://github.com/giakki/
 For Ghost, this can be done by tapping into the site's RSS feed, convert the post URIs to a JSON array, and hand it over to UnCSS.
 
 ### Download your site's RSS feed
-We need the Node module <code class="language-">download</code> to do this.
+We need the Node module `download` to do this.
 
 ```js
 gulp.task('download-rss-feed', function(callback) {
@@ -77,7 +77,7 @@ gulp.task('download-rss-feed', function(callback) {
 });
 ```
 
-This will synchronously download your site's RSS feed to your root directory, and indicates that the task is complete via a callback once the <code class="language-">download</code> module sends out the the <code class="language-">close</code> event emitter. This is important, as Gulp is asynchronous, and if we didn’t have this, the next step would attempt running before the file completed.
+This will synchronously download your site's RSS feed to your root directory, and indicates that the task is complete via a callback once the `download` module sends out the the `close` event emitter. This is important, as Gulp is asynchronous, and if we didn’t have this, the next step would attempt running before the file completed.
 
 [Cameron Spear has some more information on Gulp synchronity](http://cameronspear.com/blog/handling-sync-tasks-with-gulp-js/), if you’re curious.
 
@@ -113,7 +113,7 @@ return gulp.src(['rss.json', 'rss.xml'], {read: false})
 
 At the end, we delete the files we’ve created using the `clean` Gulp module.
 
-Observant readers will once again notice that we have an unfamiliar variable called <code class="language-">filesToUncss</code>. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
+Observant readers will once again notice that we have an unfamiliar variable called `filesToUncss`. This is a global variable I set in the Gulpfile earlier, which includes all of the static pages I have that don’t appear in the RSS feed. You’ll of course want to replace these pages with your own, if you have any. If not, it’s safe to leave the array blank.
 
 ```js
 var filesToUncss = [
@@ -123,10 +123,10 @@ var filesToUncss = [
 ];
 ```
 
-As we’re pushing the RSS feed items to this variable, and we’ll be using this variable in <code class="language-">styles-build</code> that will call <code class="language-">find-site-files</code>, the variable value will persist, and all of our pages and posts will be covered by UnCSS. Nifty, eh?
+As we’re pushing the RSS feed items to this variable, and we’ll be using this variable in `styles-build` that will call `find-site-files`, the variable value will persist, and all of our pages and posts will be covered by UnCSS. Nifty, eh?
 
 ### Use JavaScript array in UnCSS
-And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your <code class="language-">cmq</code> pipe.
+And finally, this is where the magic happens. Now that we’re all set up, all you need to do is call UnCSS using our newly populated array below your `cmq` pipe.
 
 ```js
 .pipe(uncss({
@@ -141,7 +141,7 @@ File size: **61KB**. This is still pretty huge, because about 90% of it is inuit
 ## Minify
 gulp-cssmin ensures that all unnecessary whitespace, comments, etc. will be thoroughly purged. We have a lot of it, so let's get started.
 
-Add <code class="language-">.pipe(cssmin())</code> after your UnCSS pipe.
+Add `.pipe(cssmin())`{language=js} after your UnCSS pipe.
 
 Final file size: **6.8KB**, down from **93KB**. Not bad for something you can automate, fire, and forget, eh?
 

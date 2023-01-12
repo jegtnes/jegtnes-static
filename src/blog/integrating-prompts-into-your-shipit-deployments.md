@@ -16,10 +16,13 @@ To alleviate this, I thought I'd ask for confirmation before wiping the database
 Instead, we can make use of the splendiferous [inquirer.js](https://github.com/SBoudrias/Inquirer.js/) library instead. It took me about half an hour to integrate this into my Shipit configuration, and it was well worth the time. Here's how:
 
 First off, install Inquirer so we can use it.
-<code class="language-js">npm install --save-dev inquirer</code>.
-
+```js
+npm install --save-dev inquirer</code>.
+```
 Then, in your Shipit configuration file, require inquirer as you would any other Node module:
-<code class="language-js">var inquirer = require('inquirer');</code>
+```js
+var inquirer = require('inquirer');
+```
 
 Create a new blocking task where you want to act on user input, and make sure it takes a callback, so we can act on the input when appropriate. You want this to be blocking if it has the chance to affect any other part of the deployment workflow, but if it's a completely stand-alone task, it may be safe to not block. (I'm not sure. I haven't tried. I'm not your dad. Do whatever you want)
 
@@ -29,7 +32,7 @@ shipit.blTask('wipeDB', function(callback) {
 });
 ```
 
-Inquirer only has one method, <code class="language-js">.prompt</code>. This method takes two parameters: one to many question config objects, and a callback. For the full details, see [Inquirer's documentation](https://github.com/SBoudrias/Inquirer.js/). This demonstration will focus on a boolean yes/no prompt: asking you if you _really_ want to wipe that production database.
+Inquirer only has one method, `.prompt`{language=js}. This method takes two parameters: one to many question config objects, and a callback. For the full details, see [Inquirer's documentation](https://github.com/SBoudrias/Inquirer.js/). This demonstration will focus on a boolean yes/no prompt: asking you if you _really_ want to wipe that production database.
 
 As you can see below, we give the prompt a type, a name to refer to later, a default answer (as we're dealing with a production database here, it's probably a good idea to err on the side of caution and set the default to _nope_), and the question to ask the user.
 
@@ -47,7 +50,7 @@ inquirer.prompt({
 So far, so good!
 ![An image of the command line output. The command run is 'shipit prod wipeDB'. Below that, text is seen saying 'Running wipeDB' task…. Below this, a question is asked: 'Here be dragons! Running this will wipe the production database. This is not recoverable. Are you sure? y/N](/assets/images/content-images/Screen-Shot-2015-10-27-at-16-30-10.png)
 
-The `answer` parameter in the callback will be a single object, with the key we created earlier, <code class="language-">wipeConfirmation</code>. This will let us check for the user's answer and take actions accordingly:
+The `answer` parameter in the callback will be a single object, with the key we created earlier, `wipeConfirmation`. This will let us check for the user's answer and take actions accordingly:
 
 ```js
 if (answer.wipeConfirmation === true) {

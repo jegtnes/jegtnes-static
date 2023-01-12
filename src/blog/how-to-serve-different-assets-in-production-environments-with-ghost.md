@@ -43,7 +43,7 @@ Then we need to register this module:
 ```js
 module.exports = registerHelper;
 ```
-And that's the helper all done with. Save it to your root directory. Call it whatever you want, I'm not your mum. I called it <code class="language-">handlebarsHelpers.js</code>.
+And that's the helper all done with. Save it to your root directory. Call it whatever you want, I'm not your mum. I called it `handlebarsHelpers.js`.
 
 ## Registering the helper
 Now open up your index.js file and cringe at the fact you're about to edit a core file. Require the newly created helper at the start of the file like you'd require anything else in Node:
@@ -62,7 +62,7 @@ Restart your Node application and this should all work.
 
 In the view where you're currently serving your assets, typically `default.hbs`, you have access to your new Handlebars helper.
 
-Hopefully you remembered we need a parameter for this, which is going to be the Ghost-provided <code class="language-js">@blog.url</code>. This will give you the full URL for the environment you're in.
+Hopefully you remembered we need a parameter for this, which is going to be the Ghost-provided `@blog.url`{language=js}. This will give you the full URL for the environment you're in.
 
 Here's how you use it:
 

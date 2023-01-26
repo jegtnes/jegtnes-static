@@ -148,7 +148,7 @@ After all that, we get this gorgeous, tiny SVG:
 
 ## But what about gzip?
 
-Okay, fair enough, every performance improvement should also be taking gzip into account to see if it's worthwhile. Gzip works better on repeated patterns, which would mean that the impact of unnecessary attributes such as `stroke-linecap` would be minimised, but there are still significant savings (relatively speaking) based on that.
+Okay, fair enough, every performance improvement should also be taking gzip into account to see if it's worthwhile. Gzip works better on repeated patterns, which would mean that the impact of unnecessary attributes such as `stroke-linecap` would be minimised, but despite that, we have made some savings.
 
 Original: 1490 bytes
 After SVGO: 1119 bytes

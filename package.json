@@ -11,7 +11,7 @@
     "shipit-deploy": "^2.2.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "eleventy-plugin-metagen": "^1.7.11",
     "jest": "^29.2.2",

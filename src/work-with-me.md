@@ -19,13 +19,7 @@ I have eight years of experience working with everything from startups and desig
 
 ## Quick summary
 
-I’m an adept web developer, possessing a varied set of highly practical skills with a front-end focus. I’ve worked on every type of project, from rapid prototypes with tight feedback loops to complex projects lasting years. I am vehement about building things properly when they should be, but also judicious about cutting corners where justified.
-
-While I am not a designer, I have a good eye for design and I love collaborating with designers as early and as frequently as possible, because this helps make better products more efficiently.
-
-Additionally, I am not a computer scientist and I do not have a computer science background. I’m not good at graph theory, I would not know where to begin if asked to reverse a linked tree on a whiteboard, and I am not fantastic at complex application architecture.
-
-But overall, I am a damn fine generalist web developer, and my foundational skills are based on solid timeless principles.
+I’m an adept web developer, possessing a varied set of highly practical skills with a front-end focus. I’ve worked on every type of project, from rapid prototypes with tight feedback loops to complex projects lasting years. I have a good eye for design and I love collaborating with designers as early and as frequently as possible, because this tight feedback loop helps make better products more efficiently.
 
 ## Technologies I work with
 
@@ -83,7 +77,7 @@ Obviously, most developers want to work on a new greenfield project that [will b
   <a href="https://medium.com/severe-contest/why-were-starting-from-scratch-with-the-economist-s-new-website-62e390e385e6">Olivia Frost, The Economist</a>
 </blockquote>
 
-As a contractor via a small [OrangeJellyfish](https://www.orangejellyfish.com/) team supporting The Economist, I was brought in to, in their own words, keep it from collapsing, while a new internal team had the freedom to build a new site from scratch. After a couple of months months, as the existing teams slowly transitioned to the rebuild, I was the only developer supporting the old website, triaging bugs, and working with the editors to accommodate seasonal and special one-off content{{symbols.emdash}}at the time, a very manual process. Since most of the internal knowledge of the old codebase had evaporated by the time I had joined, it was mostly up to me to piece it together to understand how it all worked.
+As a contractor via a small [OrangeJellyfish](https://www.orangejellyfish.com/) team supporting The Economist, I was brought in to, in their own words, keep it from collapsing, while a new internal team had the freedom to build a new site from scratch. After a couple of months, as the existing teams slowly transitioned to the rebuild, I was the only developer supporting the old website, triaging bugs, and working with the editors to accommodate seasonal and special one-off content{{symbols.emdash}}at the time, a very manual process. Since most of the internal knowledge of the old codebase had evaporated by the time I had joined, it was mostly up to me to piece it together to understand how it all worked.
 
 I'm naturally an incredibly curious person, and I enjoy weaponising this curiosity in my job as a developer. From bisecting through ancient Git commits from years before the developers left, searching GitHub PRs and Slack discussions, perusing long-abandoned Confluence pages, or more brute-force approaches, there's something satisfying about piecing together a complex system and understanding how it works. A legacy code base with a few head-scratchers and a backlog of decisions that were, perhaps in hindsight, suboptimal, isn't a source of annoyance for me, it's a challenge that I relish.
 

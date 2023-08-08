@@ -12,16 +12,16 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    # - name: Copy repo to remote server
-    #   uses: appleboy/scp-action@master
-    #   with:
-    #     source: "."
-    #     target: "/var/www/jegtnes"
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.SSH_KEY }}
-    #     port: ${{ secrets.SSH_PORT }}
-    #     timeout: 120s
+    - name: Copy repo to server
+      uses: appleboy/scp-action@master
+      with:
+        source: "."
+        target: "/var/www/jegtnes"
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        timeout: 120s
 
     - name: Testing remote command
       uses: appleboy/ssh-action@master
@@ -30,4 +30,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        script: ls -al
+        script: |
+          cd /var/www/jegtnes
+          ls -al

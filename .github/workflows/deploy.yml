@@ -1,0 +1,33 @@
+name: Deploy and build static site
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Copy repo to remote server
+      uses: appleboy/scp-action@master
+      env:
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        KEY: ${{ secrets.SSH_KEY }}
+        PORT: ${{ secrets.SSH_PORT }}
+      with:
+        source: "."
+        target: "/var/www/jegtnes"
+
+    - name: Testing remote command
+      uses: appleboy/ssh-action@master
+      with:
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        KEY: ${{ secrets.SSH_KEY }}
+        PORT: ${{ secrets.SSH_PORT }}
+        script: ls -al

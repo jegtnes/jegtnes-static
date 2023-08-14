@@ -28,6 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Test
+      run: |
+        echo ${{ env.TMP_FOLDER }}
     - name: Transfer from CI to server
       uses: appleboy/scp-action@master
       with:

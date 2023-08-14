@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  set-envs:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,16 +13,22 @@ jobs:
       run: echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
     - name: Set deploy folder env var
       run: echo "TMP_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
-    - name: Test env var names
-      run: |
-        echo $DATETIME
-        echo $TMP_FOLDER
-    - uses: actions/checkout@v1
-    - name: build
+    
+  build:
+    runs-on: ubuntu-latest
+
+    steps:    
+    - name: Build 11ty site
       uses: TartanLlama/actions-eleventy@master
       with:
         install_dependencies: true
-    - name: transfer
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Transfer from CI to server
       uses: appleboy/scp-action@master
       with:
         source: "dist"
@@ -32,7 +38,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-    - name: Testing remote command
+    - name: Move to nginx location
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -40,6 +46,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
+          find ${{ secrets.DEPLOY_FOLDER }} -mindepth 1 -delete
           mv ${{env.TMP_FOLDER}}/* ${{ secrets.DEPLOY_FOLDER }}
-          cd ${{ secrets.DEPLOY_FOLDER }}
-          ls -al

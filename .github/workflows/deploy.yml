@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github.event.repository.name) }}
-      run: echo "$GITHUB_CONTEXT"
+    - name: Set env
+      run: echo "DATETIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+    - name: Test
+      run: echo $DATETIME
     - uses: actions/checkout@v1
     - name: build
       uses: TartanLlama/actions-eleventy@master
@@ -22,7 +22,7 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         source: "dist"
-        target: "/var/www/jegtnes"
+        target: "${{format('{0}{1}', '/tmp/', github.event.repository.name )}}"
         strip_components: 1
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}

@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set env
-      run: |
-        echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
-        echo "DEPLOY_FOLDER=$(/tmp/$GITHUB_CONTEXT.EVENT.REPOSITORY.NAME)-$DATETIME" >> $GITHUB_ENV
-    - name: Test
+    - name: Set datetime env var
+      run: echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
+    - name: Set deploy folder env var
+      run: echo "DEPLOY_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
+    - name: Test env var names
       run: |
         echo $DATETIME
         echo $DEPLOY_FOLDER

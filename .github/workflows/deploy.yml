@@ -40,6 +40,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          mv ${{env.TMP_FOLDER}} ${{ secrets.DEPLOY_FOLDER }}
+          mv ${{env.TMP_FOLDER}}/* ${{ secrets.DEPLOY_FOLDER }}
           cd ${{ secrets.DEPLOY_FOLDER }}
           ls -al

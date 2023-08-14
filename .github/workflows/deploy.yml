@@ -12,11 +12,11 @@ jobs:
     - name: Set datetime env var
       run: echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
     - name: Set deploy folder env var
-      run: echo "DEPLOY_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
+      run: echo "TMP_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
     - name: Test env var names
       run: |
         echo $DATETIME
-        echo $DEPLOY_FOLDER
+        echo $TMP_FOLDER
     - uses: actions/checkout@v1
     - name: build
       uses: TartanLlama/actions-eleventy@master
@@ -26,7 +26,7 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         source: "dist"
-        target: "${{format('{0}{1}-{2}', '/tmp/', github.event.repository.name, env.DATETIME )}}"
+        target: "${{env.TMP_FOLDER}}"
         strip_components: 1
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -40,5 +40,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd /var/www/jegtnes
+          mv ${{env.TMP_FOLDER}} ${{ secrets.DEPLOY_FOLDER }}
+          cd ${{ secrets.DEPLOY_FOLDER }}
           ls -al

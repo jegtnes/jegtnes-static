@@ -24,7 +24,7 @@ jobs:
         install_dependencies: true
 
   deploy:
-    needs: build
+    needs: [build, set-envs]
     runs-on: ubuntu-latest
     
     steps:

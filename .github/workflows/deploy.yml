@@ -10,9 +10,13 @@ jobs:
 
     steps:
     - name: Set env
-      run: echo "DATETIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+      run: |
+        echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
+        echo "DEPLOY_FOLDER=$(/tmp/$GITHUB_CONTEXT.EVENT.REPOSITORY.NAME)-$DATETIME" >> $GITHUB_ENV
     - name: Test
-      run: echo $DATETIME
+      run: |
+        echo $DATETIME
+        echo $DEPLOY_FOLDER
     - uses: actions/checkout@v1
     - name: build
       uses: TartanLlama/actions-eleventy@master

@@ -130,7 +130,7 @@ blockquote {
 }
 
 .flow--spacious {
-  --flow-space: 1.5em;
+  --flow-space: var(--space-m-l);
 }
 
 .container {

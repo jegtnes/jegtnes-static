@@ -9,19 +9,19 @@ eleventyComputed:
   twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
 ---
 
-Hi there! I'm Alex, an independent web development contractor based in London. 
+Hi there! I'm Alex, an independent web development contractor based in London. I have nine years of experience working with clients ranging from startups and design studios to large corporations and banks. I develop fast, accessible, and beautiful websites and web apps.
+
 
 {% if global.availability %}
   <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
 {% endif %}
 
-I have eight years of experience working with everything from startups and design studios to large corporations and banks develop fast, accessible, and beautiful websites and web apps.
 
 ## Quick summary
 
 I’m an adept web developer, possessing a varied set of highly practical skills with a front-end focus. I’ve worked on every type of project, from rapid prototypes with tight feedback loops to complex projects lasting years. I have a good eye for design and I love collaborating with designers as early and as frequently as possible, because this tight feedback loop helps make better products more efficiently.
 
-## Technologies I work with
+## My experience
 
 <article class="flex-grid flex-grid--equal">
   <section class="flow">

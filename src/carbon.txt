@@ -1,0 +1,4 @@
+[upstream]
+providers = [
+    { domain = "hetzner.com", service = "vps" },
+]

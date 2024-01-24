@@ -1,12 +1,11 @@
 {% if twitterLabel1 and twitterData1 and twitterLabel2 and twitterData2 %}
   {% set custom = [
-    ["meta", "", {name: "twitter:label1", content: twitterLabel1 }],
-    ["meta", "", {name: "twitter:data1", content: twitterData1 }],
-    ["meta", "", {name: "twitter:label2", content: twitterLabel2 }],
-    ["meta", "", {name: "twitter:data2", content: twitterData2 }]
+      { tag: 'meta', attrs: { name: "twitter:label1", content: twitterLabel1 } },
+      { tag: 'meta', attrs: { name: "twitter:data1", content: twitterData1 } },
+      { tag: 'meta', attrs: { name: "twitter:label2", content: twitterLabel2 } },
+      { tag: 'meta', attrs: { name: "twitter:data2", content: twitterData2 } }
   ] %}
 {% endif %}
-
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>

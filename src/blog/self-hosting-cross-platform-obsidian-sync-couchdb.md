@@ -1,6 +1,6 @@
 ---
 eleventyExcludeFromCollections: true # remove this line to publish
-title: "Self-hosting a cross-platform Obsidian Sync solution for iOS, Android, Mac, and Windows with CouchDB"
+title: "Self-hosting Obsidian Sync for iOS, Android, Mac, and Windows with CouchDB"
 date: 2024-01-16
 layout: blog-post.njk
 excerpt: "How to set up a self-hosted sync solution for the note-taking-app Obsidian that works cross-platform, backed by CouchDB on your own server."

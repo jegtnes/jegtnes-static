@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true # remove this line to publish
 title: "Self-hosting a cross-platform Obsidian Sync solution for iOS, Android, Mac, and Windows with CouchDB"
 date: 2024-01-16
 layout: blog-post.njk

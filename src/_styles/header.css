@@ -1,7 +1,6 @@
 .site-header {
   background: var(--color-brand);
   padding-block: var(--space-s-m);
-  color: var(--color-white);
   margin-block-end: var(--space-m-l);
 }
 
@@ -34,7 +33,7 @@
 
 .main-nav__link,
 .main-nav__link:visited {
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .main-nav__link:hover,

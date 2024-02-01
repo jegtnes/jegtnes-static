@@ -50,4 +50,4 @@ And that's about it. This will save me a few premature pushes in the future—ho
 
 Here's a quick gif of the hook in action.
 
-![](/assets/images/content-images/test-suite-skip.gif)
+![A GIF of a command line terminal in front of a code editor. This shows a successful Git push, then some code being updated to add a test suite skip, and then Git rejecting the push.](/assets/images/content-images/test-suite-skip.gif)

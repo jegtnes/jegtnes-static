@@ -1,5 +1,8 @@
 .site-header {
-  margin-block-end: var(--space-s-m);
+  background: var(--color-brand);
+  padding-block: var(--space-s-m);
+  color: var(--color-white);
+  margin-block-end: var(--space-m-l);
 }
 
 .main-nav {

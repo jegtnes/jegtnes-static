@@ -17,7 +17,7 @@ If you're currently migrating your blog from another content service provider to
 
 2) (Recommended) Retain your links structure. Find your SQLite database and change the `permalinks` key in the `settings` table (which should be under `/content/data/ghost.db`), like such:
 
-![](/assets/images/content-images/ghost-permalink-db.png)
+![An image of a single row in a SQL database, showing that a 'permalinks' key has been changed to /blog/:slug:/](/assets/images/content-images/ghost-permalink-db.png)
 
 To do this you need a SQLite editor. If you're on OS X, [MesaSQLite](http://mesasqlite.en.softonic.com/mac/download) is a tiny bit neckbeardy, but it's free and does the job. For Windows and Linux, there's a list of available applications at [AlternativeTo](http://alternativeto.net/tag/sqlite/).
 

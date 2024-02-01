@@ -34,7 +34,7 @@ Until then, I wanted to migrate my blog to Ghost for a clean slate sooner rather
 
 Knowing little JavaScript, no NodeJS whatsoever, and barely having heard of Express before digging into the source code of Ghost, this was the perfect opportunity to get down and dirty.
 
-![](/assets/images/content-images/ghost-redirection-rules.png)
+![A screenshot of a code editor showing some Ghost source code. It's about 40 lines of code, showing the logic for how to handle various GET and POST requests to the admin backend.](/assets/images/content-images/ghost-redirection-rules.png)
 
 _A small piece of Ghost's redirection rules. What does all of this mean? I have no idea, really. But that's okay. Figuring it out is half the fun!_
 

@@ -41,8 +41,8 @@ body {
 
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-blue-dark);
+  color: var(--color-white);
   font-family: var(--font-system-humanist);
   font-size: var(--step-0);
 }

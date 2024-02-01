@@ -34,7 +34,7 @@ Until then, I wanted to migrate my blog to Ghost for a clean slate sooner rather
 
 Knowing little JavaScript, no NodeJS whatsoever, and barely having heard of Express before digging into the source code of Ghost, this was the perfect opportunity to get down and dirty.
 
-![](/assets/images/content-images/Screen_Shot_2013_10_24_at_17_47_42.png)
+![](/assets/images/content-images/ghost-redirection-rules.png)
 
 _A small piece of Ghost's redirection rules. What does all of this mean? I have no idea, really. But that's okay. Figuring it out is half the fun!_
 

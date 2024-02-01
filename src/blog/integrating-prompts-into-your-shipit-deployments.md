@@ -48,7 +48,7 @@ inquirer.prompt({
 ```
 
 So far, so good!
-![An image of the command line output. The command run is 'shipit prod wipeDB'. Below that, text is seen saying 'Running wipeDB' task…. Below this, a question is asked: 'Here be dragons! Running this will wipe the production database. This is not recoverable. Are you sure? y/N](/assets/images/content-images/Screen-Shot-2015-10-27-at-16-30-10.png)
+![An image of the command line output. The command run is 'shipit prod wipeDB'. Below that, text is seen saying 'Running wipeDB' task…. Below this, a question is asked: 'Here be dragons! Running this will wipe the production database. This is not recoverable. Are you sure? y/N](/assets/images/content-images/shipit-prompt-delete.png)
 
 The `answer` parameter in the callback will be a single object, with the key we created earlier, `wipeConfirmation`. This will let us check for the user's answer and take actions accordingly:
 
@@ -91,6 +91,6 @@ shipit.blTask('wipeDB', function(callback) {
 
 And it works!
 
-![A screenshot of the previous command being ran twice, first saying yes and then saying no, and the appropriate output being displayed](/assets/images/content-images/Screen-Shot-2015-10-27-at-16-33-51.png)
+![A screenshot of the previous command being ran twice, first saying yes and then saying no, and the appropriate output being displayed](/assets/images/content-images/shipit-prompt-delete-confirmed.png)
 
 Go forth and run your deployment tasks safe in the knowledge that your users are _really_ sure they wanted to do it!

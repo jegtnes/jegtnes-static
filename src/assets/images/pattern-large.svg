@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 92">
+    <style>
+        .w {
+            fill: #fff;
+        }
+        .b {
+            fill: #00205B;
+        }
+    </style>
+    <defs>
+        <path id="l" d="M.34 0 .22.357c-.223.6-.294 2.6-.127 3.5C.315 5.1.956 6.374 1.778 7.246L2.52 8l.126-.429c.196-.642.154-2.912-.07-3.67-.11-.37-.544-1.17-.962-1.785A18.08 18.08 0 0 1 .593.5L.341 0Z"/>
+        <use id="r" href="#l" transform="scale(-1, 1)" x="-6" />
+        <g id="s">
+            <use href="#l" />
+            <use href="#r" />
+        </g>
+    </defs>
+    <g id="r0">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="w" />
+        <use href="#s" y="18" class="w" />
+        <use href="#s" y="24" class="b" />
+        <use href="#s" y="30" class="w" />
+        <use href="#s" y="36" class="b" />
+        <use href="#s" y="42" class="w" />
+        <use href="#s" y="48" class="b" />
+        <use href="#s" y="54" class="w" />
+        <use href="#s" y="60" class="b" />
+        <use href="#s" y="66" class="w" />
+        <use href="#s" y="72" class="w" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r1" transform="translate(6)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="b" />
+        <use href="#s" y="18" class="w" />
+        <use href="#s" y="24" class="w" />
+        <use href="#s" y="30" class="b" />
+        <use href="#s" y="36" class="w" />
+        <use href="#s" y="42" class="b" />
+        <use href="#s" y="48" class="w" />
+        <use href="#s" y="54" class="b" />
+        <use href="#s" y="60" class="w" />
+        <use href="#s" y="66" class="w" />
+        <use href="#s" y="72" class="b" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r2" transform="translate(12)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="w" />
+        <use href="#s" y="12" class="b" />
+        <use href="#s" y="18" class="b" />
+        <use href="#s" y="24" class="w" />
+        <use href="#s" y="30" class="w" />
+        <use href="#s" y="36" class="b" />
+        <use href="#s" y="42" class="w" />
+        <use href="#s" y="48" class="b" />
+        <use href="#s" y="54" class="w" />
+        <use href="#s" y="60" class="w" />
+        <use href="#s" y="66" class="b" />
+        <use href="#s" y="72" class="b" />
+        <use href="#s" y="78" class="w" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r3" transform="translate(18)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="w" />
+        <use href="#s" y="18" class="b" />
+        <use href="#s" y="24" class="b" />
+        <use href="#s" y="30" class="w" />
+        <use href="#s" y="36" class="w" />
+        <use href="#s" y="42" class="b" />
+        <use href="#s" y="48" class="w" />
+        <use href="#s" y="54" class="w" />
+        <use href="#s" y="60" class="b" />
+        <use href="#s" y="66" class="b" />
+        <use href="#s" y="72" class="w" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r4" transform="translate(24)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="w" />
+        <use href="#s" y="12" class="b" />
+        <use href="#s" y="18" class="w" />
+        <use href="#s" y="24" class="b" />
+        <use href="#s" y="30" class="b" />
+        <use href="#s" y="36" class="w" />
+        <use href="#s" y="42" class="w" />
+        <use href="#s" y="48" class="w" />
+        <use href="#s" y="54" class="b" />
+        <use href="#s" y="60" class="b" />
+        <use href="#s" y="66" class="w" />
+        <use href="#s" y="72" class="b" />
+        <use href="#s" y="78" class="w" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r5" transform="translate(30)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="w" />
+        <use href="#s" y="12" class="w" />
+        <use href="#s" y="18" class="b" />
+        <use href="#s" y="24" class="w" />
+        <use href="#s" y="30" class="b" />
+        <use href="#s" y="36" class="b" />
+        <use href="#s" y="42" class="w" />
+        <use href="#s" y="48" class="b" />
+        <use href="#s" y="54" class="b" />
+        <use href="#s" y="60" class="w" />
+        <use href="#s" y="66" class="b" />
+        <use href="#s" y="72" class="w" />
+        <use href="#s" y="78" class="w" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r6" transform="translate(36)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="w" />
+        <use href="#s" y="18" class="w" />
+        <use href="#s" y="24" class="b" />
+        <use href="#s" y="30" class="w" />
+        <use href="#s" y="36" class="b" />
+        <use href="#s" y="42" class="b" />
+        <use href="#s" y="48" class="b" />
+        <use href="#s" y="54" class="w" />
+        <use href="#s" y="60" class="b" />
+        <use href="#s" y="66" class="w" />
+        <use href="#s" y="72" class="w" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r7" transform="translate(42)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="b" />
+        <use href="#s" y="18" class="w" />
+        <use href="#s" y="24" class="w" />
+        <use href="#s" y="30" class="b" />
+        <use href="#s" y="36" class="w" />
+        <use href="#s" y="42" class="b" />
+        <use href="#s" y="48" class="w" />
+        <use href="#s" y="54" class="b" />
+        <use href="#s" y="60" class="w" />
+        <use href="#s" y="66" class="w" />
+        <use href="#s" y="72" class="b" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r8" transform="translate(48)">
+        <use href="#s" y="00" class="b" />
+        <use href="#s" y="06" class="b" />
+        <use href="#s" y="12" class="b" />
+        <use href="#s" y="18" class="b" />
+        <use href="#s" y="24" class="w" />
+        <use href="#s" y="30" class="w" />
+        <use href="#s" y="36" class="b" />
+        <use href="#s" y="42" class="w" />
+        <use href="#s" y="48" class="b" />
+        <use href="#s" y="54" class="w" />
+        <use href="#s" y="60" class="w" />
+        <use href="#s" y="66" class="b" />
+        <use href="#s" y="72" class="b" />
+        <use href="#s" y="78" class="b" />
+        <use href="#s" y="84" class="b" />
+    </g>
+    <g id="r9" transform="translate(54)">
+        <use href="#l" y="00" class="b" />
+        <use href="#l" y="06" class="w" />
+        <use href="#l" y="12" class="b" />
+        <use href="#l" y="18" class="b" />
+        <use href="#l" y="24" class="b" />
+        <use href="#l" y="30" class="w" />
+        <use href="#l" y="36" class="w" />
+        <use href="#l" y="42" class="b" />
+        <use href="#l" y="48" class="w" />
+        <use href="#l" y="54" class="w" />
+        <use href="#l" y="60" class="b" />
+        <use href="#l" y="66" class="b" />
+        <use href="#l" y="72" class="b" />
+        <use href="#l" y="78" class="w" />
+        <use href="#l" y="84" class="b" />
+    </g>
+    <use href="#r9" x="-114" transform="scale(-1, 1)" />
+    <use href="#r8" x="12" />
+    <use href="#r7" x="24" />
+    <use href="#r6" x="36" />
+    <use href="#r5" x="48" />
+    <use href="#r4" x="60" />
+    <use href="#r3" x="72" />
+    <use href="#r2" x="84" />
+    <use href="#r1" x="96" />
+</svg>

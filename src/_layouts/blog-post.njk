@@ -3,10 +3,12 @@ layout: global.njk
 permalink: /blog/{{ title | slugify }}/
 ---
 
-<article class="container flow h-entry">
-  <h1 class="p-name">{{ title }}</h1>
-  <time class="dt-published" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>
-  <div class="e-content flow">
+<article class="flow h-entry">
+  <header class="container marius-section">
+    <h1 class="p-name">{{ title }}</h1>
+    <time class="dt-published" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>
+  </header>
+  <div class="container e-content flow">
     {{ content | safe }}
   </div>
 </article>

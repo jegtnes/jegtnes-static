@@ -1,6 +1,7 @@
 ---
 title: On the word 'guys'
 date: 2015-07-14
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "On the implications of gendered language and why I believe we should try to avoid it if appropriate."
 ---

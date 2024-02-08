@@ -1,6 +1,7 @@
 ---
 title: How to implement permalink redirection in Ghost 0.3
 date: 2013-08-28
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "If you're using Ghost 0.3 and want some form of permalink redirection, I explain how, as this isn't a core part of the platform yet."
 ---

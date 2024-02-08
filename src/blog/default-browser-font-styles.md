@@ -1,6 +1,7 @@
 ---
 title: Default browser stylesheet font properties
 date: 2017-03-21
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "A list of all the default font styles in the browser stylesheet to take into consideration when setting up typographic styles for a new project. Save yourself from the tyranny of accidental faux-italics today!"
 ---

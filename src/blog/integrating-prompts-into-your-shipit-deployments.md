@@ -1,6 +1,7 @@
 ---
 title: Integrating prompts into your Shipit deployments
 date: 2015-10-27
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: If you use Shipit to deploy things and want to be able to take certain actions depending on user input, this might be the thing for you.
 ---

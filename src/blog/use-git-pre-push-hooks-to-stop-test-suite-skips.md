@@ -1,6 +1,7 @@
 ---
 title: Use Git pre-push hooks to stop test suite skips
 date: 2016-03-09
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "Git pre-push hooks are powerful, and can stop embarassing premature pushes of your half-finished stuff. I'll hook you up with some tips and tricks."
 ---

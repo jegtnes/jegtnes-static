@@ -1,6 +1,7 @@
 ---
 title: Migrating your current permalink structure to Ghost 0.4
 date: 2014-05-01
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "If you're using Ghost 0.4 and want some form of permalink redirection, it's now a lot easier and less hacky than with 0.3."
 ---

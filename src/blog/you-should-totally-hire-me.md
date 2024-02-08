@@ -1,6 +1,7 @@
 ---
 title: Graduate seeking great company to make lovely web things for
 date: 2014-06-02
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "I'm looking for a job. It'd be nice if you'd like to hire me."
 ---

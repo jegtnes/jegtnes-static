@@ -1,17 +1,18 @@
-{% set anchorClass %}main-nav__link {% activeSection item.url, page.url %}{% endset %}
-
 <header class="site-header">
   <nav class="container">
-    <ul class="main-nav">
+    <ul class="main-nav half-bleed">
       {% for item in nav.items %}
+        {% set anchorClass %}main-nav__link {% activeSection item.url, page.url, "main-nav__link--active" %}{% endset %}
+
         {% if item.url == "/" %}
-          <li class="main-nav__item hcard">
+          <li class="main-nav__item main-nav__item--logo hcard">
         {% else %}
           <li class="main-nav__item">
         {% endif %}
           <a
             href="{{item.url}}"
-            class="main-nav__link {% activeSection item.url, page.url %}"
+            class="{{anchorClass}}"
+            data-text="{{item.label}}"
             {% ariaCurrent item.url, page.url %}
           >
             {{item.label}}

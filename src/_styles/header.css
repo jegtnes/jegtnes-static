@@ -17,9 +17,10 @@
   margin: 0 var(--space-xs);
 }
 
-.main-nav__item:first-of-type {
+.main-nav__item--logo {
   flex-grow: 1;
   margin: 0; 
+  font-family: var(--font-brand);
   font-size: var(--step-1)
 }
 
@@ -29,6 +30,19 @@
 
 .main-nav__link {
   text-decoration: none;
+}
+
+/* Duplicating the content to allow for layout shift free bolding - also hide from users in any meaningful way ofc */
+.main-nav__link::after {
+  display: block;
+  font-weight: 700;
+  content: attr(data-text);
+
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
 }
 
 .main-nav__link,
@@ -42,6 +56,6 @@
   outline: none;
 }
 
-.main-nav__link.current {
-  color: var(--color-brand)
+.main-nav__link--active {
+  font-weight: 700;
 }

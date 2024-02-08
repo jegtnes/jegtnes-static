@@ -1,6 +1,7 @@
 ---
 title: Yes, people will probably do that on their phone
 date: 2013-03-12
+location: London, UK
 layout: blog-post.njk
 excerpt: "Despite it being the good lord's year of 2013, plenty of folks believe in the myth of mobile context. People will do everything on their phones."
 ---

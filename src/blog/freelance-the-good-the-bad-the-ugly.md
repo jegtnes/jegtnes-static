@@ -1,6 +1,7 @@
 ---
 title: "Freelance: The good, the bad, and the ugly"
 date: 2017-01-07
+location: on the train between Bristol and Leeds, UK
 layout: blog-post.njk
 excerpt: "In which I take a look at my fledgling freelance career and question everything."
 ---

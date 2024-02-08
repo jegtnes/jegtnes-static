@@ -2,6 +2,7 @@
 title: "Hardware Hacking Diaries 1: Arcane Thermometer"
 date: 2015-10-12
 layout: blog-post.njk
+location: Bristol, UK
 excerpt: "I play around with Arduinos for fun and profit, and in the end I made the daftest ever Arduino thermometer."
 ---
 

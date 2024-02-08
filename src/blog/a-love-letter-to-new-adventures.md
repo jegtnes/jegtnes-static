@@ -1,6 +1,7 @@
 ---
 title: A love letter to New Adventures
 date: 2013-01-31
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "Attending the New Adventures conference is the single greatest thing that has happened to my career thus far for plenty of reasons."
 ---

@@ -1,6 +1,7 @@
 ---
 title: Questions to ask prospective employers as an intern
 date: 2014-09-22
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "If you're looking for a placement or internship at a tech company, here are some questions you might want to ask in job interviews or similar scenarios."
 ---

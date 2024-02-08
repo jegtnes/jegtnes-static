@@ -1,6 +1,7 @@
 ---
 title: "Antiviral: Tweetbot regular expressions to mute hyperbole and listicles"
 date: 2014-02-24
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "I made some regular expressions to make my Twitter experience a bit nicer."
 ---

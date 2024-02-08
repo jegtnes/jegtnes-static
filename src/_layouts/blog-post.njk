@@ -5,8 +5,17 @@ permalink: /blog/{{ title | slugify }}/
 
 <article class="flow h-entry">
   <header class="container marius-section">
-    <h1 class="p-name">{{ title }}</h1>
-    <time class="dt-published" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>
+    <h1 class="p-name half-bleed">{{ title }}</h1>
+    <p class="half-bleed">
+      Published on
+        <time class="dt-published" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>
+      {% if location %}
+        {% if (location.slice(0, 2) !== 'on') and (location.slice(0, 2) !== 'in') %}
+          in
+        {% endif %}
+        {{ location }}
+      {% endif %}
+    </p>
   </header>
   <div class="container e-content flow">
     {{ content | safe }}

@@ -39,10 +39,6 @@ a:visited {
   color: var(--color-purple);
 }
 
-time {
-  display: block;
-}
-
 blockquote {
   border-inline-start: var(--space-2xs) solid var(--color-brand);
   font-size: 1.2em;
@@ -132,11 +128,7 @@ nav ul li {
 }
 
 @container (min-width: 60ch) {
-  .container > h1,
-  .container > h2,
-  .container > h3,
-  .container > h4,
-  .container > pre {
-    /* grid-column: 2 / -2; */
+  .half-bleed {
+    grid-column: 2 / -2;
   }
 }

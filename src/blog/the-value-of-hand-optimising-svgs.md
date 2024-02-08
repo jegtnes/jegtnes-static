@@ -1,6 +1,7 @@
 ---
 title: The value of hand-optimising SVGs
 date: 2023-01-26
+location: London, UK
 layout: blog-post.njk
 excerpt: "In which the author extols the virtue of taking a look at the markup of the SVGs you use"
 ---
@@ -81,7 +82,7 @@ The first thing you may notice is that some paths have been moved to `<defs>` an
 
 But the first thing that should clue an observant reader in is that we still see repeated definitions of things that just aren't necessary because they're the SVG default values (`stroke-linejoin="meter"` and friends). It's like including `div { margin: 0; }` in a CSS reset; it's just not necessary, divs have no margins by default.
 
-## But we can do _even better_ than that
+## Further manual improvements
 
 This isn't intended to be a full SVG reference book, so I won't go into all the remaining optimisations that could be done in great depths, but here's what I did:
 

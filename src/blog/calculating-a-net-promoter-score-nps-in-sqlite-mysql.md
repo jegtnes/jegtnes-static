@@ -1,6 +1,7 @@
 ---
 title: Calculating a Net Promoter Score (NPS) in SQLite, PostgreSQL, and MySQL
 date: 2015-12-08
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "How to calculate a Net Promoter Score in one query using your favourite SQL-based DBMS."
 ---

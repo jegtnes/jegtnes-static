@@ -1,6 +1,7 @@
 ---
 title: I'm joining cxpartners
 date: 2014-06-24
+location: Bristol, UK
 layout: blog-post.njk
 excerpt: "I'm delighted to be joining cxpartners this June as a full-time developer."
 ---

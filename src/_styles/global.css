@@ -8,8 +8,13 @@ body {
 }
 
 .flow > * + *,
-.flow > dl > * { 
+.flow > dl > * {
   margin-block-start: var(--flow-space, 1em)
+}
+
+/* Needed to override default theme spacing */
+.flow pre {
+  margin: var(--flow-space, 1em) 0 0 0;
 }
 
 .flow--spacious {
@@ -17,9 +22,6 @@ body {
 }
 
 footer {
-  margin-block-start: var(--space-s-m);
-  border-block-start: 1px solid black;
-  padding-block-start: var(--space-s-m);
   padding-block-end: var(--space-s-m);
 }
 
@@ -106,6 +108,7 @@ nav ul li {
   content: "";
   grid-column: 1 / -1;
   height: clamp(3.8333rem, 9vmax, 7.67rem);
+  margin-block: var(--space-s-m);
   background-image: url(/assets/images/pattern-large.svg);
 }
 

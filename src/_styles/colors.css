@@ -4,6 +4,8 @@
 
   --color-brand-primary: var(--norway-red-550);
   --color-brand-secondary: var(--norway-blue-750);
+  --color-blue-light: var(--norway-blue-150);
+  --color-blue-lighter: var(--fjord-blue-50);
 
   --norway-red-950: oklch(5%  0.017 23);
   --norway-red-900: oklch(10% 0.037 23);
@@ -44,4 +46,24 @@
   --norway-blue-150: oklch(85% 0.068 261);
   --norway-blue-100: oklch(90% 0.042 261);
   --norway-blue-50:  oklch(95% 0.018 261);
+
+  --fjord-blue-950: oklch(5%  0.015 217.4);
+  --fjord-blue-900: oklch(10% 0.015 217.4);
+  --fjord-blue-850: oklch(15% 0.025 217.4);
+  --fjord-blue-800: oklch(20% 0.034 217.4);
+  --fjord-blue-750: oklch(25% 0.046 217.4);
+  --fjord-blue-700: oklch(30% 0.053 217.4);
+  --fjord-blue-650: oklch(35% 0.063 217.4);
+  --fjord-blue-600: oklch(40% 0.071 217.4);
+  --fjord-blue-550: oklch(45% 0.081 217.4);
+  --fjord-blue-500: oklch(50% 0.089 217.4);
+  --fjord-blue-450: oklch(55% 0.098 217.4);
+  --fjord-blue-400: oklch(60% 0.107 217.4);
+  --fjord-blue-350: oklch(65% 0.117 217.4);
+  --fjord-blue-300: oklch(70% 0.126 217.4);
+  --fjord-blue-250: oklch(75% 0.134 217.4);
+  --fjord-blue-200: oklch(80% 0.139 217.4);
+  --fjord-blue-150: oklch(85% 0.106 217.4);
+  --fjord-blue-100: oklch(90% 0.066 217.4);
+  --fjord-blue-50:  oklch(95% 0.066 217.4);
 }

@@ -24,7 +24,7 @@ footer {
 }
 
 a {
-  /* color: var(--color-blue); */
+  color: var(--color-blue-lighter);
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
 }
@@ -36,7 +36,7 @@ a:focus {
 }
 
 a:visited {
-  color: var(--color-purple);
+  color: var(--color-blue-light);
 }
 
 blockquote {

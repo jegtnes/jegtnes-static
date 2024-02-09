@@ -93,7 +93,7 @@ nav ul li {
 
 :not(pre) > code[class*="language-"] {
   display: inline-block;
-  font-size: .8em;  
+  font-size: .8em;
   padding: 0 .33em;
 }
 

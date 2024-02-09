@@ -1,5 +1,5 @@
 .site-header {
-  background: var(--color-brand);
+  background: var(--color-brand-primary);
   padding-block: var(--space-s-m);
   margin-block-end: var(--space-m-l);
 }
@@ -11,6 +11,7 @@
   align-items: center;
   list-style-type: none;
   font-size: var(--step-0);
+  text-transform: uppercase;
 }
 
 .main-nav__item {

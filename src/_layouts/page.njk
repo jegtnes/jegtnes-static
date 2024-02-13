@@ -2,11 +2,19 @@
 layout: global.njk
 ---
 
-<div class="container flow marius-section">
-  {% if headline %}
-    <h1>{{ headline }}</h1>
-  {% elseif title %}
-    <h1>{{title}}</h1>
-  {% endif %}
-  {{ content | safe }}
+<article class="marius-section">
+  <header class="container flow marius-section">
+    {% if headline %}
+      <h1>{{ headline }}</h1>
+    {% elseif title %}
+      <h1>{{title}}</h1>
+    {% endif %}
+    {% if intro %}
+      {{ intro | safe }}
+    {% endif %}
+  </header>
+
+  <div class="container flow">
+    {{ content | safe }}
+  </div>
 </div>

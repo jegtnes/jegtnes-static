@@ -2,16 +2,18 @@
 headline: Hi there! I'm Alex.
 title: Home
 layout: page.njk
+eleventyComputed:
+  twitterLabel1: Availability
+  twitterData1: "{%if global.availability%}{{global.availabilityDate}}{%else%}None{%endif%}"
+  twitterLabel2: Proficiencies
+  twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
+  intro:
+    <p>I'm an independent web development contractor based in London with ten years of experience. I develop fast, accessible, and beautiful websites and web apps.</p>
+    {% if global.availability %}
+    <p><strong>I have availability for new projects {{ global.availabilityDate }}</strong>, either remotely or on-site in London.</p>
+    <a class="btn" href="/work-with-me#quick-summary">See what I can do for your organisation</a>
+    {% endif %}
 ---
-
-<p>I'm a freelance web developer from Norway living in London, UK.</p>
-
-<p>It's nice to meet you. I make websites, web apps, and prototypes that run fast, are accessible, and solve real user problems.</p>
-
-{% if global.availability %}
-  <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
-  <a class="btn" href="/work-with-me">See what I can do for your organisation</a>
-{% endif %}
 
 <section class="flow flow--spacious h-feed">
   <h2>Latest blog posts</h2>

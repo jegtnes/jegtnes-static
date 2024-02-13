@@ -3,7 +3,7 @@ layout: global.njk
 permalink: /blog/{{ title | slugify }}/
 ---
 
-<article class="h-entry">
+<article class="h-entry marius-section">
   <header class="container marius-section">
     <h1 class="p-name half-bleed">{{ title }}</h1>
     <p class="half-bleed">
@@ -17,7 +17,7 @@ permalink: /blog/{{ title | slugify }}/
       {% endif %}
     </p>
   </header>
-  <div class="container e-content flow marius-section">
+  <div class="container e-content flow">
     {{ content | safe }}
   </div>
 </article>

@@ -7,15 +7,8 @@ eleventyComputed:
   twitterData1: "{%if global.availability%}{{global.availabilityDate}}{%else%}None{%endif%}"
   twitterLabel2: Proficiencies
   twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
+  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p><strong>I have availability for new projects {{ global.availabilityDate }}</strong>, either remotely or on-site in London.</p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
 ---
-
-Hi there! I'm Alex, an independent web development contractor based in London. I have nine years of experience working with clients ranging from startups and design studios to large corporations and banks. I develop fast, accessible, and beautiful websites and web apps.
-
-
-{% if global.availability %}
-  <p class="delta">I have availability for new projects {{ global.availabilityDate }}, either remotely or on-site in London.</p>
-{% endif %}
-
 
 ## Quick summary
 
@@ -30,28 +23,28 @@ I’m an adept web developer, possessing a varied set of highly practical skills
       <li>HTML</li>
       <li>CSS/Sass</li>
       <li>JavaScript</li>
-      <li>React</li>
       <li>Accessibility</li>
       <li>Web performance</li>
     </ul>
   </section>
   <section class="flow">
-    <h3 class="delta" id="good-competency">Good competency</h3>
+    <h3 class="delta" id="good-competency">Solid competency</h3>
     <ul>
+      <li>Design systems</li>
+      <li>Storybook</li>
+      <li><abbr title="JavaScript, APIs, Markup">JAMstack</abbr></li>
+      <li>React</li>
+      <li>Next.js</li>
       <li>Node.js</li>
       <li>GraphQL</li>
       <li>PHP</li>
       <li>WordPress</li>
-      <li>Serverless</li>
-      <li>Design systems</li>
-      <li>Storybook</li>
-      <li>TDD</li>
-      <li>Next.js</li>
     </ul>
   </section>
   <section class="flow">
     <h3 class="delta" id="basic-proficiency">Basic familarity</h3>
     <ul>
+      <li>Serverless</li>
       <li>MySQL/PostgreSQL</li>
       <li>MongoDB</li>
       <li>Laravel</li>
@@ -65,7 +58,7 @@ I’m an adept web developer, possessing a varied set of highly practical skills
 
 But I like to think I am a bit more than just a set of technologies. Here are some more reasons people have enjoyed working with me in the past:
 
-## ⛏️ I'm a seasoned code archaeologist
+## I'm a seasoned code archaeologist
 
 My six years of contracting experience has given me exposure to a wide variety of codebases, and part and parcel of being a contractor is getting up to speed with these quickly.
 
@@ -81,7 +74,7 @@ As a contractor via a small [OrangeJellyfish](https://www.orangejellyfish.com/) 
 
 I'm naturally an incredibly curious person, and I enjoy weaponising this curiosity in my job as a developer. From bisecting through ancient Git commits from years before the developers left, searching GitHub PRs and Slack discussions, perusing long-abandoned Confluence pages, or more brute-force approaches, there's something satisfying about piecing together a complex system and understanding how it works. A legacy code base with a few head-scratchers and a backlog of decisions that were, perhaps in hindsight, suboptimal, isn't a source of annoyance for me, it's a challenge that I relish.
 
-## 🦮 Accessibility 
+## Accessibility 
 
 I have several years of experience building accessible websites and web applications, getting involved earlier in the product process to discuss accessibility with designers and product-people up-front, and helping development teams upskill their accessibility knowledge.
 
@@ -93,7 +86,7 @@ Additionally, where the accessibility issues were partially or entirely as a res
 
 By the time my engagement finished, I had left the development and product teams in a much more robust state to tackle their existing accessibility issues, and through mentoring and knowledge-sharing, build more accessible products in the future.
 
-## 🚅 Web performance
+## Web performance
 
 We’ve all been there on dodgy train WiFi desperately trying to load a website we desperately need, but for the connection to drop halfway through and you end up sad. I just happen to have a long memory and a vendetta that fuels my continous healthy web performance zealotry.
 

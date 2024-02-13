@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 2rem;
+}
+
 body {
   margin: 0 auto;
 
@@ -108,7 +112,7 @@ nav ul li {
   content: "";
   grid-column: 1 / -1;
   height: clamp(3.8333rem, 9vmax, 7.67rem);
-  margin-block: var(--space-s-m);
+  margin-block: var(--space-m-l);
   background-image: url(/assets/images/pattern-large.svg);
 }
 

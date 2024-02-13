@@ -66,4 +66,40 @@
   --fjord-blue-150: oklch(85% 0.106 217.4);
   --fjord-blue-100: oklch(90% 0.066 217.4);
   --fjord-blue-50:  oklch(95% 0.066 217.4);
+
+  --forest-green-900: oklch(10% 0.029 141);
+  --forest-green-850: oklch(15% 0.046 141);
+  --forest-green-800: oklch(20% 0.065 141);
+  --forest-green-750: oklch(25% 0.083 141);
+  --forest-green-700: oklch(30% 0.1 141);
+  --forest-green-650: oklch(35% 0.116 141);
+  --forest-green-600: oklch(40% 0.133 141);
+  --forest-green-550: oklch(45% 0.15 141);
+  --forest-green-500: oklch(50% 0.166 141);
+  --forest-green-450: oklch(55% 0.183 141);
+  --forest-green-400: oklch(60% 0.2 141);
+  --forest-green-350: oklch(65% 0.216 141);
+  --forest-green-300: oklch(70% 0.233 141);
+  --forest-green-250: oklch(75% 0.249 141);
+  --forest-green-200: oklch(80% 0.258 141);
+  --forest-green-150: oklch(85% 0.262 141);
+  --forest-green-100: oklch(90% 0.18 141);
+
+  --cabbage-purple-900: oklch(10% 0.041 321);
+  --cabbage-purple-850: oklch(15% 0.065 321);
+  --cabbage-purple-800: oklch(20% 0.091 321);
+  --cabbage-purple-750: oklch(25% 0.117 321);
+  --cabbage-purple-700: oklch(30% 0.141 321);
+  --cabbage-purple-650: oklch(35% 0.164 321);
+  --cabbage-purple-600: oklch(40% 0.188 321);
+  --cabbage-purple-550: oklch(45% 0.211 321);
+  --cabbage-purple-500: oklch(50% 0.235 321);
+  --cabbage-purple-450: oklch(55% 0.258 321);
+  --cabbage-purple-400: oklch(60% 0.282 321);
+  --cabbage-purple-350: oklch(65% 0.305 321);
+  --cabbage-purple-300: oklch(70% 0.285 321);
+  --cabbage-purple-250: oklch(75% 0.232 321);
+  --cabbage-purple-200: oklch(80% 0.176 321);
+  --cabbage-purple-150: oklch(85% 0.123 321);
+  --cabbage-purple-100: oklch(90% 0.075 321);
 }

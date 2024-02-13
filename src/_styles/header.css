@@ -15,21 +15,23 @@
 }
 
 .main-nav__item {
-  margin: 0 var(--space-xs);
+  line-height: 1;
+  display: inline-flex;
 }
 
 .main-nav__item--logo {
   flex-grow: 1;
-  margin: 0; 
   font-family: var(--font-brand);
   font-size: var(--step-1)
 }
 
-.main-nav__item:last-of-type {
-  margin-inline-end: 0;
+.main-nav__item + .main-nav__item {
+  margin-inline-start: var(--space-xs-s);
 }
 
 .main-nav__link {
+  display: inline-block;
+  padding-block: var(--space-xs-s);
   text-decoration: none;
 }
 

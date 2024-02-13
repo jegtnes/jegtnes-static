@@ -34,4 +34,6 @@
   --space-m-l: clamp(1.5rem, 1.2rem + 1.5vi, 3rem);
   --space-l-xl: clamp(2rem, 1.2rem + 4vi, 6rem);
   --space-xl-2xl: clamp(4rem, 3rem + 5vi, 9rem);
+
+  --site-max-width: 60ch;
 }

@@ -32,12 +32,12 @@ body {
 a {
   color: var(--color-blue-lighter);
   text-decoration: underline;
-  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.125em;
 }
 
 a:hover,
 a:focus {
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.25em;
   outline: none;
 }
 

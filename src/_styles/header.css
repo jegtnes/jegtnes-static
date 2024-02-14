@@ -1,6 +1,6 @@
 .site-header {
   background: var(--color-brand-primary);
-  padding-block: var(--space-xs-s);
+  padding-block: var(--space-s-m);
   margin-block-end: var(--space-m-l);
 }
 
@@ -22,7 +22,7 @@
 }
 
 .main-nav__item + .main-nav__item > .main-nav__link {
-  padding-inline-start: var(--space-xs);
+  margin-inline-start: var(--space-xs);
 }
 
 .main-nav__logo {
@@ -32,22 +32,10 @@
 }
 
 .main-nav__link {
+  position: relative;
   display: inline-block;
   padding-block: var(--space-s);
   text-decoration: none;
-}
-
-/* Duplicating the content to allow for layout shift free bolding - also hide from users in any meaningful way ofc */
-.main-nav__link::after {
-  display: block;
-  font-weight: 700;
-  content: attr(data-text);
-
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
 }
 
 .main-nav__link,
@@ -61,6 +49,13 @@
   outline: none;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus-visible {
+  text-decoration-thickness: 0.2em;
+}
+
 .main-nav__link--active {
-  font-weight: 700;
+  text-decoration-thickness: 0.1em;
+  text-decoration-line: underline;
+  text-decoration-color: var(--norway-red-250);
 }

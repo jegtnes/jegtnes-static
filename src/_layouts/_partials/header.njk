@@ -1,14 +1,16 @@
-<header class="site-header">
-  <nav class="container">
-    <ul class="main-nav half-bleed">
+<header class="site-header container">
+  <nav class="main-nav half-bleed">
+    <a
+      href="{{nav.home.url}}"
+      class="main-nav__item main-nav__link main-nav__logo hcard"
+      {% ariaCurrent nav.home.url, page.url %}
+    >
+      {{nav.home.label}}
+    </a>
+    <ul class="main-nav__links">
       {% for item in nav.items %}
         {% set anchorClass %}main-nav__link {% activeSection item.url, page.url, "main-nav__link--active" %}{% endset %}
-
-        {% if item.url == "/" %}
-          <li class="main-nav__item main-nav__item--logo hcard">
-        {% else %}
-          <li class="main-nav__item">
-        {% endif %}
+        <li class="main-nav__item">
           <a
             href="{{item.url}}"
             class="{{anchorClass}}"

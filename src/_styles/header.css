@@ -1,6 +1,6 @@
 .site-header {
   background: var(--color-brand-primary);
-  padding-block: var(--space-s-m);
+  padding-block: var(--space-s);
   margin-block-end: var(--space-m-l);
 }
 

@@ -4,6 +4,7 @@ const markdownItPrism = require("markdown-it-prism");
 
 const rss = require("@11ty/eleventy-plugin-rss");
 const metagen = require("eleventy-plugin-metagen");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 
 const activeSection = require("./src/_shortcodes/active-section");
 const ariaCurrent = require("./src/_shortcodes/aria-current");
@@ -30,6 +31,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(rss);
   eleventyConfig.addPlugin(metagen);
+  eleventyConfig.addPlugin(EleventyVitePlugin);
 
   const mdLib = markdownIt({
     html: true,

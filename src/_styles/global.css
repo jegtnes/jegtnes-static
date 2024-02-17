@@ -121,7 +121,7 @@ nav ul li {
   grid-column: 1 / -1;
   height: clamp(3.8333rem, 9vmax, 7.67rem);
   margin-block: var(--space-m-l);
-  background-image: url(/assets/images/pattern-large.svg);
+  background-image: url(/assets/images/pattern-large-optimised.svg);
 }
 
 .container {

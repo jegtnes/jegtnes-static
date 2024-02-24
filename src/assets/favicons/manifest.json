@@ -1,0 +1,19 @@
+{
+    "name": "The website and blog of Alex Jegtnes, a freelance front-end developer",
+    "short_name": "Alex Jegtnes",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#001C54",
+    "display": "standalone"
+}

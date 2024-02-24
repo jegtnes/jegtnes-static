@@ -12,9 +12,6 @@ const ariaCurrent = require("./src/_shortcodes/aria-current");
 const { humanPostDate, isoPostDate } = require("./src/_filters/date");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
-
   eleventyConfig.addWatchTarget("src/_filters");
   eleventyConfig.addWatchTarget("src/_shortcodes");
   eleventyConfig.addWatchTarget("src/_styles");
@@ -32,6 +29,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rss);
   eleventyConfig.addPlugin(metagen);
   eleventyConfig.addPlugin(EleventyVitePlugin);
+
+  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicons": "public" });
+  eleventyConfig.addPassthroughCopy({ "src/*.txt": "public" });
 
   const mdLib = markdownIt({
     html: true,

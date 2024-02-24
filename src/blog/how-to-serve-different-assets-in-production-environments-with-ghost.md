@@ -1,6 +1,6 @@
 ---
 title: How to serve different assets in production environments with Ghost
-date: 2014-05-01
+date: 2014-05-02
 location: Bristol, UK
 layout: blog-post.njk
 excerpt: "On implementing Handlebars helpers in Ghost and using them to serve different assets locally and in production."

@@ -10,7 +10,7 @@ The talented student [Tom de Wit](//twitter.com/ttomdewit) is looking for an int
 
 I was asked to give some feedback on these, and this will follow below. It’s a comprehensive set of questions, so be wary that if these take place in an interview setting, it’s likely you’ll have been told a lot of this information before or during the interview itself. Bring a notebook. Before the interview, jot down the crucial information you know about the position and company, and during the interview, write down any useful information you pick up before you’re asked whether you have any questions. ([This is generally good advice in any interview setting](http://www.kalzumeus.com/2012/01/23/salary-negotiation/)).
 
-> Do you know anyone who you’ve ever thought “Man, I thought they were competent, but then it turned out they had a notebook so I had to write them off?” No. Taking notes says “I’m attentive and detail-oriented and I care about what you say.”</dt>
+> Do you know anyone who you’ve ever thought “Man, I thought they were competent, but then it turned out they had a notebook so I had to write them off?” No. Taking notes says “I’m attentive and detail-oriented and I care about what you say.”
 
 If any of them remain unanswered at this stage, fire away! Most of these are great, and a lot are not specific to placements and interns.
 

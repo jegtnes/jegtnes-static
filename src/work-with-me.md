@@ -1,7 +1,7 @@
 ---
 title: Work with me
 layout: page.njk
-description: Hire Alex Jegtnes, a versatile freelance front-end developer.
+description: Hire Alex Jegtnes, a versatile freelance front-end developer with ten years of experience working for everything from small design studios to banks and newspapers.
 eleventyComputed:
   twitterLabel1: Availability
   twitterData1: "{%if global.availability%}{{global.availabilityDate}}{%else%}None{%endif%}"

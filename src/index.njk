@@ -2,8 +2,10 @@
 headline: Hi there! I'm Alex.
 title: Home
 layout: page.njk
+introHalfBleed: true
 eleventyComputed:
   intro:
+    <img src="/assets/images/face.jpg" class="image-inline" alt="A photo of me, cropped at just below the shoulders. I have shoulder-length, wavy, blond hair, blue eyes, and wearing black, rounded rectangular glasses." />
     <p>I'm an independent web development contractor based in London with ten years of experience. I develop fast, accessible, and beautiful websites and web apps.</p>
     {% if global.availability %}
     <p><strong>I have availability for new projects {{ global.availabilityDate }}</strong>, either remotely or on-site in London.</p>

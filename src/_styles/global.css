@@ -136,6 +136,13 @@ nav ul li {
   grid-column: 3;
 }
 
+.image-inline {
+  margin-inline: auto;
+  margin-block-end: var(--space-m);
+  width: 100%;
+  max-width: 20em;
+}
+
 .container__full-bleed,
 .container > pre,
 .container > .marius::after {
@@ -145,5 +152,12 @@ nav ul li {
 @container (min-width: 60ch) {
   .half-bleed {
     grid-column: 2 / -2;
+  }
+
+  .image-inline {
+    float: left;
+    max-width: 25%;
+    margin-inline-end: var(--space-s-m);
+    margin-block-end: 0;
   }
 }

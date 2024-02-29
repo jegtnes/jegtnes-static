@@ -30,10 +30,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(metagen);
   eleventyConfig.addPlugin(EleventyVitePlugin);
 
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({ "src/assets/public": "public" });
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicons": "public" });
-  eleventyConfig.addPassthroughCopy({ "src/*.txt": "public" });
 
   const mdLib = markdownIt({
     html: true,

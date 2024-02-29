@@ -8,6 +8,7 @@ const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 
 const activeSection = require("./src/_shortcodes/active-section");
 const ariaCurrent = require("./src/_shortcodes/aria-current");
+const availability = require("./src/_shortcodes/availability");
 
 const { humanPostDate, isoPostDate } = require("./src/_filters/date");
 
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("activeSection", activeSection);
   eleventyConfig.addShortcode("ariaCurrent", ariaCurrent);
+  eleventyConfig.addShortcode("availability", availability);
 
   eleventyConfig.addFilter("humanPostDate", humanPostDate);
   eleventyConfig.addFilter("isoPostDate", isoPostDate);

@@ -6,10 +6,11 @@ layout: page.njk
 introHalfBleed: true
 eleventyComputed:
   intro:
-    <img src="/assets/images/face.jpg" class="image-inline" alt="A photo of me, cropped at just below the shoulders. I have shoulder-length, wavy, blond hair, blue eyes, and wearing black, rounded rectangular glasses." />
-    <p>I'm an independent web development contractor based in London with ten years of experience. I develop fast, accessible, and beautiful websites and web apps.</p>
+    <img src="/assets/images/face.jpg" width="700" height="875" class="image-inline" alt="A photo of me, cropped at just below the shoulders. I have shoulder-length, wavy, blond hair, blue eyes, and wearing black, rounded rectangular glasses." />
+    <p>I'm an independent web development contractor based in London with ten years of experience. I develop fast, accessible, and beautiful websites and web apps for everything from small design studios to banks and newspapers.</p>
+    <p>At the heart of my approach is facilitating excellent cross-team communication without getting bogged down in bike-shedding, breaking down barriers to collaboration, and helping find that ever-tricky balance between perfection and shipping.</p>
     {% if global.availability %}
-    <p><strong>I have availability for new projects {{ global.availabilityDate }}</strong>, either remotely or on-site in London.</p>
+    <p>{% availability global.availability, global.availabilityString %}</p>
     <a class="btn" href="/work-with-me#quick-summary">See what I can do for your organisation</a>
     {% endif %}
 ---

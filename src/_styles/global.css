@@ -141,6 +141,8 @@ nav ul li {
   margin-block-end: var(--space-m);
   width: 100%;
   max-width: 20em;
+  height: auto;
+  width: auto;
 }
 
 .container__full-bleed,

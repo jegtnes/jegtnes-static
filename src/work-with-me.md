@@ -4,10 +4,10 @@ layout: page.njk
 description: Hire Alex Jegtnes, a versatile freelance front-end developer with ten years of experience working for everything from small design studios to banks and newspapers.
 eleventyComputed:
   twitterLabel1: Availability
-  twitterData1: "{%if global.availability%}{{global.availabilityDate}}{%else%}None{%endif%}"
+  twitterData1: "{% availability global.availability, global.availabilityString, true %}"
   twitterLabel2: Proficiencies
   twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
-  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p><strong>I have availability for new projects {{ global.availabilityDate }}</strong>, either remotely or on-site in London.</p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
+  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p><p>{% availability global.availability, global.availabilityString %}</p></p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
 ---
 
 ## Quick summary
@@ -96,6 +96,6 @@ Speaking of responsive images, in the dark days when responsive images weren't n
 
 ## Let's make a nice website together?
 
-If my skills sound relevant to anything you need help with I'd love to hear from you and to discuss your next project.
+If my skills sound relevant to anything you need help with, I'd love to hear from you and to discuss your next project.
 
 <a class="btn" href="mailto:alex@jegtnes.com?subject=Contracting%20inquiry">Toss an email my way!</a>

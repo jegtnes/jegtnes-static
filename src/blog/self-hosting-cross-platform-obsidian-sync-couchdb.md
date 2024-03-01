@@ -1,8 +1,7 @@
 ---
-eleventyExcludeFromCollections: true # remove this line to publish
 title: "Self-hosting Obsidian Sync for iOS, Android, Mac, and Windows with CouchDB"
-date: 2024-01-16
-location: London, UK
+date: 2024-03-01
+location: Oslo, Norway
 layout: blog-post.njk
 excerpt: "How to set up a self-hosted sync solution for the note-taking-app Obsidian that works cross-platform, backed by CouchDB on your own server."
 tags: ["subscription-fatigue", "obsidian-meta", "cross-os"]
@@ -22,7 +21,7 @@ Scouring the internet left me with two options:
 - Two external apps, [Syncthing](https://syncthing.net/) for Windows, Android, MacOS, and [Möbius](https://apps.apple.com/us/app/m%C3%B6bius-sync/id1539203216) for iOS
 - [Obsidian LiveSync](https://github.com/vrtmrz/obsidian-livesync) - an Obsidian community plugin that uses CouchDB to sync
 
-I preferred the look of the latter option, as it seemed simpler to handle this via an Obsidian plugin instead of installing _another_ app across my devices for just this one use case, and I have a VPS that mostly goes unused.
+I preferred the look of the latter option, as it seemed simpler to handle this via an Obsidian plugin instead of installing _another_ app across my devices for just this one use case, and I have a <abbr title="Virtual Private Server">VPS</abbr> that has plenty of spare network and computing capacity.
 
 So without further lengthy pre-amble, here's how you might do this.
 
@@ -38,9 +37,11 @@ CouchDB is not available on apt's default package repositories, so you'll need t
 
 The installation process will then ask you whether you're wanting to install it in standalone mode or as part of a cluster; it will almost certainly be standalone mode - if you need a cluster to sync your notes you will need help that I am in no way qualified to give you.
 
-Despite choosing this, I was asked for an "Erlang magic cookie value", which I have no idea what is, and why it's relevant for standalone mode. That's okay, I charged forward thinking that if this actually has any implications at any point that's future Alex's problem, randomly generated a 64 character string that I stored as part of the server's entry in my 1Password, and moved on. 
+Despite choosing this, I was asked for an "Erlang magic cookie value", which I have no idea what is, and why it's relevant for standalone mode. That's okay, I charged forward thinking that if this actually has any implications at any point, that's future Alex's problem, randomly generated a 64 character string that I stored as part of the server's entry in my 1Password, and moved on.
 
-![A three-panel comic featuring two men in suits having a dialogue. Person 1: "So, how do I query the database?" Person 2: "It's not a database. It's a key-value store! 1: "Ok, it's not a database. How do I query it?" 2: "You write a distributed map reduce function in Erlang!" 1: "Did you just tell me to go fuck myself?" 2: "I believe I did, Bob"](/assets/images/content-images/erlang-go-fuck-yourself.png)
+<div class="half-bleed">
+    <img src="/assets/images/content-images/erlang-magic-cookie.png" alt='A terminal prompt titled "Configuring couchdb", text reads the following: A CouchD node has an Erlang magic cookie value set at startup. This value must match for all nodes in the cluster. If they do not match, attempts to connect the node to the cluster will be rejected. CouchDB Erlang magic cookie' />
+</div>
 
 Following on from this prompt, I then accepted the default server binding address - 127.0.0.1, and set a secure admin password. Do not skip this, that'd be silly.
 
@@ -113,22 +114,25 @@ You are putting this behind SSL, right? If you're using Let's Encrypt, you'll th
 Congrats, you've mostly gotten through the hard bits - now we just need to make Obsidian LiveSync talk to your server. Head to Obsidian LiveSync's options in the Obsidian preferences, select the "wizard" pane, and select the "Discard existing preferences and setup" option. This will then take you to a window where you fill in some details - the URI will be https://couchdb-subdomain.your-domain.com or whatever you configured it to be - the admin credentials will be what you chose earlier when you set up CouchDB, and the _database name_ you can choose yourself - I went for the convention 'obsidian-VAULT-NAME', since you can sync multiple vaults with the same CouchDB setup as long as they have a unique database name.
 
 Once you've done this, press Test Database Connection, and if all is well, press Check Database Configuration. Oddly enough, despite following Obsidian LiveSync's CouchDB preference recommendations, I was told that several config options were wrong or suboptimal, but Obsidian LiveSync helpfully provided buttons to fix these individually.
-![[CleanShot 2023-12-16 at 16.38.30@2x.png]]
+
+![A screenshot from the Obsidian LiveSync preference panel, highlighting with a checkmark that some settings are correct, such as "chttpd.require-valid-user" a red exclamation mark that some settings are incorrect, such as "httpd.WWW-Authenticate" is missing, as well as six more similar errors](/assets/images/content-images/obsidian-sync-permissions.png)
 
 Presumably, since it has admin credentials, it uses a CouchDB API of some sort to update the database settings. Seriously, massive kudos to Obsidian LiveSync for implementing this, many other similar solutions of similar stubborn neckbeardedness would have dumped out a raw error log at you and told you to go fuck yourself. This was really nice to see.
 
-![[Pasted image 20231217015241.png]]
-jrecursive https://twitter.com/jrecursive/status/1414067934381547527
+<figure>
+    <img src="/assets/images/content-images/erlang-go-fuck-yourself.png" alt="A three-panel comic featuring two men in suits having a dialogue. Person 1: 'So, how do I query the database?' Person 2: 'Itʼs not a database. Itʼs a key-value store! 1: 'Ok, itʼs not a database. How do I query it?' 2: 'You write a distributed map reduce function in Erlang!' 1: 'Did you just tell me to go fuck myself?' 2: 'I believe I did, Bob'" />
+    <figcaption>credit: <cite><a href="https://twitter.com/jrecursive/status/1414067934381547527">jrecursive</a></cite></figcaption>
+</figure>
 
 (I later found that the additional settings it changed were added to `/opt/couchdb/etc/local.d/10-admins.ini`.)
 
 Once all your settings are working, you should be good to go! Have a look at some of the other of Obsidian LiveSync's settings, it's an advanced piece of kit and it's worth making sure it behaves how you want it to.
 
-You can now visit https://couchdb-subdomain.your-domain.com/_utils, enter your admin credentials, and confirm that the database has been created and that things are moving into it, if you'd care to.
+You can now visit `https://couchdb-subdomain.your-domain.com/_utils`, enter your admin credentials, and confirm that the database has been created and that things are moving into it, if you'd care to.
 
 Once you're done tinkering, head back to the setup wizard screen and copy the setup URI, setting a sensible passphrase - you'll need this next.
 
-![[CleanShot 2023-12-16 at 16.49.28@2x.png]]
+![A screenshot from the Obsidian LiveSync preference panel, showing an open modal dialog titled "encrypt your settings" with one field labelled "the passphrase to encrypt the setup URI", and with OK and Cancel as context buttons](/assets/images/content-images/obsidian-sync-encrypt.png)
 
 ## Connecting Obsidian LiveSync to your CouchDB database on second and subsequent devices
 On each of your other devices that you want to sync, create a new Obsidian vault, install the LiveSync plugin, and go to the setup wizard screen again. Press "Open setup URI" and paste the URI you grabbed at the end of the last step, then enter the passphrase. That should be all you need!

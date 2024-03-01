@@ -6,6 +6,7 @@ h5,
 h6 {
   font-family: "Noord Regular";
   font-weight: 500;
+  text-wrap: balance;
 }
 
 .hefty-boi {

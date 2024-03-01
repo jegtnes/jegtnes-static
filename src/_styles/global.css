@@ -136,6 +136,10 @@ nav ul li {
   grid-column: 3;
 }
 
+img {
+  height: auto;
+}
+
 .image-inline {
   margin-inline: auto;
   margin-block-end: var(--space-m);

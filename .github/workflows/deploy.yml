@@ -19,10 +19,8 @@ jobs:
       run: echo "TMP_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
     - name: Echo Node version
       run: node -v
-    - name: Build 11ty site
-      uses: TartanLlama/actions-eleventy@master
-      with:
-        install_dependencies: true
+    - name: Build Eleventy site
+      uses: extrawitz/11ty-dockerless-build@v1
     - name: Transfer built site to server
       uses: appleboy/scp-action@master
       with:

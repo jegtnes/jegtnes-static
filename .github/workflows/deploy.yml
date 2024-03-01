@@ -17,6 +17,8 @@ jobs:
       run: echo "DATETIME=$(date -u +"%Y%m%d-%H%M%SZ")" >> $GITHUB_ENV
     - name: Set deploy folder env var
       run: echo "TMP_FOLDER=/tmp/${{github.event.repository.name}}-${{env.DATETIME}}" >> $GITHUB_ENV
+    - name: Echo Node version
+      run: node -v
     - name: Build 11ty site
       uses: TartanLlama/actions-eleventy@master
       with:

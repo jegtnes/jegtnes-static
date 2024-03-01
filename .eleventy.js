@@ -36,6 +36,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		formats: ["avif", "webp", "jpeg"],
 
+		// widths: ["350", "700", "1000", "auto"],
 		widths: ["auto"],
 
 		defaultAttributes: {

@@ -51,6 +51,7 @@ module.exports = function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
+    typographer: true,
   })
     .use(markdownItAnchor, {
       tabIndex: false,

@@ -1,9 +1,10 @@
 ---
 layout: global.njk
 ---
-
 <article class="marius-section">
   <header class="container marius-section">
+    {# Christ, this is getting a bit messy eh - should do some sort of subtemplate or other fix #}
+
     {% if introHalfBleed %}
       <div class="half-bleed flow">
     {% endif %}
@@ -20,7 +21,7 @@ layout: global.njk
     {% endif %}
 
     {% if (intro and not introHalfBleed) %}
-      <div class="flow-spacing">{{ intro | safe }}</div>
+      <div class="flow-spacing flow">{{ intro | safe }}</div>
     {% elseif intro %}
       {{ intro | safe }}
     {% endif %}

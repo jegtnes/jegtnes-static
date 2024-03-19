@@ -6,16 +6,14 @@ permalink: /blog/{{ title | slugify }}/
 <article class="h-entry marius-section">
   <header class="container marius-section">
     <h1 class="p-name half-bleed">{{ title }}</h1>
-    <p class="half-bleed">
+    <p class="half-bleed italic">
       Published on
         <time class="dt-published" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>
       {% if location %}
         {% if (location.slice(0, 2) !== 'on') and (location.slice(0, 2) !== 'in') %}
           in
         {% endif %}
-        {{ location }}
-      {% endif %}
-    </p>
+        {{ location }}{% endif %}.</p>
   </header>
   <div class="container e-content flow">
     {{ content | safe }}

@@ -47,3 +47,11 @@ h4,
   font-size: var(--step--1);
   line-height: 1.4;
 }
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}

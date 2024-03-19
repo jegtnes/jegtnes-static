@@ -11,6 +11,10 @@
     {
       "label": "Work with me",
       "url": "/work-with-me/"
+    },
+    {
+      "label": "Now",
+      "url": "/now/"
     }
   ]
 }

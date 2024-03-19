@@ -16,7 +16,8 @@ body {
 }
 
 .flow > * + *,
-.flow > dl > * {
+.flow > dl > *,
+.flow-spacing {
   margin-block-start: var(--flow-space, 1em)
 }
 

@@ -3,18 +3,25 @@ layout: global.njk
 ---
 
 <article class="marius-section">
-  <header class="container flow marius-section">
+  <header class="container marius-section">
     {% if introHalfBleed %}
       <div class="half-bleed flow">
     {% endif %}
 
-    {% if headline %}
-      <h1>{{ headline }}</h1>
-    {% elseif title %}
-      <h1>{{title}}</h1>
+    {% if (headline or title) %}
+      {% if headline %}
+        <h1>{{ headline }}</h1>
+      {% elseif title %}
+        <h1>{{title}}</h1>
+      {% endif %}
+      {% if updated %}
+        <p class="italic">Last updated on <time class="dt-updated" datetime="{{date | isoPostDate}}">{{date | humanPostDate}}</time>.</p>
+      {% endif %}
     {% endif %}
 
-    {% if intro %}
+    {% if (intro and not introHalfBleed) %}
+      <div class="flow-spacing">{{ intro | safe }}</div>
+    {% elseif intro %}
       {{ intro | safe }}
     {% endif %}
 

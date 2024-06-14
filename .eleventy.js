@@ -65,6 +65,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", mdLib);
 
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: "src",
       output: "dist",

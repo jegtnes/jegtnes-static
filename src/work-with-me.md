@@ -7,7 +7,7 @@ eleventyComputed:
   twitterData1: "{% availability global.availability, global.availabilityString, true %}"
   twitterLabel2: Proficiencies
   twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
-  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p><p>{% availability global.availability, global.availabilityString %}</p></p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
+  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p>{% availability global.availability, global.availabilityString %}</p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
 ---
 
 ## Quick summary
@@ -28,7 +28,7 @@ I’m an adept web developer, possessing a varied set of highly practical skills
     </ul>
   </section>
   <section class="flow">
-    <h3 class="delta" id="good-competency">Solid competency</h3>
+    <h3 class="delta" id="solid-competency">Solid competency</h3>
     <ul>
       <li>Design systems</li>
       <li>Storybook</li>
@@ -42,7 +42,7 @@ I’m an adept web developer, possessing a varied set of highly practical skills
     </ul>
   </section>
   <section class="flow">
-    <h3 class="delta" id="basic-proficiency">Basic familarity</h3>
+    <h3 class="delta" id="basic-familarity">Basic familarity</h3>
     <ul>
       <li>Serverless</li>
       <li>MySQL/PostgreSQL</li>
@@ -56,11 +56,13 @@ I’m an adept web developer, possessing a varied set of highly practical skills
   </section>
 </article>
 
+<!-- {% include './_layouts/_partials/work-timeline.njk' %} -->
+
 But I like to think I am a bit more than just a set of technologies. Here are some more reasons people have enjoyed working with me in the past:
 
 ## I'm a seasoned code archaeologist
 
-My six years of contracting experience has given me exposure to a wide variety of codebases, and part and parcel of being a contractor is getting up to speed with these quickly.
+My eight years of contracting experience has given me exposure to a wide variety of codebases, and part and parcel of being a contractor is getting up to speed with these quickly.
 
 Obviously, most developers want to work on a new greenfield project that [will be perfect this time](https://bonkersworld.net/building-software), the reality of software development is often{{symbols.emdash}}well, quite a bit messier{{symbols.emdash}}but I have grown to embrace that.
 
@@ -78,7 +80,7 @@ I'm naturally an incredibly curious person, and I enjoy weaponising this curiosi
 
 I have several years of experience building accessible websites and web applications, getting involved earlier in the product process to discuss accessibility with designers and product-people up-front, and helping development teams upskill their accessibility knowledge.
 
-Recently, at the [Economist Intelligence Unit](https://www.eiu.com), I was leading the accessibility efforts in the React web application they were building to replace their legacy site. I took the findings of an external accessibility audit, transformed them into a comprehensive Jira epic, organised the tickets in a way that would allow the management teams to have a much clearer picture of the progress made towards WCAG complicance, and letting the product teams prioritise their time.
+Recently, at the [Economist Intelligence Unit](https://www.eiu.com), I was leading the accessibility efforts in the React web application they were building to replace their legacy site. I took the findings of an external accessibility audit, transformed them into a comprehensive Jira epic, organised the tickets in a way that would allow the management teams to have a much clearer picture of the progress made towards WCAG compliance, and letting the product teams prioritise their time.
 
 This let us clearly separate the more straight-forward fixes that could be tackled as part of a sprint from the longer-term accessibility goals that would also require cross-disciplinary collaboration with external teams{{symbols.emdash}}such as the editorial and CMS teams{{symbols.emdash}}being required to format and mark up the editorial content, especially graphs and charts, in a more accessible manner.
 

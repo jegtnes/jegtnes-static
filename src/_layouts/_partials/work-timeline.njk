@@ -1,0 +1,4 @@
+{% for timelineItem in collections.timeline | reverse %}
+		<h2 class="p-name">{{timelineItem.data.title}}</h2>
+		<div>{{ timelineItem.templateContent | safe }}</div>
+{% endfor %}

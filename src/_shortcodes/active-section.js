@@ -1,4 +1,6 @@
 module.exports = function activeSection(itemUrl, pageUrl, output) {
+  if(!itemUrl || !pageUrl) return "";
+
   // The homepage will not have an active state in either case
   if (itemUrl === "/") return "";
 

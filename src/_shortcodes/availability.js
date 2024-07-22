@@ -7,7 +7,7 @@ module.exports = function availability(availability, availabilityString, short =
 
 	if (!availability) return "I presently have no availability for new engagements.";
 
-	if(availabilityString && availabilityString.length) return `<strong>I have availability for new engagements from ${availabilityString}</strong>, either remotely or on-site in London.`;
+	if(availabilityString && availabilityString.length) return `<strong>I have availability for new remote engagements from ${availabilityString}</strong>.`;
   
-	return "<strong>I have current availability for new engagements</strong>, either remotely or on-site in London.";
+	return "<strong>I have current availability for new remote engagements</strong>.";
 };

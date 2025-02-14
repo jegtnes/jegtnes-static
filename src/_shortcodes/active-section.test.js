@@ -1,4 +1,4 @@
-const activeSection = require("./active-section");
+import activeSection from "./active-section";
 
 it("should not add a class to the homepage link", () => {
   expect(activeSection("/", "/")).toEqual("");

@@ -1,4 +1,4 @@
-module.exports = function availability(availability, availabilityString, short = false) {
+export default function availability(availability, availabilityString, short = false) {
 	if (short) {
 		if (!availability) return "None currently";
 		if(availabilityString && availabilityString.length) return `from ${availabilityString}`;

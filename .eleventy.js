@@ -1,19 +1,19 @@
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const markdownItPrism = require("markdown-it-prism");
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItPrism from "markdown-it-prism";
 
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const rss = require("@11ty/eleventy-plugin-rss");
-const metagen = require("eleventy-plugin-metagen");
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import rss from "@11ty/eleventy-plugin-rss";
+import metagen from "eleventy-plugin-metagen";
+import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
 
-const activeSection = require("./src/_shortcodes/active-section");
-const ariaCurrent = require("./src/_shortcodes/aria-current");
-const availability = require("./src/_shortcodes/availability");
+import activeSection from "./src/_shortcodes/active-section.js";
+import ariaCurrent from "./src/_shortcodes/aria-current.js";
+import availability from "./src/_shortcodes/availability.js";
 
-const { humanPostDate, isoPostDate } = require("./src/_filters/date");
+import { humanPostDate, isoPostDate } from "./src/_filters/date.js";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/_filters");
   eleventyConfig.addWatchTarget("src/_shortcodes");
   eleventyConfig.addWatchTarget("src/_styles");

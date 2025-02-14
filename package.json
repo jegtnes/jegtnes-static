@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Alex Jegtnes <alex@jegtnes.com> (https://jegtnes.com)",
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "postcss": "postcss ./dist/assets/styles/styles.css -o ./dist/assets/styles/styles.min.css",
     "build": "npm run clean && eleventy",
@@ -18,7 +19,7 @@
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "@11ty/eleventy-plugin-vite": "^6.0.0",
     "eleventy-plugin-metagen": "^1.8.3",
     "luxon": "^3.1.0",
     "markdown-it": "^13.0.1",

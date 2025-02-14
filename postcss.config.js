@@ -1,10 +1,8 @@
-const okLab = require('@csstools/postcss-oklab-function');
-const pruneVar = require('postcss-prune-var');
-const presetEnv = require('postcss-preset-env');
-module.exports = {
-	plugins: [
-		okLab(),
-		pruneVar(),
-		presetEnv()
-	]
-}
+import okLab from '@csstools/postcss-oklab-function';
+import pruneVar from 'postcss-prune-var';
+import presetEnv from 'postcss-preset-env';
+export const plugins = [
+	okLab(),
+	pruneVar(),
+	presetEnv()
+];

@@ -1,13 +1,13 @@
-const ordinal = require("ordinal");
-const { DateTime } = require("luxon");
+import ordinal from "ordinal";
+import { DateTime } from "luxon";
 
-module.exports.humanPostDate = function (date) {
+export function humanPostDate (date) {
   const luxonDate = DateTime.fromJSDate(date).toUTC();
 
   const ordinaledDay = ordinal(luxonDate.day);
   return `${ordinaledDay} ${luxonDate.monthLong} ${luxonDate.year}`;
-};
+}
 
-module.exports.isoPostDate = function (date) {
+export function isoPostDate (date) {
   return DateTime.fromJSDate(date).toUTC().toISODate();
-};
+}

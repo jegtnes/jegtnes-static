@@ -1,4 +1,4 @@
-const ariaCurrent = require("./aria-current");
+import ariaCurrent from "./aria-current";
 
 it("should not add aria-current if the current link doesn't match identically", () => {
   expect(ariaCurrent("/1", "/2")).toEqual("");

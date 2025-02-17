@@ -9,7 +9,7 @@
   "scripts": {
     "postcss": "postcss ./dist/assets/styles/styles.css -o ./dist/assets/styles/styles.min.css",
     "build": "npm run clean && eleventy",
-    "serve": "npm run clean && eleventy --serve --incremental",
+    "serve": "eleventy --serve --incremental",
     "clean": "rm -rf ./dist",
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest",
     "test:watch": "jest --watch"

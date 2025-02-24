@@ -1,5 +1,5 @@
 {
-  "availability": true,
+  "availabilityDays": 2,
   "availabilityString": "March 2025",
   "baseUrl": "https://jegtnes.com",
   "siteName": "Alex Jegtnes"

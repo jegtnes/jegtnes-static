@@ -4,10 +4,10 @@ layout: page.njk
 description: Hire Alex Jegtnes, a versatile freelance front-end developer with ten years of experience working for everything from small design studios to banks and newspapers.
 eleventyComputed:
   twitterLabel1: Availability
-  twitterData1: "{% availability global.availability, global.availabilityString, true %}"
+  twitterData1: "{% availability global.availabilityDays, global.availabilityString, true %}"
   twitterLabel2: Proficiencies
   twitterData2: JavaScript, well-crafted HTML & CSS, accessibility, React, web performance
-  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availability %}<p>{% availability global.availability, global.availabilityString %}</p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
+  intro: <p>Hi there! I'm Alex, an independent web development contractor based in London. I develop fast, accessible, and beautiful websites and web apps.</p>{% if global.availabilityDays %}<p>{% availability global.availabilityDays, global.availabilityString %}</p><p>I have ten years of experience working with clients ranging from startups and design studios to large corporations and banks. Read on to find out what I can bring to your organisation.</p>{% endif %}
 ---
 
 ## Quick summary

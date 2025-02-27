@@ -1,6 +1,6 @@
 {
-  "availabilityDays": 2,
-  "availabilityString": "March 2025",
+  "shortAvailability": "2 days/week",
+  "longAvailability": "<strong>I'm currently available for part-time engagements up to 2 days/week</strong>, either on-site in London or remotely.",
   "baseUrl": "https://jegtnes.com",
   "siteName": "Alex Jegtnes"
 }

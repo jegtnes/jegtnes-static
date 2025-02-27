@@ -9,7 +9,6 @@ import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
 
 import activeSection from "./src/_shortcodes/active-section.js";
 import ariaCurrent from "./src/_shortcodes/aria-current.js";
-import availability from "./src/_shortcodes/availability.js";
 
 import { humanPostDate, isoPostDate } from "./src/_filters/date.js";
 
@@ -20,7 +19,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addShortcode("activeSection", activeSection);
   eleventyConfig.addShortcode("ariaCurrent", ariaCurrent);
-  eleventyConfig.addShortcode("availability", availability);
 
   eleventyConfig.addFilter("humanPostDate", humanPostDate);
   eleventyConfig.addFilter("isoPostDate", isoPostDate);
